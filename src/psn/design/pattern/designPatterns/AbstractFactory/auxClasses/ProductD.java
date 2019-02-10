@@ -7,8 +7,14 @@ public class ProductD extends AbstractProductB {
         this.productName = name;
         System.out.println("Name of the created product: " + name);
     }
-    public void operationB1() { }
-    public void operationB2() { }
+    public void operationB1() {
+
+        System.out.println(" First operation (B1 - Covering) with " + productName + " done!");
+    }
+    public void operationB2() {
+
+        System.out.println(" Second operation (B2 - Packing) with " + productName + " done!");
+    }
 
     @Override
     public String toString() {

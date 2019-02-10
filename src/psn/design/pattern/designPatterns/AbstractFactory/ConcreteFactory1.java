@@ -1,9 +1,6 @@
 package psn.design.pattern.designPatterns.AbstractFactory;
 
-import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductA;
-import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductB;
-import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.ProductA;
-import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.ProductC;
+import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.*;
 
 public class ConcreteFactory1 extends AbstractFactoryDP{
 
@@ -13,10 +10,31 @@ public class ConcreteFactory1 extends AbstractFactoryDP{
         return new ProductA(productName);
     }
 
-    public AbstractProductB createProductB(String productName){
+    public AbstractProductA createProductB(String productName){
+
+        this.productName = productName;
+        return new ProductB(productName);
+    }
+
+    @Override
+    public AbstractProductA createProductC(String productName) {
 
         this.productName = productName;
         return new ProductC(productName);
+    }
+
+    @Override
+    public AbstractProductB createProductD(String productName) {
+
+        this.productName = productName;
+        return new ProductD(productName);
+    }
+
+    @Override
+    public AbstractProductB createProductE(String productName) {
+
+        this.productName = productName;
+        return new ProductE(productName);
     }
 
     @Override

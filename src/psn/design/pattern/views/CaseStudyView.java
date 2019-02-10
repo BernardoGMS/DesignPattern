@@ -7,6 +7,9 @@ import psn.design.pattern.controllers.AbstractsController;
 import psn.design.pattern.designPatterns.ConcretePatternInstantiation;
 import psn.design.pattern.designPatterns.ImplPatternInterface;
 import psn.design.pattern.messages.*;
+import psn.design.pattern.messages.TextsInterface;
+
+import java.util.Map;
 
 public class CaseStudyView implements AbstractsView {
 
@@ -17,16 +20,21 @@ public class CaseStudyView implements AbstractsView {
     protected AbstractsView mainView;
     protected TextsConstructor textsConstructor;
     protected ImplPatternInterface patternInterface;
+    protected Map<Integer, TextsInterface> textsInterfaceMap;
 
     public CaseStudyView(Prompt prompt, AppSetter appSetter) {
 
         this.prompt = prompt;
         this.languageID = appSetter.getLanguageID();
         this.patternInterface = new ConcretePatternInstantiation();
+        this.textsInterfaceMap = appSetter.getTextsInfacesMap();
         if (this.languageID ==0){
             this.textsConstructor = new TextsConstructorEN();
         }else{
             this.textsConstructor = new TextsConstructorPT();
+        }
+        for (TextsInterface t : textsInterfaceMap.values()) {
+            t.setConstructor(this.textsConstructor);
         }
     }
 
@@ -64,57 +72,33 @@ public class CaseStudyView implements AbstractsView {
     public void showOptions(MenuInputScanner optionsList) {
 
         int answer = this.prompt.getUserInput(optionsList);
-        if (answer==2) {this.mainView.init(languageID);}
+        if (answer==3) {this.mainView.init(languageID);}
 
         if (answer==1) {
 
             if (this.textsConstructor instanceof TextsConstructorEN) {
 
-                this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_ABSTRACTFACTORY_TEXT_P1);
-                this.textsConstructor.setCurrentTitle(MessagesEN.CASESTUDY_ABSTRACTFACTORY.toUpperCase());
-                this.textsConstructor.constructTextTitle();
-                this.textsConstructor.setCurrentSubTitle(MessagesEN.CASESTUDY_INTENT);
-                this.textsConstructor.constructTextSubTitle();
-
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_ABSTRACTFACTORY_TEXT_P2);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_ABSTRACTFACTORY_TEXT_P3);
-                this.textsConstructor.constructText();
-                this.textsConstructor.constructTextDown(1);
-
-                this.textsConstructor.setCurrentSubTitle(MessagesEN.CASESTUDY_PROBLEM);
-                this.textsConstructor.constructTextSubTitle();
-                this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_ABSTRACTFACTORY_TEXT_P4);
-                this.textsConstructor.constructText();
-                this.textsConstructor.constructTextDown(1);
-
+                this.textsInterfaceMap.get(1).displayEnglishTexts();
                 this.patternInterface.implementAbstractFactory(textsConstructor);
-
             }else{
 
-                this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_ABSTRACTFACTORY_TEXT_P1);
-                this.textsConstructor.setCurrentTitle(MessagesPT.CASESTUDY_ABSTRACTFACTORY.toUpperCase());
-                this.textsConstructor.constructTextTitle();
-                this.textsConstructor.setCurrentSubTitle(MessagesPT.CASESTUDY_INTENT);
-                this.textsConstructor.constructTextSubTitle();
-
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_ABSTRACTFACTORY_TEXT_P2);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_ABSTRACTFACTORY_TEXT_P3);
-                this.textsConstructor.constructText();
-                this.textsConstructor.constructTextDown(1);
-
-                this.textsConstructor.setCurrentSubTitle(MessagesPT.CASESTUDY_PROBLEM);
-                this.textsConstructor.constructTextSubTitle();
-                this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_ABSTRACTFACTORY_TEXT_P4);
-                this.textsConstructor.constructText();
-                this.textsConstructor.constructTextDown(1);
-
+                this.textsInterfaceMap.get(1).displayPortugueseTexts();
                 this.patternInterface.implementAbstractFactory(textsConstructor);
+            }
 
+            this.init(languageID);
+        }
 
+        if (answer==2) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(6).displayEnglishTexts();
+                this.patternInterface.implementAdapter(textsConstructor);
+            }else{
+
+                this.textsInterfaceMap.get(6).displayPortugueseTexts();
+                this.patternInterface.implementAdapter(textsConstructor);
             }
 
             this.init(languageID);

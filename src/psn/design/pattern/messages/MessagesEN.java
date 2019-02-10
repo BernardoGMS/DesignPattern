@@ -32,6 +32,15 @@ public class MessagesEN {
             " Too often, this encapsulation is not engineered in advance, and lots of #ifdef case statements with options" +
             " for all currently supported platforms begin to procreate like rabbits throughout the code.";
 
+    public static String CASESTUDY_ADAPTER = "Adapter.";
+    public static String CASESTUDY_ADAPTER_TEXT_P1 = " * Convert the interface of a class into another interface clients expect." +
+            " Adapter lets classes work together that couldn't otherwise because of incompatible interfaces;";
+    public static String CASESTUDY_ADAPTER_TEXT_P2 = " * Wrap an existing class with a new interface;";
+    public static String CASESTUDY_ADAPTER_TEXT_P3 = " * Impedance match an old component to a new system.";
+    public static String CASESTUDY_ADAPTER_TEXT_P4 = "  An 'off the shelf' component offers compelling functionality that you would" +
+            "like to reuse, but its 'views of the world' is not compatible with the philosophy and architecture of the system " +
+            "currently being developed.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -39,9 +48,24 @@ public class MessagesEN {
             " both product are of type A...";
     public static String CASESTUDY_CREATE_PRODUCTS_FACB = " 3. Creating 3 different (Cuetara, Oreo and Cream) of products using factory B" +
             " where product C is of type A and others of type B...";
+    public static String CASESTUDY_ABSTRACTFACTORY_DOING_OPERATIONS = " 4. Making some operations with the products:";
+
+    // Messages used during the case of study implementation - ADAPTER
+    public static String CASESTUDY_CREATE_AUDIOPLAYER = "1. Creating audio players ONE and TWO. Both support .mp3 files only!";
+    public static String CASESTUDY_PLAY_MP3_FILE_AUDIOPLAYER_ONE = "2.1 Playing song 'only you.mp3' on audio player ONE...";
+    public static String CASESTUDY_PLAY_MP3_FILE_AUDIOPLAYER_TWO = "2.2 Playing song 'need to know.mp3' on audio player TWO...";
+    public static String CASESTUDY_PLAY_MP4_FILE_AUDIOPLAYER_ONE = "3.1 Playing song 'only you.mp4' on audio player ONE, which " +
+            "need to be adapted by using a method to do the job. Until now it was used the interface MediaPlayer instead of the " +
+            "current AdvancedMediaPlayer which provides the ability to read .mp4 and .vlc files.";
+    public static String CASESTUDY_PLAY_VLC_FILE_AUDIOPLAYER_TWO = "3.2 Playing song 'judas.vlc' on audio player TWO, by using the" +
+            " same process used right before.";
+    public static String CASESTUDY_PLAY_AVI_FILE_AUDIOPLAYER_TWO = "4. Trying to play file 'love, simon.avi' on audio player TWO," +
+            " which is impossible because the audio player does not have a specific adapter to provide it the ability of reading" +
+            " such files type.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";
+    public static String CASESTUDY_EXEMPLIFICATION = "CONCRETE EXAMPLE";
 
     public static String TEXT_OVERVIEW_TITLE = "OVERVIEW";
     public static String TEXT_OVERVIEW_P1 = "In software engineering, a design pattern is a general repeatable solution to a commonly " +
@@ -58,7 +82,27 @@ public class MessagesEN {
     public static String TEXT_OVERVIEW_P3 = "However These techniques are difficult to apply to a broader range of problems. Design patterns" +
             " provide general solutions, documented in a format that doesn't require specifics tied to a particular problem.";
 
+    public static String TEXT_CREATIONALPATTERN_CONCEPT_TITLE = "CREATIONAL PATTERNS";
+    public static String TEXT_CREATIONALPATTERN_CONCEPT_P1 = "  This design is all about instantiation. This pattern can be further" +
+            "divided into class-creation patterns and object-creational patterns. While class-creation patterns use" +
+            "inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get job done. " +
+            "As examples of those kind of patterns, we have Abstract factory, builder, factory method, object pool, prototype and singleton";
+
+    public static String TEXT_STRUCTURALPATTERN_CONCEPT_TITLE = "STRUCTURAL PATTERNS";
+    public static String TEXT_STRUCTURALPATTERN_CONCEPT_P1 = "  This design patterns is all about Class ans Object composition. " +
+            "Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways" +
+            "to compose objects to obtain new functionality. Examples of such patterns are adapter, bridge, composite, decorator," +
+            " façade, flyweight, private class data and proxy.";
+
+    public static String TEXT_BEHAVIORALPATTERN_CONCEPT_TITLE = "BEHAVIORAL PATTERNS";
+    public static String TEXT_BEHAVIORALPATTERN_CONCEPT_P1 = "  This design patterns is all about Class's objects communication" +
+            ". Behavioral patterns are those patterns that are most specifically concerned with communication between objects. " +
+            "Example of such patterns are chain of responsibility, command, interpreter, iterator, mediator, memento, null object," +
+            " observer, state, strategy, template method and visitor.";
+
     public static String HALL_UP_DOWN = "************************************************************************************";
 
     public static String QUIT_MESSAGE = "See you another time!";
+
+    public static String SOURCE_MESSAGE = "Source: Shevets, A., 'Design Patterns - Explained Simple.' :)";
 }

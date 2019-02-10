@@ -33,6 +33,16 @@ public class MessagesPT {
             " #ifdef com opções para todas as plataformas currentement suportadas começam a procriar-se como coelhos ao longo" +
             "do código.";
 
+    public static String CASESTUDY_ADAPTER = "Adapter.";
+    public static String CASESTUDY_ADAPTER_TEXT_P1 = " * Converter a interface de uma classe noutra que o cliente espera." +
+            " O adapter permite que as classes trabalhem juntas de forma que de outra forma não conseguiam devido a incompatibilidade" +
+            "de interfaces;";
+    public static String CASESTUDY_ADAPTER_TEXT_P2 = " * Envolve uma classe existente numa nova interface;";
+    public static String CASESTUDY_ADAPTER_TEXT_P3 = " * A impedância faz corresponder um componente antigo num novo sistema.";
+    public static String CASESTUDY_ADAPTER_TEXT_P4 = "  Um coponente 'fora da prateleria' oferece uma funcionalidade convincente que" +
+            "tu deverás gostar de reutilizar, mas as suas 'visões do mundo' não são compatívies com a filosofia e arquitecturas" +
+            " do sistema correntemente em desenvolvimento.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -40,9 +50,24 @@ public class MessagesPT {
             " a fábrica A, onde ambos são do tipo A";
     public static String CASESTUDY_CREATE_PRODUCTS_FACB = " 3. Criando 3 diferentes (Cuetara, Oreo e Cream) de productos usando" +
             " a B onde o produto Cuetara é do tipo A e os outros do tipo B";
+    public static String CASESTUDY_ABSTRACTFACTORY_DOING_OPERATIONS = " 4. Efectuando algumas operações com os produtos:";
+
+    // Messages used during the case of study implementation - ADAPTER
+    public static String CASESTUDY_CREATE_AUDIOPLAYER = "1. Criando os audio players ONE e TWO, que apenas suportam ficheiros .mp3!";
+    public static String CASESTUDY_PLAY_MP3_FILE_AUDIOPLAYER_ONE = "2.1 Reproduzindo a música 'only you.mp3' no audio player ONE...";
+    public static String CASESTUDY_PLAY_MP3_FILE_AUDIOPLAYER_TWO = "2.2 Reproduzindo a música 'need to know.mp3' no audio player TWO...";
+    public static String CASESTUDY_PLAY_MP4_FILE_AUDIOPLAYER_ONE = "3.1 Reproduzindo a música 'only you.mp4' no audio player ONE, que " +
+            "precisa de ser adapatedo usando um método para o efeito. Até agora foi usada a interface MediaPlayer em vez da " +
+            "corrente AdvancedMediaPlayer que fornece a possibilidade de ler ficheiros .mp4 e .vlc.";
+    public static String CASESTUDY_PLAY_VLC_FILE_AUDIOPLAYER_TWO = "3.2 Reproduzindo a música 'judas.vlc' no audio player TWO, usando o " +
+            "mesmo processo usado imediatamente antes.";
+    public static String CASESTUDY_PLAY_AVI_FILE_AUDIOPLAYER_TWO = "4. Tentando reproduzir o ficheiro 'love, simon.avi' no audio player TWO," +
+            " o que é impossivel porque este audio player não tem um adaptador específico que forneça a possibilidade de ler" +
+            " este tipo de ficheiros.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";
+    public static String CASESTUDY_EXEMPLIFICATION = "EXEMPLO CONCRETO";
 
     public static String TEXT_OVERVIEW_TITLE = "VISÃO GERAL";
     public static String TEXT_OVERVIEW_P1 = "  Na engenharia de software,um padrão de design é uma solução repetitiva para um problema " +
@@ -61,6 +86,25 @@ public class MessagesPT {
     public static String TEXT_OVERVIEW_P3 = "" +
             "  No entanto estas técnicas são dificeis de aplicar a um amplo intervalo de problemas. Os padrões de design" +
             " fornecem soluções gerais, documentadas num formato que não requer ligação específica a um problema particular.";
+
+    public static String TEXT_CREATIONALPATTERN_CONCEPT_TITLE = "PADRÕES CRIACIONAIS";
+    public static String TEXT_CREATIONALPATTERN_CONCEPT_P1 = "  Este design é tudo sobre instanciação. Este padrão pode ser assim dividido" +
+            "em padrões de criação de classes e padrões de criação de objectos. Enquanto os padrões de criação de classes usam" +
+            "efetivamente a herança no processo de instanciação, os padrões de criação de objectos usam efectivamente a delegação" +
+            "para terem o trabalho realizado. Como exemplos destes tipos de padrões temos a abstract factory, builder, factory " +
+            "method, object pool, prototype e singleton";
+
+    public static String TEXT_STRUCTURALPATTERN_CONCEPT_TITLE = "PADRÕES ESTRUTURAIS";
+    public static String TEXT_STRUCTURALPATTERN_CONCEPT_P1 = "  Este design é tudo sobre composição de Classes e Objectos. Os " +
+            "padrões estruturais de criação de classes usam herança para compor interfaces. Os padrões estruturais de criação de objectos " +
+            "definem formas de compor objectos para obter novas funcionalidades. Exemplos de tais padrões são o adapter, bridge" +
+            ", composite, decorator, façade, flyweight, private class data e proxy.";
+
+    public static String TEXT_BEHAVIORALPATTERN_CONCEPT_TITLE = "PADRÕES COMPORTAMENTAIS";
+    public static String TEXT_BEHAVIORALPATTERN_CONCEPT_P1 = "  Este desdign é tudo sobre comunicação entre objectos de classes." +
+            ". Os padrões comportamentais são aqueles que estão mais especificamente focados na comunicação entre objectos. " +
+            "Exemplos de tais padrões são a chain of responsibility, command, interpreter, iterator, mediator, memento, null object," +
+            " observer, state, strategy, template method e visitor";
 
     public static String HALL_UP_DOWN = "************************************************************************************";
 

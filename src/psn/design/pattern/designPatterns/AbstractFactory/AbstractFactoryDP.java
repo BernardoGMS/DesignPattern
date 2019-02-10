@@ -8,5 +8,8 @@ public abstract class AbstractFactoryDP{
     protected String productName;
 
     public abstract AbstractProductA createProductA(String productName);
-    public abstract AbstractProductB createProductB(String productName);
+    public abstract AbstractProductA createProductB(String productName);
+    public abstract AbstractProductA createProductC(String productName);
+    public abstract AbstractProductB createProductD(String productName);
+    public abstract AbstractProductB createProductE(String productName);
 }

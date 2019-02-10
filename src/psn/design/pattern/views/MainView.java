@@ -30,6 +30,8 @@ public class MainView implements AbstractsView {
 
         if ((languageID == 2)) {
             System.out.print(MessagesEN.QUIT_MESSAGE + "/ " + MessagesPT.QUIT_MESSAGE);
+            System.out.println("\n");
+            System.out.println(MessagesEN.SOURCE_MESSAGE);
             System.exit(0);
         } else {
             mainController.constructOptions(languageID);

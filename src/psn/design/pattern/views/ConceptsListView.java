@@ -6,6 +6,8 @@ import psn.design.pattern.messages.*;
 import psn.design.pattern.appSetter.AppSetter;
 import psn.design.pattern.controllers.AbstractsController;
 
+import java.util.Map;
+
 public class ConceptsListView implements AbstractsView {
 
     private Prompt prompt;
@@ -14,16 +16,21 @@ public class ConceptsListView implements AbstractsView {
     protected AbstractsView conceptsView;
     protected AbstractsController conceptsListController;
     protected TextsConstructor textsConstructor;
+    protected Map<Integer, TextsInterface> textsInterfaceMap;
 
     public ConceptsListView(Prompt prompt, AppSetter appSetter) {
 
         this.prompt = prompt;
         this.appSetter = appSetter;
         this.languageID = appSetter.getLanguageID();
+        this.textsInterfaceMap = appSetter.getTextsInfacesMap();
         if (this.languageID ==0){
             this.textsConstructor = new TextsConstructorEN();
         }else{
             this.textsConstructor = new TextsConstructorPT();
+        }
+        for (TextsInterface t : textsInterfaceMap.values()) {
+            t.setConstructor(this.textsConstructor);
         }
     }
 
@@ -64,53 +71,51 @@ public class ConceptsListView implements AbstractsView {
         int answer = this.prompt.getUserInput(optionsList);
         if (answer==5) {this.conceptsView.init(languageID);}
 
-        if (answer==1) {
+            if (answer==1) {
 
-            if (this.textsConstructor instanceof TextsConstructorEN) {
+                if (this.textsConstructor instanceof TextsConstructorEN) {
 
-                this.textsConstructor.setCurrentText(MessagesEN.TEXT_OVERVIEW_P1);
-                this.textsConstructor.setCurrentTitle(MessagesEN.TEXT_OVERVIEW_TITLE);
-                this.textsConstructor.constructTextTitle();
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.TEXT_OVERVIEW_P2);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.TEXT_OVERVIEW_P2_A);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.TEXT_OVERVIEW_P2_B);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.TEXT_OVERVIEW_P2_C);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesEN.TEXT_OVERVIEW_P3);
-                this.textsConstructor.constructText();
-                this.textsConstructor.constructTextDown(3);
+                    this.textsInterfaceMap.get(2).displayEnglishTexts();
+                }else{
 
-            }else{
-
-                this.textsConstructor.setCurrentText(MessagesPT.TEXT_OVERVIEW_P1);
-                this.textsConstructor.setCurrentTitle(MessagesPT.TEXT_OVERVIEW_TITLE);
-                this.textsConstructor.constructTextTitle();
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.TEXT_OVERVIEW_P2);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.TEXT_OVERVIEW_P2_A);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.TEXT_OVERVIEW_P2_B);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.TEXT_OVERVIEW_P2_C);
-                this.textsConstructor.constructText();
-                this.textsConstructor.setCurrentText(MessagesPT.TEXT_OVERVIEW_P3);
-                this.textsConstructor.constructText();
-                this.textsConstructor.constructTextDown(3);
+                    this.textsInterfaceMap.get(2).displayPortugueseTexts();
+                }
 
             }
 
-            this.init(languageID);
+        if (answer==2) {
 
-            /*
-            this.conceptsListView = mainView.getAppGetter().getConceptsListView();
-            this.conceptsListView.init(this.languageID);
-            */
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(3).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(3).displayPortugueseTexts();
+            }
         }
 
+        if (answer==3) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(4).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(4).displayPortugueseTexts();
+            }
+        }
+
+        if (answer==4) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(5).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(5).displayPortugueseTexts();
+            }
+        }
+
+        this.init(languageID);
     }
 }

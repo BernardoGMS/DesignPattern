@@ -56,5 +56,7 @@ public class ConceptsView implements AbstractsView {
             this.conceptsListView = mainView.getAppGetter().getConceptsListView();
             this.conceptsListView.init(this.languageID);
         }
+
+
     }
 }

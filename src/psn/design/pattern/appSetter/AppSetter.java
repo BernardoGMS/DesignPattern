@@ -5,13 +5,19 @@ import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 import psn.design.pattern.controllers.*;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
+import psn.design.pattern.messages.concreteTexts.*;
+import psn.design.pattern.messages.TextsInterface;
 import psn.design.pattern.views.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class AppSetter {
 
     private String[] languagesOptions = new String[3];
     private Prompt prompt = new Prompt(System.in, System.out);
+    private Map<Integer, TextsInterface> textsInterfaceMap;
     private Integer languageID;
     private AbstractsView mainView;
     private AbstractsView conceptsView;
@@ -34,9 +40,9 @@ public class AppSetter {
         return mainView;
     }
 
-    public AbstractsView getConceptsView() {
+    public Map<Integer, TextsInterface> getTextsInfacesMap() {
 
-        return conceptsView;
+        return textsInterfaceMap;
     }
 
     public AbstractsView getCaseStudyView() {
@@ -71,6 +77,14 @@ public class AppSetter {
 
         int answer = prompt.getUserInput(languageList);
         this.languageID = answer-1;
+
+        this.textsInterfaceMap = new HashMap<>();
+        textsInterfaceMap.put(1, new AbstractFactoryTexts());
+        textsInterfaceMap.put(2, new OverviewTexts());
+        textsInterfaceMap.put(3, new CreationalPatternTexts());
+        textsInterfaceMap.put(4, new StructuralPatternTexts());
+        textsInterfaceMap.put(5, new BehavioralPatternTexts());
+        textsInterfaceMap.put(6, new AdapterTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);
