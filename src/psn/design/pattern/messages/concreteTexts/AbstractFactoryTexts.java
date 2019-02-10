@@ -55,7 +55,7 @@ public class AbstractFactoryTexts implements TextsInterface {
         this.textsConstructor.constructText();
         this.textsConstructor.constructTextDown(1);
 
-        this.textsConstructor.setCurrentSubTitle(MessagesEN.CASESTUDY_EXEMPLIFICATION);
+        this.textsConstructor.setCurrentSubTitle(MessagesPT.CASESTUDY_EXEMPLIFICATION);
         this.textsConstructor.constructTextSubTitle();
     }
 

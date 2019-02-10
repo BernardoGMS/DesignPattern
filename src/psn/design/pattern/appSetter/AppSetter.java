@@ -85,6 +85,7 @@ public class AppSetter {
         textsInterfaceMap.put(4, new StructuralPatternTexts());
         textsInterfaceMap.put(5, new BehavioralPatternTexts());
         textsInterfaceMap.put(6, new AdapterTexts());
+        textsInterfaceMap.put(7, new BridgeTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);

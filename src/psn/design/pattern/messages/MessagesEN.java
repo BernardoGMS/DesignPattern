@@ -41,6 +41,28 @@ public class MessagesEN {
             "like to reuse, but its 'views of the world' is not compatible with the philosophy and architecture of the system " +
             "currently being developed.";
 
+    public static String CASESTUDY_BRIDGE = "Bridge.";
+    public static String CASESTUDY_NEED_SCHEME = "-- (NEED A SCHEME) --";
+    public static String CASESTUDY_NEED_OTHER_SCHEME = "-- (ANOTHER SCHEME) --";
+    public static String CASESTUDY_BRIDGE_TEXT_P1 = " * Decouple an abstraction from its implementation so that the two can vary" +
+            " independently;";
+    public static String CASESTUDY_BRIDGE_TEXT_P2 = " * Publish interface in an inheritance hierarchy, and bury implementation" +
+            " in its own inheritance hierarchy;";
+    public static String CASESTUDY_BRIDGE_TEXT_P3 = " * Beyond encapsulation, to insulation;";
+    public static String CASESTUDY_BRIDGE_TEXT_P4 = " 'Hardening of the software arteries' has occurred by using subclassing" +
+            " of an abstract base class to provide alternative implementations. This locks in compile-time binding between" +
+            " interface and implementation. The abstraction and implementation cannot be independently extended or composed.";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_1 = " Consider the domain of 'thread scheduling':";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_2 = " There are two types of thread schedules, and two types of operating systems " +
+            "or 'platforms'. Given this approach to specialization, we have to define a class for each permutation of these two " +
+            "dimensions. If we add a new platform (say... JVM), what would our hierarchy look like?";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_3 = " What if we have three kinds of thread schedules, and four kinds" +
+            " of platforms? What if we had five kinds of thread schedules, and ten kinds of platforms? The number of classes we" +
+            " would to define is the product of the number of scheduling schemes and the number of platforms. ";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_4 = " The Bridge design pattern proposes refactoring this exponentially explosive " +
+            "inheritance hierarchy into two orthogonal hierarchies - one for platform-independent abstractions, and the other for " +
+            "platform-dependent implementations.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -63,9 +85,20 @@ public class MessagesEN {
             " which is impossible because the audio player does not have a specific adapter to provide it the ability of reading" +
             " such files type.";
 
+    // Messages used during the case of study implementation - BRIDGE
+    public static String CASESTUDY_EXPLANATION_CIRCLE_STRUCTURE = "0. In that example there is an interface API which" +
+            " is owned by the class Circle (through Shape abstract class). The concrete classes, which are more specific," +
+            " i.e., have specific colors, implement DrawAPI interface and are instantiated by creating a Circle object which" +
+            " extends from shape abstract class and can use method drawCircle overriding the DrawAPI;";
+    public static String CASESTUDY_CREATE_RED_CIRCLE = "1. Creating a red circle (RedCircle class)...";
+    public static String CASESTUDY_CREATE_PURPLE_CIRCLE = "2. Creating a purple circle (PurpleCircle class)...";
+    public static String CASESTUDY_CREATE_BLUE_CIRCLE = "3. Creating a blue circle (BlueCircle class)...";
+    public static String CASESTUDY_DRAW_CIRCLES = "4. Drawing all the circles.";
+
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";
     public static String CASESTUDY_EXEMPLIFICATION = "CONCRETE EXAMPLE";
+    public static String CASESTUDY_MOTIVATION = "MOTIVATION";
 
     public static String TEXT_OVERVIEW_TITLE = "OVERVIEW";
     public static String TEXT_OVERVIEW_P1 = "In software engineering, a design pattern is a general repeatable solution to a commonly " +

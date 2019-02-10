@@ -1,10 +1,12 @@
 package psn.design.pattern.designPatterns;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import psn.design.pattern.designPatterns.AbstractFactory.AbstractFactoryDP;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductA;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductB;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.FactoryMaker;
 import psn.design.pattern.designPatterns.Adapter.auxClasses.AudioPlayer;
+import psn.design.pattern.designPatterns.Bridge.auxClasses.*;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -179,11 +181,61 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/adapter_pattern.htm");
 
             constructor.constructTextDown(2);
-
         }
-
-
     }
 
+    @Override
+    public void implementBridge(TextsConstructor constructor) {
 
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_EXPLANATION_CIRCLE_STRUCTURE);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_RED_CIRCLE);
+            constructor.constructText();
+            Shape redCircle = new Circle(100,100, 10, new RedCircle());
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_PURPLE_CIRCLE);
+            constructor.constructText();
+            Shape purpleCircle = new Circle(100,100, 10, new PurpleCircle());
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_BLUE_CIRCLE);
+            constructor.constructText();
+            Shape blueCircle = new Circle(200,100, 15, new BlueCircle());
+            constructor.setCurrentText(MessagesEN.CASESTUDY_DRAW_CIRCLES);
+            constructor.constructText();
+            redCircle.draw();
+            purpleCircle.draw();
+            blueCircle.draw();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/bridge_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_EXPLANATION_CIRCLE_STRUCTURE);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_RED_CIRCLE);
+            constructor.constructText();
+            Shape redCircle = new Circle(100,100, 10, new RedCircle());
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_PURPLE_CIRCLE);
+            constructor.constructText();
+            Shape purpleCircle = new Circle(100,100, 10, new PurpleCircle());
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_BLUE_CIRCLE);
+            constructor.constructText();
+            Shape blueCircle = new Circle(200,100, 15, new BlueCircle());
+            constructor.setCurrentText(MessagesPT.CASESTUDY_DRAW_CIRCLES);
+            constructor.constructText();
+            redCircle.draw();
+            purpleCircle.draw();
+            blueCircle.draw();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/bridge_pattern.htm");
+
+            constructor.constructTextDown(2);
+        }
+    }
 }

@@ -43,6 +43,29 @@ public class MessagesPT {
             "tu deverás gostar de reutilizar, mas as suas 'visões do mundo' não são compatívies com a filosofia e arquitecturas" +
             " do sistema correntemente em desenvolvimento.";
 
+    public static String CASESTUDY_BRIDGE = "Bridge.";
+    public static String CASESTUDY_NEED_SCHEME = "-- (PRECISA ESQUEMA) --";
+    public static String CASESTUDY_NEED_OTHER_SCHEME = "-- (OUTRO ESQUEMA) --";
+    public static String CASESTUDY_BRIDGE_TEXT_P1 = " * Desacopla uma abstração da sua implementação para que ambas possam" +
+            " variar independentemente;";
+    public static String CASESTUDY_BRIDGE_TEXT_P2 = " * Publica a interface herança hierquizada, e esconde a implementação" +
+            " na sua própria herança hierquizada;";
+    public static String CASESTUDY_BRIDGE_TEXT_P3 = " * Para além do encapsulamento, o isolamento.";
+    public static String CASESTUDY_BRIDGE_TEXT_P4 = " O 'endurecimento das artérias dos software' tem ocorrido usando as subclasses" +
+            " de uma classe base abstracta para fornecer alternativas de implementação. Isto bloqueia a ligação em tempo de compilação" +
+            " entre a interface and implementação. A abstração e implementação não podem extender ou compor independentemente.";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_1 = " Considera o domínio da 'linha de agendamento':";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_2 = "Existem" +
+            " dois tipos de agendamento das linhas, e dois tipos de sistemas operativos ou 'plataformas'. Dada essa abordagem para especialização" +
+            ", temos de definir a classe para cada permutação destas duas dimensões. Se adicionarmos uma nova plataforma (como... JVM), qual" +
+            " será a nossa hierarquia?";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_3 = "E se tivermos três tipos de agendamento de linhas, e quatro tipos" +
+            " de plataformas? E se tivessemos cinco de agendamento de linhas, e dez tipos de plataformas? O número de classes que" +
+            " teríamos de definir seria o produto entre o número de esquemas de agendamentos e o número de plataformas.";
+    public static String CASESTUDY_BRIDGE_TEXT_P5_4 = "O Padrão Bridge" +
+            " propõe refacturar esta explosão exponencial de hierarquias em duas hierarquias ortogonais - uma para as abstrações" +
+            " independentes de plataformas, e a outra para implementações dependentes de plataformas.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -65,9 +88,20 @@ public class MessagesPT {
             " o que é impossivel porque este audio player não tem um adaptador específico que forneça a possibilidade de ler" +
             " este tipo de ficheiros.";
 
+    // Messages used during the case of study implementation - BRIDGE
+    public static String CASESTUDY_EXPLANATION_CIRCLE_STRUCTURE = "0. Neste exemplo existe uma interface API que" +
+            " é uma propriedade da classe Circle (através da classe abstracta Shape). As classes concretas, que são mais" +
+            " específicas, i.e., têm cores específicas, implementam a interface DrawAPI e são instanciadas criando um objecto" +
+            " Circle que extend da classe abstracta Shapee podem usar o método drawCircle sobrepondo a assinatura da DrawAPI.";
+    public static String CASESTUDY_CREATE_RED_CIRCLE = "1. Criando um circulo vermelho (Classe RedCircle)...";
+    public static String CASESTUDY_CREATE_PURPLE_CIRCLE = "2. Criando um circulo roxo (Classe PurpleCircle)...";
+    public static String CASESTUDY_CREATE_BLUE_CIRCLE = "3. Criando um circulo azul (Classe BlueCircle)...";
+    public static String CASESTUDY_DRAW_CIRCLES = "4. Desenhando todos os circulos.";
+
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";
     public static String CASESTUDY_EXEMPLIFICATION = "EXEMPLO CONCRETO";
+    public static String CASESTUDY_MOTIVATION = "MOTIVAÇÃO";
 
     public static String TEXT_OVERVIEW_TITLE = "VISÃO GERAL";
     public static String TEXT_OVERVIEW_P1 = "  Na engenharia de software,um padrão de design é uma solução repetitiva para um problema " +
