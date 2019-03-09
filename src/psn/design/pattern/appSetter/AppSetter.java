@@ -79,19 +79,24 @@ public class AppSetter {
         this.languageID = answer-1;
 
         this.textsInterfaceMap = new HashMap<>();
-        textsInterfaceMap.put(1, new AbstractFactoryTexts());
-        textsInterfaceMap.put(2, new OverviewTexts());
-        textsInterfaceMap.put(3, new CreationalPatternTexts());
-        textsInterfaceMap.put(4, new StructuralPatternTexts());
-        textsInterfaceMap.put(5, new BehavioralPatternTexts());
-        textsInterfaceMap.put(6, new AdapterTexts());
-        textsInterfaceMap.put(7, new BridgeTexts());
+        textsInterfaceMap.put(1, new OverviewTexts());
+        textsInterfaceMap.put(2, new CreationalPatternTexts());
+        textsInterfaceMap.put(3, new StructuralPatternTexts());
+        textsInterfaceMap.put(4, new BehavioralPatternTexts());
+        textsInterfaceMap.put(5, new AbstractFactoryTexts());
+        textsInterfaceMap.put(6, new AbstractFactoryConceptsTexts());
+        textsInterfaceMap.put(7, new AdapterTexts());
+        textsInterfaceMap.put(8, new AdapterConceptsTexts());
+        textsInterfaceMap.put(9, new BridgeTexts());
+        textsInterfaceMap.put(10, new BridgeConceptsTexts());
+        textsInterfaceMap.put(11, new BuilderTexts());
+        textsInterfaceMap.put(12, new BuilderConceptsTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);
         this.mainView.setController(this.mainController);
 
-        this.conceptsView = new ConceptsView(this.prompt);
+        this.conceptsView = new ConceptsView(this.prompt, this);
         this.conceptsView.setView(mainView);
         this.conceptsController = new ConceptsController(conceptsView);
         this.conceptsView.setController(conceptsController);

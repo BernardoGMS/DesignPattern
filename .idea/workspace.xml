@@ -2,30 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f25bff1-c9fd-4053-bf84-441412a8294a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/DrawAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/BlueCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/PurpleCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/RedCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BridgeTexts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/MealBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Packing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Bottle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Burger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/ChickenBurger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Coke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/ColdDrink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Pepsi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/VegBurger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Wrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryConceptsTexts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterConceptsTexts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BridgeConceptsTexts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderConceptsTexts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderTexts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/appSetter/AppSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/appSetter/AppSetter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/controllers/CaseStudyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/controllers/CaseStudyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/controllers/ConceptsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/controllers/ConceptsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/MessagesEN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/MessagesEN.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/MessagesPT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/MessagesPT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/concreteTexts/AdapterTexts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/messages/concreteTexts/AdapterTexts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/views/CaseStudyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/views/CaseStudyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/views/ConceptsListView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/views/ConceptsListView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/views/ConceptsView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern/psn/design/pattern/views/ConceptsView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/appSetter/AppSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/appSetter/AppSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/controllers/CaseStudyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/controllers/CaseStudyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/controllers/ConceptsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/controllers/ConceptsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ImplPatternInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ImplPatternInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterTexts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,33 +49,35 @@
     <session id="1118910689">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.118" value="1" />
           <entry key="project.open.time.124" value="2" />
           <entry key="project.open.time.162" value="1" />
+          <entry key="project.open.time.242" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="356" />
+          <entry key="java" value="415" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="356" />
+          <entry key="JAVA" value="415" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="31761" />
+          <entry key="java" value="35796" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="31761" />
+          <entry key="JAVA" value="35796" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -75,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1468">
-              <caret line="104" column="12" lean-forward="true" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+            <state relative-caret-position="2">
+              <caret line="293" column="32" selection-start-line="293" selection-start-column="32" selection-end-line="293" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,19 +98,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/BlueCircle.java">
+        <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderTexts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="124">
+              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/RedCircle.java">
+        <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="158">
+              <caret line="117" column="45" lean-forward="true" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="130" column="55" selection-start-line="130" selection-start-column="55" selection-end-line="130" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -118,32 +152,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/TextsConstructor.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/TextsConstructorEN.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/TextsConstructorPT.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/AbstractProductA.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/AbstractProductB.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductB2.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductA1.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductA2.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductB1.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/AbstractFactoryDP.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/ConcreteFactory1.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductA.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductB.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductC.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductD.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductE.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/ConcreteFactory2.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/abstractFactoryTexts/TextsInterface.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/abstractFactoryTexts/AbstractFactoryTexts.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsView.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/overviewTexts/OverviewTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/OverviewTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/CreationalPatternTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/StructuralPatternTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BehavioralPatternTexts.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsListView.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/auxClasses/Mp4Player.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/auxClasses/MediaPlayer.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/AdvancedMediaPlayer.java" />
@@ -153,22 +167,42 @@
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/Main.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/DesignPattern.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/views/MainView.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/controllers/CaseStudyController.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/appSetter/AppSetter.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BridgeTexts.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/DrawAPI.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/Shape.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ImplPatternInterface.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java" />
-        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/Circle.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/PurpleCircle.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/BlueCircle.java" />
         <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/RedCircle.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryConceptsTexts.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterConceptsTexts.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BridgeConceptsTexts.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsListView.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/controllers/ConceptsController.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderConceptsTexts.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/appSetter/AppSetter.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsView.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderTexts.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ImplPatternInterface.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Packing.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Wrapper.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Bottle.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Burger.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/ColdDrink.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/VegBurger.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/ChickenBurger.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Coke.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Pepsi.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Meal.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/MealBuilder.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Item.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/controllers/CaseStudyController.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java" />
+        <option value="$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java" />
       </list>
     </option>
   </component>
@@ -216,28 +250,26 @@
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DesignPattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="designPatterns" type="462c0819:PsiDirectoryNode" />
-              <item name="Bridge" type="462c0819:PsiDirectoryNode" />
-              <item name="auxClasses" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
+              <item name="concreteTexts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549834232286" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552155445326" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/lib" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../GeneralLibs/prompt-view-master" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -339,7 +371,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
@@ -347,10 +378,10 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2632375" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.2602118" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46721312" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46721312" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -361,7 +392,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -373,182 +404,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/controllers/ConceptsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/TextsConstructorPT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/FactoryMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/AbstractProductA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/AbstractProductB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/ConcreteFactory1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/auxClasses/ProductE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/AbstractFactory/ConcreteFactory2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/TextsConstructorEN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/TextsInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/OverviewTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/CreationalPatternTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/StructuralPatternTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BehavioralPatternTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="114" column="44" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/auxClasses/Mp4Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/auxClasses/VlcPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -567,9 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,9 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,9 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,9 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
           <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,80 +481,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/controllers/CaseStudyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/appSetter/AppSetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="87" column="50" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ImplPatternInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Adapter/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge.java" />
     <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BridgeTexts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="112" column="18" lean-forward="true" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,20 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="96" column="40" lean-forward="true" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/PurpleCircle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -760,20 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1468">
-          <caret line="104" column="12" lean-forward="true" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Bridge/auxClasses/BlueCircle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -781,6 +529,281 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/AbstractsView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryConceptsTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AdapterConceptsTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BridgeConceptsTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/controllers/ConceptsListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderConceptsTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/appSetter/AppSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="92" column="60" selection-start-line="92" selection-start-column="60" selection-end-line="92" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/ConceptsView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/controllers/ConceptsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="21" column="69" lean-forward="true" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/AbstractFactoryTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ImplPatternInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Bottle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Burger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Packing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/ColdDrink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/VegBurger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/ChickenBurger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Coke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/auxClasses/Pepsi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/MealBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/Builder/Meal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/views/CaseStudyView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="130" column="55" selection-start-line="130" selection-start-column="55" selection-end-line="130" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/concreteTexts/BuilderTexts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/designPatterns/ConcretePatternInstantiation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="293" column="32" selection-start-line="293" selection-start-column="32" selection-end-line="293" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/controllers/CaseStudyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesEN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="114" column="60" lean-forward="true" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/psn/design/pattern/messages/MessagesPT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="117" column="45" lean-forward="true" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
         </state>
       </provider>
     </entry>

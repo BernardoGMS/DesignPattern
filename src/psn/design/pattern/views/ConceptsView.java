@@ -4,6 +4,12 @@ import org.academiadecodigo.bootcamp.Prompt;
 import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
 import psn.design.pattern.appSetter.AppSetter;
 import psn.design.pattern.controllers.AbstractsController;
+import psn.design.pattern.messages.TextsConstructor;
+import psn.design.pattern.messages.TextsConstructorEN;
+import psn.design.pattern.messages.TextsConstructorPT;
+import psn.design.pattern.messages.TextsInterface;
+
+import java.util.Map;
 
 public class ConceptsView implements AbstractsView {
 
@@ -13,10 +19,23 @@ public class ConceptsView implements AbstractsView {
     protected AbstractsController conceptsController;
     protected AbstractsView mainView;
     protected AbstractsView conceptsListView;
+    protected TextsConstructor textsConstructor;
+    protected Map<Integer, TextsInterface> textsInterfaceMap;
 
-    public ConceptsView(Prompt prompt) {
+    public ConceptsView(Prompt prompt, AppSetter appSetter) {
 
         this.prompt = prompt;
+        this.appSetter = appSetter;
+        this.languageID = appSetter.getLanguageID();
+        this.textsInterfaceMap = appSetter.getTextsInfacesMap();
+        if (this.languageID ==0){
+            this.textsConstructor = new TextsConstructorEN();
+        }else{
+            this.textsConstructor = new TextsConstructorPT();
+        }
+        for (TextsInterface t : textsInterfaceMap.values()) {
+            t.setConstructor(this.textsConstructor);
+        }
     }
 
     public void init(Integer languageID) {
@@ -49,12 +68,60 @@ public class ConceptsView implements AbstractsView {
     public void showOptions(MenuInputScanner optionsList) {
 
         int answer = this.prompt.getUserInput(optionsList);
-        if (answer==4) {this.mainView.init(languageID);}
+        if (answer==6) {this.mainView.init(languageID);}
 
         if (answer==1) {
 
             this.conceptsListView = mainView.getAppGetter().getConceptsListView();
             this.conceptsListView.init(this.languageID);
+        }
+
+        if (answer==2) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(6).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(6).displayPortugueseTexts();
+            }
+
+        }
+
+        if (answer==3) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(8).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(8).displayPortugueseTexts();
+            }
+
+        }
+
+        if (answer==4) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(10).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(10).displayPortugueseTexts();
+            }
+
+        }
+
+        if (answer==5) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(12).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(12).displayPortugueseTexts();
+            }
+
         }
 
 

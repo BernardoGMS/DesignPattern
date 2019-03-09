@@ -9,4 +9,6 @@ public interface ImplPatternInterface {
     void implementAdapter(TextsConstructor constructor);
 
     void implementBridge(TextsConstructor constructor);
+
+    void implementBuilder(TextsConstructor constructor);
 }

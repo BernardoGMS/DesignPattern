@@ -13,7 +13,9 @@ public class MessagesPT {
     public static String INITIAL_OPTIONS_BACK = "Voltar ao menu anterior!";
 
     public static String CONCEPTS_OPTIONS_GENERAL = "Conceitos gerais.";
-    public static String CONCEPTS_OPTIONS_ABSTRACTFACTORY = "Padrão Abstract Factory.";
+    public static String CONCEPTS_OPTIONS_ABSTRACT_FACTORY = "Padrão Abstract Factory.";
+    public static String CONCEPTS_OPTIONS_ADAPTER = "Padrão Adapter.";
+    public static String CONCEPTS_OPTIONS_BRIDGE = "Padrão Bridge.";
     public static String CONCEPTS_OPTIONS_BUILDER = "Padrão Builder.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
@@ -66,6 +68,14 @@ public class MessagesPT {
             " propõe refacturar esta explosão exponencial de hierarquias em duas hierarquias ortogonais - uma para as abstrações" +
             " independentes de plataformas, e a outra para implementações dependentes de plataformas.";
 
+    public static String CASESTUDY_BUILDER = "Builder.";
+    public static String CASESTUDY_BUILDER_TEXT_P1 = " * Separar a constyrucção de um objecto complexo da sua representação" +
+            " de forma que que o mesmo processo de construção poderá criar diferentes representações;";
+    public static String CASESTUDY_BUILDER_TEXT_P2 = " * Analisar uma representação complexa, criar um de diversos alvos;";
+    public static String CASESTUDY_BUILDER_TEXT_P3 = " Uma aplicação precisa de criar os elementos de uma agregação complexa. A" +
+            " especificação para a agregação existe numa memória secundária e uma de muitas representações precisa de ser" +
+            " construida na memória primária.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -97,6 +107,16 @@ public class MessagesPT {
     public static String CASESTUDY_CREATE_PURPLE_CIRCLE = "2. Criando um circulo roxo (Classe PurpleCircle)...";
     public static String CASESTUDY_CREATE_BLUE_CIRCLE = "3. Criando um circulo azul (Classe BlueCircle)...";
     public static String CASESTUDY_DRAW_CIRCLES = "4. Desenhando todos os circulos.";
+
+    // Messages used during the case of study implementation - BUILDER
+    public static String CASESTUDY_CREATE_MEALBUILDER = "1. Os constructores das refeições estão sendo criados: esta classe" +
+            " possui um conjunto de métodos que são chamados de acordo com os pedidos do clientes...";
+    public static String CASESTUDY_VEGMEAL_1 = "2.1 O primeiro cliente pediu uma Refeição Vegam que é composta por um" +
+            " vegburger e uma coke...";
+    public static String CASESTUDY_VEGMEAL_2 = "2.2 Mas ele também pediu uma coke adicional (com este padrão, podemos adicionar" +
+            " qualquer item que queiramos, dando ao cliente a possibilidade de pedir o que pretender, e no final ter o preço" +
+            " total automaticamente calculado).";
+    public static String CASESTUDY_NONVEGMEAL_1 = "3. O segundo cliente apenas pediu uma Refeição Não Vegan...";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

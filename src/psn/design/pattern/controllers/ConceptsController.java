@@ -8,7 +8,7 @@ import psn.design.pattern.views.AbstractsView;
 public class ConceptsController implements AbstractsController {
 
     protected AbstractsView conceptsView;
-    private String[] options = new String[4];
+    private String[] options = new String[6];
     private Integer languageID;
 
     public ConceptsController(AbstractsView conceptsView) {
@@ -17,9 +17,12 @@ public class ConceptsController implements AbstractsController {
         this.languageID = conceptsView.getLanguageID();
 
         options[0] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_GENERAL : MessagesPT.CONCEPTS_OPTIONS_GENERAL;
-        options[1] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_ABSTRACTFACTORY : MessagesPT.CONCEPTS_OPTIONS_ABSTRACTFACTORY ;
-        options[2] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_BUILDER : MessagesPT.CONCEPTS_OPTIONS_BUILDER ;
-        options[3] = (this.languageID==0) ? MessagesEN.INITIAL_OPTIONS_BACK : MessagesPT.INITIAL_OPTIONS_BACK ;
+        options[1] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_ABSTRACT_FACTORY : MessagesPT.CONCEPTS_OPTIONS_ABSTRACT_FACTORY;
+        options[2] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_ADAPTER : MessagesPT.CONCEPTS_OPTIONS_ADAPTER;
+        options[3] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_BRIDGE : MessagesPT.CONCEPTS_OPTIONS_BRIDGE;
+        options[4] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_BUILDER : MessagesPT.CONCEPTS_OPTIONS_BUILDER;
+        options[5] = (this.languageID==0) ? MessagesEN.INITIAL_OPTIONS_BACK : MessagesPT.INITIAL_OPTIONS_BACK ;
+
     }
 
     @Override

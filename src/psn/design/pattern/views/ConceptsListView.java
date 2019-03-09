@@ -75,15 +75,26 @@ public class ConceptsListView implements AbstractsView {
 
                 if (this.textsConstructor instanceof TextsConstructorEN) {
 
-                    this.textsInterfaceMap.get(2).displayEnglishTexts();
+                    this.textsInterfaceMap.get(1).displayEnglishTexts();
                 }else{
 
-                    this.textsInterfaceMap.get(2).displayPortugueseTexts();
+                    this.textsInterfaceMap.get(1).displayPortugueseTexts();
                 }
 
             }
 
         if (answer==2) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(2).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(2).displayPortugueseTexts();
+            }
+        }
+
+        if (answer==3) {
 
             if (this.textsConstructor instanceof TextsConstructorEN) {
 
@@ -94,7 +105,7 @@ public class ConceptsListView implements AbstractsView {
             }
         }
 
-        if (answer==3) {
+        if (answer==4) {
 
             if (this.textsConstructor instanceof TextsConstructorEN) {
 
@@ -102,17 +113,6 @@ public class ConceptsListView implements AbstractsView {
             }else{
 
                 this.textsInterfaceMap.get(4).displayPortugueseTexts();
-            }
-        }
-
-        if (answer==4) {
-
-            if (this.textsConstructor instanceof TextsConstructorEN) {
-
-                this.textsInterfaceMap.get(5).displayEnglishTexts();
-            }else{
-
-                this.textsInterfaceMap.get(5).displayPortugueseTexts();
             }
         }
 

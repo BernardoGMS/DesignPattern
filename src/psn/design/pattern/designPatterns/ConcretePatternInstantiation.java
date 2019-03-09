@@ -7,6 +7,9 @@ import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProd
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.FactoryMaker;
 import psn.design.pattern.designPatterns.Adapter.auxClasses.AudioPlayer;
 import psn.design.pattern.designPatterns.Bridge.auxClasses.*;
+import psn.design.pattern.designPatterns.Builder.Meal;
+import psn.design.pattern.designPatterns.Builder.MealBuilder;
+import psn.design.pattern.designPatterns.Builder.auxClasses.Coke;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -237,5 +240,70 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
             constructor.constructTextDown(2);
         }
+    }
+
+    @Override
+    public void implementBuilder(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_MEALBUILDER);
+            constructor.constructText();
+            MealBuilder mealBuilder = new MealBuilder();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_VEGMEAL_1);
+            constructor.constructText();
+            Meal vegMeal = mealBuilder.prepareVegMeal();
+            System.out.println("Veg Meal");
+            vegMeal.showItems();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_VEGMEAL_2);
+            constructor.constructText();
+            vegMeal.addItem(new Coke());
+            vegMeal.showItems();
+            System.out.println("Total Cost: " + vegMeal.getCost());
+            constructor.setCurrentText(MessagesEN.CASESTUDY_NONVEGMEAL_1);
+            constructor.constructText();
+            Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
+            System.out.println("Non-Veg Meal");
+            nonVegMeal.showItems();
+            System.out.println("Total Cost: " + nonVegMeal.getCost());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/builder_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_MEALBUILDER);
+            constructor.constructText();
+            MealBuilder mealBuilder = new MealBuilder();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_VEGMEAL_1);
+            constructor.constructText();
+            Meal vegMeal = mealBuilder.prepareVegMeal();
+            System.out.println("Refeição Vegan");
+            vegMeal.showItems();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_VEGMEAL_2);
+            constructor.constructText();
+            vegMeal.addItem(new Coke());
+            vegMeal.showItems();
+            System.out.println("Custo total: " + vegMeal.getCost());
+            constructor.setCurrentText(MessagesPT.CASESTUDY_NONVEGMEAL_1);
+            constructor.constructText();
+            Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
+            System.out.println("Refeição Não-Vegan");
+            nonVegMeal.showItems();
+            System.out.println("Custo total: " + nonVegMeal.getCost());
+
+            constructor.constructTextDown(2);
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/builder_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
+
     }
 }

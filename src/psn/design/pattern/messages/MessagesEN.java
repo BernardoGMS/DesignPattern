@@ -13,7 +13,9 @@ public class MessagesEN {
     public static String INITIAL_OPTIONS_BACK = "Go back!";
 
     public static String CONCEPTS_OPTIONS_GENERAL = "General concepts.";
-    public static String CONCEPTS_OPTIONS_ABSTRACTFACTORY = "Abstract Factory Pattern.";
+    public static String CONCEPTS_OPTIONS_ABSTRACT_FACTORY = "Abstract Factory Pattern.";
+    public static String CONCEPTS_OPTIONS_ADAPTER = "Adapter Pattern.";
+    public static String CONCEPTS_OPTIONS_BRIDGE = "Bridge Pattern.";
     public static String CONCEPTS_OPTIONS_BUILDER = "Builder Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
@@ -63,6 +65,14 @@ public class MessagesEN {
             "inheritance hierarchy into two orthogonal hierarchies - one for platform-independent abstractions, and the other for " +
             "platform-dependent implementations.";
 
+    public static String CASESTUDY_BUILDER = "Builder.";
+    public static String CASESTUDY_BUILDER_TEXT_P1 = " * Separete the construction of a complex object from its representation" +
+            " so that the same construction process can create different representations;";
+    public static String CASESTUDY_BUILDER_TEXT_P2 = " * Parse a complex representation, create one of several targets;";
+    public static String CASESTUDY_BUILDER_TEXT_P3 = " An application needs to create the elements of a complex aggregate. The" +
+            " specification for the aggregate exists on secondary storage and one of many representations needs to be built" +
+            " in primary storage.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -94,6 +104,16 @@ public class MessagesEN {
     public static String CASESTUDY_CREATE_PURPLE_CIRCLE = "2. Creating a purple circle (PurpleCircle class)...";
     public static String CASESTUDY_CREATE_BLUE_CIRCLE = "3. Creating a blue circle (BlueCircle class)...";
     public static String CASESTUDY_DRAW_CIRCLES = "4. Drawing all the circles.";
+
+    // Messages used during the case of study implementation - BUILDER
+    public static String CASESTUDY_CREATE_MEALBUILDER = "1. The Meals Builder is being created: this class has a set of" +
+            " methods that are called according clients requirements...";
+    public static String CASESTUDY_VEGMEAL_1 = "2.1 First client asked for a Veg Meal which is composed by one vegburger" +
+            " and a coke...";
+    public static String CASESTUDY_VEGMEAL_2 = "2.2 But he also asked for an additional coke (with such pattern one can" +
+            " add any item we want, providing to the client the possibility of asking for whatever he wants, and in the " +
+            "final the total price is automatically computed).";
+    public static String CASESTUDY_NONVEGMEAL_1 = "3. Second client just asked for a Non-vegmeal...";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

@@ -72,17 +72,17 @@ public class CaseStudyView implements AbstractsView {
     public void showOptions(MenuInputScanner optionsList) {
 
         int answer = this.prompt.getUserInput(optionsList);
-        if (answer==4) {this.mainView.init(languageID);}
+        if (answer==5) {this.mainView.init(languageID);}
 
         if (answer==1) {
 
             if (this.textsConstructor instanceof TextsConstructorEN) {
 
-                this.textsInterfaceMap.get(1).displayEnglishTexts();
+                this.textsInterfaceMap.get(5).displayEnglishTexts();
                 this.patternInterface.implementAbstractFactory(textsConstructor);
             }else{
 
-                this.textsInterfaceMap.get(1).displayPortugueseTexts();
+                this.textsInterfaceMap.get(5).displayPortugueseTexts();
                 this.patternInterface.implementAbstractFactory(textsConstructor);
             }
 
@@ -93,11 +93,11 @@ public class CaseStudyView implements AbstractsView {
 
             if (this.textsConstructor instanceof TextsConstructorEN) {
 
-                this.textsInterfaceMap.get(6).displayEnglishTexts();
+                this.textsInterfaceMap.get(7).displayEnglishTexts();
                 this.patternInterface.implementAdapter(textsConstructor);
             }else{
 
-                this.textsInterfaceMap.get(6).displayPortugueseTexts();
+                this.textsInterfaceMap.get(7).displayPortugueseTexts();
                 this.patternInterface.implementAdapter(textsConstructor);
             }
 
@@ -108,12 +108,27 @@ public class CaseStudyView implements AbstractsView {
 
             if (this.textsConstructor instanceof TextsConstructorEN) {
 
-                this.textsInterfaceMap.get(7).displayEnglishTexts();
+                this.textsInterfaceMap.get(9).displayEnglishTexts();
                 this.patternInterface.implementBridge(textsConstructor);
             }else{
 
-                this.textsInterfaceMap.get(7).displayPortugueseTexts();
+                this.textsInterfaceMap.get(9).displayPortugueseTexts();
                 this.patternInterface.implementBridge(textsConstructor);
+            }
+
+            this.init(languageID);
+        }
+
+        if (answer==4) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(11).displayEnglishTexts();
+                this.patternInterface.implementBuilder(textsConstructor);
+            }else{
+
+                this.textsInterfaceMap.get(11).displayPortugueseTexts();
+                this.patternInterface.implementBuilder(textsConstructor);
             }
 
             this.init(languageID);
