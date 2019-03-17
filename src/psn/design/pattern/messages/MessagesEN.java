@@ -17,6 +17,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_ADAPTER = "Adapter Pattern.";
     public static String CONCEPTS_OPTIONS_BRIDGE = "Bridge Pattern.";
     public static String CONCEPTS_OPTIONS_BUILDER = "Builder Pattern.";
+    public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Chain of responsibility Pattern";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -73,6 +74,17 @@ public class MessagesEN {
             " specification for the aggregate exists on secondary storage and one of many representations needs to be built" +
             " in primary storage.";
 
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY = "Chain of Responsibility.";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P1 = " * Avoid coupling the sender of a request to its receiver by giving" +
+            " more than one chance to handle the request. Chain the receiving objects and pass the request along the chain until an object" +
+            " handles it;";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P2 = " * Launch-and-leave requests with a single proceeding pipeline that" +
+            " contains many possible handlers;";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P3 = " * An object-oriented linked list with recursive traversal.";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P4 = " There is a potentially variable number of 'handler' or 'processing " +
+            "element' or 'node' objects, and a stream of requests that must be handled. Need to efficiently process the requests without" +
+            " hard-wiring handler relationships and precedence, or request-to-handler mappings.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -114,6 +126,15 @@ public class MessagesEN {
             " add any item we want, providing to the client the possibility of asking for whatever he wants, and in the " +
             "final the total price is automatically computed).";
     public static String CASESTUDY_NONVEGMEAL_1 = "3. Second client just asked for a Non-vegmeal...";
+
+    // Messages used during the case of study implementation - CHAIN OF RESPONSIBILITY
+    public static String CASESTUDY_CONSTRUCT_CHAIN_OF_LOGGERS = "1. Firstly, the chain logger is being construct. This class, which has" +
+            " a static method is responsible to create the loggers and put it in the chain through the method .setNextLogger. In that" +
+            " example, we are creating a total of 3 loggers, one is INFO, another is DEBUG and at last we've an ERROR;";
+    public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_1 = "2.1 Then the messages will be printed according the level of each" +
+            " logger included in the chain: first the INFO...";
+    public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_2 = "2.2 Then the DEBUG message...";
+    public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_3 = "2.3 And at last the ERROR message!";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

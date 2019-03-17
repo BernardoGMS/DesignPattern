@@ -11,4 +11,6 @@ public interface ImplPatternInterface {
     void implementBridge(TextsConstructor constructor);
 
     void implementBuilder(TextsConstructor constructor);
+
+    void implementChainofResponsability(TextsConstructor constructor);
 }

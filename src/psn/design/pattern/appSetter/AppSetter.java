@@ -91,6 +91,8 @@ public class AppSetter {
         textsInterfaceMap.put(10, new BridgeConceptsTexts());
         textsInterfaceMap.put(11, new BuilderTexts());
         textsInterfaceMap.put(12, new BuilderConceptsTexts());
+        textsInterfaceMap.put(13, new ChainOfResponsabilityTexts());
+        textsInterfaceMap.put(14, new ChainOfResponsabilityConceptsTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);

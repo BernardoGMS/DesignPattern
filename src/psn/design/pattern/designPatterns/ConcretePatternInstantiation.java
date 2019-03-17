@@ -10,6 +10,11 @@ import psn.design.pattern.designPatterns.Bridge.auxClasses.*;
 import psn.design.pattern.designPatterns.Builder.Meal;
 import psn.design.pattern.designPatterns.Builder.MealBuilder;
 import psn.design.pattern.designPatterns.Builder.auxClasses.Coke;
+import psn.design.pattern.designPatterns.ChainOfResponsibility.AbstractLogger;
+import psn.design.pattern.designPatterns.ChainOfResponsibility.ChainPatternDemo;
+import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.ConsoleLogger;
+import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.ErrorLogger;
+import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.FileLogger;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -300,6 +305,73 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             constructor.constructTextDown(2);
 
             System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/builder_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
+
+    }
+
+    @Override
+    public void implementChainofResponsability(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CONSTRUCT_CHAIN_OF_LOGGERS);
+            constructor.constructText();
+                AbstractLogger loggerChain = ChainPatternDemo.getChainOfLoggers();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_PRINTING_INFORMATIONS_LEVEL_1);
+            constructor.constructText();
+
+                loggerChain.logMessage(AbstractLogger.INFO,
+                        "This is an information.");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_PRINTING_INFORMATIONS_LEVEL_2);
+            constructor.constructText();
+
+                loggerChain.logMessage(AbstractLogger.DEBUG,
+                        "This is an debug level information.");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_PRINTING_INFORMATIONS_LEVEL_3);
+            constructor.constructText();
+
+                loggerChain.logMessage(AbstractLogger.ERROR,
+                        "This is an error information. \n");
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CONSTRUCT_CHAIN_OF_LOGGERS);
+            constructor.constructText();
+            AbstractLogger loggerChain = ChainPatternDemo.getChainOfLoggers();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_PRINTING_INFORMATIONS_LEVEL_1);
+            constructor.constructText();
+
+            loggerChain.logMessage(AbstractLogger.INFO,
+                    "This is an information.");
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_PRINTING_INFORMATIONS_LEVEL_2);
+            constructor.constructText();
+
+            loggerChain.logMessage(AbstractLogger.DEBUG,
+                    "This is an debug level information.");
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_PRINTING_INFORMATIONS_LEVEL_3);
+            constructor.constructText();
+
+            loggerChain.logMessage(AbstractLogger.ERROR,
+                    "This is an error information. \n");
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm");
 
             constructor.constructTextDown(2);
 

@@ -17,6 +17,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_ADAPTER = "Padrão Adapter.";
     public static String CONCEPTS_OPTIONS_BRIDGE = "Padrão Bridge.";
     public static String CONCEPTS_OPTIONS_BUILDER = "Padrão Builder.";
+    public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Padrão Chain of responsibility";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -76,6 +77,17 @@ public class MessagesPT {
             " especificação para a agregação existe numa memória secundária e uma de muitas representações precisa de ser" +
             " construida na memória primária.";
 
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY = "Chain of Responsibility.";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P1 = " * Evitar acoplar o emissor de um pedido ao seu receptor dando" +
+            " ~mais do que uma hipótese de lidar com o pedido. Encadear os objectos recebidos e passar o pedido ao longo da cadeia até" +
+            " que um objecto lide com isto;";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P2 = " * Lançar-e-deixar pedidos com um único fluxo que contém o maior número" +
+            " possivel de responsavéis por lidar com o pedido;";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P3 = " * Uma lista ligada orientada a objectos com passagem recursiva.";
+    public static String CASESTUDY_CHAIN_OF_RESPONSIBILITY_TEXT_P4 = " Existe um potencialmente número de variável de 'gestores' ou " +
+            "'elementos de processamento' ou 'objectos nós', e uma corrente de pedidosque deverão ser geridos. Precisa de processar" +
+            " eficientemente os pedidos sem atropelamento das relações entre gestores e precedência, ou mapeamentos de pedido-gestor.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -117,6 +129,15 @@ public class MessagesPT {
             " qualquer item que queiramos, dando ao cliente a possibilidade de pedir o que pretender, e no final ter o preço" +
             " total automaticamente calculado).";
     public static String CASESTUDY_NONVEGMEAL_1 = "3. O segundo cliente apenas pediu uma Refeição Não Vegan...";
+
+    // Messages used during the case of study implementation - CHAIN OF RESPONSIBILITY
+    public static String CASESTUDY_CONSTRUCT_CHAIN_OF_LOGGERS = "1. Primeiramente, o logger da cedeia é construído. Esta classe, que tem" +
+            " um método estático é responsável por criar os loggers e colocá-los na cadeia através do método .setNextLogger. Neste exemplo" +
+            ", estamos a criar um total d e 3 loggers, um é INFO, outro é DEBUG e por fim temos um ERROR;";
+    public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_1 = "2.1 Depois a mensagem irá ser imprimida de acordo com o nível de cada" +
+            " logger incluído na cadeia: primeiro de INFO...";
+    public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_2 = "2.2 Em seguida a mensagem de DEBUG...";
+    public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_3 = "2.3 E por último a mensagem de ERROR!";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";
