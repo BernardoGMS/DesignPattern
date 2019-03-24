@@ -72,7 +72,7 @@ public class CaseStudyView implements AbstractsView {
     public void showOptions(MenuInputScanner optionsList) {
 
         int answer = this.prompt.getUserInput(optionsList);
-        if (answer==6) {this.mainView.init(languageID);}
+        if (answer==7) {this.mainView.init(languageID);}
 
         if (answer==1) {
 
@@ -144,6 +144,21 @@ public class CaseStudyView implements AbstractsView {
 
                 this.textsInterfaceMap.get(13).displayPortugueseTexts();
                 this.patternInterface.implementChainofResponsability(textsConstructor);
+            }
+
+            this.init(languageID);
+        }
+
+        if (answer==6) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(15).displayEnglishTexts();
+                this.patternInterface.implementCommand(textsConstructor);
+            }else{
+
+                this.textsInterfaceMap.get(15).displayPortugueseTexts();
+                this.patternInterface.implementCommand(textsConstructor);
             }
 
             this.init(languageID);

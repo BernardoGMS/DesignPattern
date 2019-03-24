@@ -15,6 +15,10 @@ import psn.design.pattern.designPatterns.ChainOfResponsibility.ChainPatternDemo;
 import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.ConsoleLogger;
 import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.ErrorLogger;
 import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.FileLogger;
+import psn.design.pattern.designPatterns.Command.auxClasses.Broker;
+import psn.design.pattern.designPatterns.Command.auxClasses.BuyStock;
+import psn.design.pattern.designPatterns.Command.auxClasses.SellStock;
+import psn.design.pattern.designPatterns.Command.auxClasses.Stock;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -372,6 +376,123 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             constructor.constructTextDown(2);
 
             System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
+
+    }
+
+    @Override
+    public void implementCommand(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_STOCK_CREATION);
+            constructor.constructText();
+
+            Stock bananasStock = new Stock("Banana", 20);
+            Stock strawberriesStorck = new Stock("Strawberry", 15);
+            Stock orangesStock = new Stock("Orange", 25);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_BUYSELL_BANANAS_ORDER_EXECUTION);
+            constructor.constructText();
+
+            BuyStock buyBananaStockOrder = new BuyStock(bananasStock);
+            SellStock sellBananaStockOrder = new SellStock(bananasStock);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_BUYSELL_STRAWBERRIES_ORDER_EXECUTION);
+            constructor.constructText();
+
+            BuyStock buyStrawberryStockOrder = new BuyStock(strawberriesStorck);
+            SellStock sellStrawberryStockOrder = new SellStock(strawberriesStorck);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_BUYSELL_ORANGES_ORDER_EXECUTION);
+            constructor.constructText();
+
+            BuyStock buyOrangeStockOrder = new BuyStock(orangesStock);
+            SellStock sellOrangeStockOrder = new SellStock(orangesStock);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_BROKER_CREATION);
+            constructor.constructText();
+
+            Broker broker = new Broker();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_TAKING_FRUITS_ORDERS);
+            constructor.constructText();
+
+            broker.takeOrder(buyBananaStockOrder);
+            broker.takeOrder(sellBananaStockOrder);
+
+            broker.takeOrder(buyStrawberryStockOrder);
+            broker.takeOrder(sellStrawberryStockOrder);
+
+            broker.takeOrder(buyOrangeStockOrder);
+            broker.takeOrder(sellOrangeStockOrder);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_EXECUTING_FRUITS_ORDERS);
+            constructor.constructText();
+
+            broker.placeOrders();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/command_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_STOCK_CREATION);
+            constructor.constructText();
+
+            Stock bananasStock = new Stock("Banana", 20);
+            Stock strawberriesStorck = new Stock("Morango", 15);
+            Stock orangesStock = new Stock("Laranja", 25);
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_BUYSELL_BANANAS_ORDER_EXECUTION);
+            constructor.constructText();
+
+            BuyStock buyBananaStockOrder = new BuyStock(bananasStock);
+            SellStock sellBananaStockOrder = new SellStock(bananasStock);
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_BUYSELL_STRAWBERRIES_ORDER_EXECUTION);
+            constructor.constructText();
+
+            BuyStock buyStrawberryStockOrder = new BuyStock(strawberriesStorck);
+            SellStock sellStrawberryStockOrder = new SellStock(strawberriesStorck);
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_BUYSELL_ORANGES_ORDER_EXECUTION);
+            constructor.constructText();
+
+            BuyStock buyOrangeStockOrder = new BuyStock(orangesStock);
+            SellStock sellOrangeStockOrder = new SellStock(orangesStock);
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_BROKER_CREATION);
+            constructor.constructText();
+
+            Broker broker = new Broker();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_TAKING_FRUITS_ORDERS);
+            constructor.constructText();
+
+            broker.takeOrder(buyBananaStockOrder);
+            broker.takeOrder(sellBananaStockOrder);
+
+            broker.takeOrder(buyStrawberryStockOrder);
+            broker.takeOrder(sellStrawberryStockOrder);
+
+            broker.takeOrder(buyOrangeStockOrder);
+            broker.takeOrder(sellOrangeStockOrder);
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_EXECUTING_FRUITS_ORDERS);
+            constructor.constructText();
+
+            broker.placeOrders();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/command_pattern.htm");
 
             constructor.constructTextDown(2);
 

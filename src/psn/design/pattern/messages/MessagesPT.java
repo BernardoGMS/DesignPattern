@@ -17,7 +17,8 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_ADAPTER = "Padrão Adapter.";
     public static String CONCEPTS_OPTIONS_BRIDGE = "Padrão Bridge.";
     public static String CONCEPTS_OPTIONS_BUILDER = "Padrão Builder.";
-    public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Padrão Chain of responsibility";
+    public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Padrão Chain of responsibility.";
+    public static String CONCEPTS_OPTIONS_COMMAND = "Padrão Command.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -88,6 +89,14 @@ public class MessagesPT {
             "'elementos de processamento' ou 'objectos nós', e uma corrente de pedidosque deverão ser geridos. Precisa de processar" +
             " eficientemente os pedidos sem atropelamento das relações entre gestores e precedência, ou mapeamentos de pedido-gestor.";
 
+    public static String CASESTUDY_COMMAND = "Command.";
+    public static String CASESTUDY_COMMAND_TEXT_P1 = " * Encapsula um pedido como um objecto, deixando assim paramatrizar os clientes" +
+            " com diferentes pedidos, filas ou pedidos de log, e suporta operações desfazíveis;";
+    public static String CASESTUDY_COMMAND_TEXT_P2 = " * Promove a 'invocação do método num objecto' para objecto de full status;";
+    public static String CASESTUDY_COMMAND_TEXT_P3 = " * Um retorno orientado a objectos.";
+    public static String CASESTUDY_COMMAND_TEXT_P4 = " Precisa de emitir pedidos a objectos sem saber nada sobre a operação" +
+            " sendo pedida ou sobre o receptor do pedido.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -138,6 +147,19 @@ public class MessagesPT {
             " logger incluído na cadeia: primeiro de INFO...";
     public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_2 = "2.2 Em seguida a mensagem de DEBUG...";
     public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_3 = "2.3 E por último a mensagem de ERROR!";
+
+    // Messages used during the case of study implementation - COMMAND
+    public static String CASESTUDY_STOCK_CREATION = "1. Em primeiro lugar, estamos a criar três tiposde stocks: bananas," +
+            " morangos e laranjas, com diferentes quantidades, sendo isto representado pela class Stock que contém um método" +
+            " para comorar stock e outro para vender. Este método é invocado apenas dentro do método execute da interface Order" +
+            " que difere de acordo com a class que a implementa. Assim, o método é totalmente encapsualdo.";
+    public static String CASESTUDY_BUYSELL_BANANAS_ORDER_EXECUTION = "2.1 Depois executamos as ordens para comprar e vender bananas...";
+    public static String CASESTUDY_BUYSELL_STRAWBERRIES_ORDER_EXECUTION = "2.2 A ordem para comprar e vender morangos...";
+    public static String CASESTUDY_BUYSELL_ORANGES_ORDER_EXECUTION = "2.3 E a ordem para comprar e vender laranjas...";
+    public static String CASESTUDY_BROKER_CREATION = "3. Agora o Broker, que é responsável por registar as ordens e executá-las" +
+            " está sendo criada...";
+    public static String CASESTUDY_TAKING_FRUITS_ORDERS = "4. Depois, o Broker regista os pedidos na lista para todas as frutas.";
+    public static String CASESTUDY_EXECUTING_FRUITS_ORDERS = "5. Finalmente a lista é apagada depois da execução.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

@@ -17,7 +17,8 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_ADAPTER = "Adapter Pattern.";
     public static String CONCEPTS_OPTIONS_BRIDGE = "Bridge Pattern.";
     public static String CONCEPTS_OPTIONS_BUILDER = "Builder Pattern.";
-    public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Chain of responsibility Pattern";
+    public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Chain of responsibility Pattern.";
+    public static String CONCEPTS_OPTIONS_COMMAND = "Command Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -85,6 +86,14 @@ public class MessagesEN {
             "element' or 'node' objects, and a stream of requests that must be handled. Need to efficiently process the requests without" +
             " hard-wiring handler relationships and precedence, or request-to-handler mappings.";
 
+    public static String CASESTUDY_COMMAND = "Command.";
+    public static String CASESTUDY_COMMAND_TEXT_P1 = " * Encapsulate a request as an object, thereby letting you parameterize clients" +
+            " with different requests, queue or log requests, and support undoable operations;";
+    public static String CASESTUDY_COMMAND_TEXT_P2 = " * Promote 'invocantion of a method on an object' to full object status;";
+    public static String CASESTUDY_COMMAND_TEXT_P3 = " * An object-oriented callback.";
+    public static String CASESTUDY_COMMAND_TEXT_P4 = " Need to issue requests to objects without knowing anything about the operation" +
+            " being requested or the receiver of the request.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -135,6 +144,19 @@ public class MessagesEN {
             " logger included in the chain: first the INFO...";
     public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_2 = "2.2 Then the DEBUG message...";
     public static String CASESTUDY_PRINTING_INFORMATIONS_LEVEL_3 = "2.3 And at last the ERROR message!";
+
+    // Messages used during the case of study implementation - COMMAND
+    public static String CASESTUDY_STOCK_CREATION = "1. In first place, we are creating three types of stocks: bananas," +
+            " strawberries and oranges, with different quantities, and it is represented by the class Stock with a method for" +
+            " buying stock and other to sell it. This method is invoked just within the method execute of Order interface" +
+            " which differs according the class and implementation that implements the interface. Indeed the method is totally encapsulated.";
+    public static String CASESTUDY_BUYSELL_BANANAS_ORDER_EXECUTION = "2.1 Then we execute the orders to buy and sell bananas...";
+    public static String CASESTUDY_BUYSELL_STRAWBERRIES_ORDER_EXECUTION = "2.2 The order to buy and sell strawberries...";
+    public static String CASESTUDY_BUYSELL_ORANGES_ORDER_EXECUTION = "2.3 And the order to buy and sell oranges...";
+    public static String CASESTUDY_BROKER_CREATION = "3. Now the Broker, which is responsible to take and execute the orders is being" +
+            " created...";
+    public static String CASESTUDY_TAKING_FRUITS_ORDERS = "4. Then, the Broker is taking to the requests list all the fruits orders.";
+    public static String CASESTUDY_EXECUTING_FRUITS_ORDERS = "5. Finally the list is cleaned up after execution.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";
