@@ -19,6 +19,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_BUILDER = "Padrão Builder.";
     public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Padrão Chain of responsibility.";
     public static String CONCEPTS_OPTIONS_COMMAND = "Padrão Command.";
+    public static String CONCEPTS_OPTIONS_COMPOSITE = "Padrão Composite.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -97,6 +98,17 @@ public class MessagesPT {
     public static String CASESTUDY_COMMAND_TEXT_P4 = " Precisa de emitir pedidos a objectos sem saber nada sobre a operação" +
             " sendo pedida ou sobre o receptor do pedido.";
 
+    //TODO: Traduzir
+    public static String CASESTUDY_COMPOSITE= "Composite.";
+    public static String CASESTUDY_COMPOSITE_TEXT_P1 = " * Compor objectos em estruturas de árvores para representar todas as hierarquias." +
+            " Composite permite aos clientes tratar objectos individuais e composição de objectos uniformemente;";
+    public static String CASESTUDY_COMPOSITE_TEXT_P2 = " * Composição recrusiva;";
+    public static String CASESTUDY_COMPOSITE_TEXT_P3 = " * 'Os Diretórios contêm entradas, podendo cada um destes ser um diretório';";
+    public static String CASESTUDY_COMPOSITE_TEXT_P4 = " * Hierarquia de um-para-muitos 'tem um' am vez de 'é um'";
+    public static String CASESTUDY_COMPOSITE_TEXT_P5 = " A aplicação precisa de manipular uma coleção de hierarquia de objectos 'primitivos'" +
+            " e 'compostos'. O processamento de objectos primitivos é lidado de uma forma, e o processamento de objectos compostos de outra" +
+            ". Tendo de procurar o 'tipo' de cada objecto antes de tentar processar não é pretendido.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -160,6 +172,19 @@ public class MessagesPT {
             " está sendo criada...";
     public static String CASESTUDY_TAKING_FRUITS_ORDERS = "4. Depois, o Broker regista os pedidos na lista para todas as frutas.";
     public static String CASESTUDY_EXECUTING_FRUITS_ORDERS = "5. Finalmente a lista é apagada depois da execução.";
+
+    // Messages used during the case of study implementation - COMPOSITE
+    public static String CASESTUDY_EMPLOYEES_CREATION = "1. Em primeiro lugar, devemos criar todos os empregados, desde o CEO ao de mais " +
+            "baixo nível na hierarquia da empresa. Assim, nós estanciamos a class Employee para criar o CEO, dois executivos de venda," +
+            " dois funcionários de publicidade, um diretor de vendas e um diretor de marketing";
+    public static String CASESTUDY_ADD_LOW_LEVELS_1 = "2.1 Agora, é hora de estabalecer a hierarquia através da inicialização da composição" +
+            " da 'lista de empregados' do CEO com o Diretor de publicidade e de vendas.";
+    public static String CASESTUDY_ADD_LOW_LEVELS_2 = "2.2 Em segundo lugar a lista do Diretor de vendas é composta pelos dois executivos.";
+    public static String CASESTUDY_ADD_LOW_LEVELS_3 = "2.3 Por fim a do Diretor de publicidade é composta pelos dois funcionários de publicidade.";
+    public static String CASESTUDY_PRINT_ALL_EMPLOYEES = "3. No final, todos os empregados são imprimidos:";
+    public static String CASESTUDY_TO_NOT_FORGET = " (Não esquecer que a classe Employee tem o método remove, que deverá ser usado" +
+            " quando queremos remover alguém da hierarquia, mas deve ser usado com cuidado porque este empregado poderá ter uma lista" +
+            " de outros empregados que também serão removidos...)";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

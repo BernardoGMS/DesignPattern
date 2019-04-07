@@ -95,6 +95,8 @@ public class AppSetter {
         textsInterfaceMap.put(14, new ChainOfResponsabilityConceptsTexts());
         textsInterfaceMap.put(15, new CommandTexts());
         textsInterfaceMap.put(16, new CommandConceptsTexts());
+        textsInterfaceMap.put(17, new CompositeTexts());
+        textsInterfaceMap.put(18, new CompositeConceptsTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);

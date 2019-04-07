@@ -15,4 +15,6 @@ public interface ImplPatternInterface {
     void implementChainofResponsability(TextsConstructor constructor);
 
     void implementCommand(TextsConstructor constructor);
+
+    void implementComposite(TextsConstructor constructor);
 }

@@ -19,6 +19,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_BUILDER = "Builder Pattern.";
     public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Chain of responsibility Pattern.";
     public static String CONCEPTS_OPTIONS_COMMAND = "Command Pattern.";
+    public static String CONCEPTS_OPTIONS_COMPOSITE = "Composite Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -94,6 +95,16 @@ public class MessagesEN {
     public static String CASESTUDY_COMMAND_TEXT_P4 = " Need to issue requests to objects without knowing anything about the operation" +
             " being requested or the receiver of the request.";
 
+    public static String CASESTUDY_COMPOSITE= "Composite.";
+    public static String CASESTUDY_COMPOSITE_TEXT_P1 = " * Compose objects into tree structures to represent whole-part hierarchies." +
+            " Composite lets clients treat individual objects and compositions of objects uniformly;";
+    public static String CASESTUDY_COMPOSITE_TEXT_P2 = " * Recursive composition;";
+    public static String CASESTUDY_COMPOSITE_TEXT_P3 = " * 'Directories contain entries, each of which could be a directory';";
+    public static String CASESTUDY_COMPOSITE_TEXT_P4 = " * One-to-many 'has a' up the 'is a' hierarchy;";
+    public static String CASESTUDY_COMPOSITE_TEXT_P5 = " Application needs to manipulate a hierarchical collection of 'primitive' and" +
+            " 'composite' objects. Processing of a primitive objects is handled own way, and processing of a composite object is handeled" +
+            " differently. Having to query the 'type' of each object before attempting to process it is not desirable.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -157,6 +168,19 @@ public class MessagesEN {
             " created...";
     public static String CASESTUDY_TAKING_FRUITS_ORDERS = "4. Then, the Broker is taking to the requests list all the fruits orders.";
     public static String CASESTUDY_EXECUTING_FRUITS_ORDERS = "5. Finally the list is cleaned up after execution.";
+
+    // Messages used during the case of study implementation - COMPOSITE
+    public static String CASESTUDY_EMPLOYEES_CREATION = "1. In first place, we should create all the employees, from CEO to the most" +
+            " low level of the firm hierarchy. Indeed, we instantiate the class Employee to create the CEO, two sales executives, two clerks" +
+            ", one headsales and one headmarketing:";
+    public static String CASESTUDY_ADD_LOW_LEVELS_1 = "2.1 Now, it's time to establish the hierarchy by initiating to compose the 'CEO" +
+            " employee list' with headmarketing and headsales.";
+    public static String CASESTUDY_ADD_LOW_LEVELS_2 = "2.2 Secondly the headsales list is composed by the two sales executives.";
+    public static String CASESTUDY_ADD_LOW_LEVELS_3 = "2.3 Lastly the headmarketing list is composed by the two clerks.";
+    public static String CASESTUDY_PRINT_ALL_EMPLOYEES = "3. In the end, all the employees are printed:";
+    public static String CASESTUDY_TO_NOT_FORGET = " (Don't forget that the classe Employee has a method: remove, which should be used" +
+            " when we want to remove someone from the hierarchy, but must be used carefully because that employee could have a list of" +
+            " other employees that will be also removed...)";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

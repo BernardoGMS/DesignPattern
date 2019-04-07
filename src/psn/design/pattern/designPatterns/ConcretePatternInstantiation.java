@@ -19,6 +19,7 @@ import psn.design.pattern.designPatterns.Command.auxClasses.Broker;
 import psn.design.pattern.designPatterns.Command.auxClasses.BuyStock;
 import psn.design.pattern.designPatterns.Command.auxClasses.SellStock;
 import psn.design.pattern.designPatterns.Command.auxClasses.Stock;
+import psn.design.pattern.designPatterns.Composite.Employee;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -498,5 +499,144 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
         }
 
+    }
+
+    @Override
+    public void implementComposite(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_EMPLOYEES_CREATION);
+            constructor.constructText();
+
+            Employee CEO = new Employee("John","CEO", 30000);
+
+            System.out.println("1.1 " + CEO.toString() + " created...");
+
+            Employee headSales = new Employee("Robert","Head Sales", 20000);
+
+            System.out.println("1.2 " + headSales.toString() + " created...");
+
+            Employee headMarketing = new Employee("Michel","Head Marketing", 20000);
+
+            System.out.println("1.3 " + headMarketing.toString() + " created...");
+
+            Employee clerk1 = new Employee("Laura","Marketing", 10000);
+            Employee clerk2 = new Employee("Bob","Marketing", 10000);
+
+            System.out.println("1.4.1 " + headSales.toString() + " created...");
+            System.out.println("1.4.2 " + headSales.toString() + " created...");
+
+            Employee salesExecutive1 = new Employee("Richard","Sales", 10000);
+            Employee salesExecutive2 = new Employee("Rob","Sales", 10000);
+
+            System.out.println("1.5.1 " + salesExecutive1.toString() + " created...");
+            System.out.println("1.5.2 " + salesExecutive2.toString() + " created...");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_1);
+            constructor.constructText();
+
+            CEO.add(headSales);
+            CEO.add(headMarketing);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_2);
+            constructor.constructText();
+
+            headSales.add(salesExecutive1);
+            headSales.add(salesExecutive2);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_3);
+            constructor.constructText();
+
+            headMarketing.add(clerk1);
+            headMarketing.add(clerk2);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_PRINT_ALL_EMPLOYEES);
+            constructor.constructText();
+
+            System.out.println(CEO);
+
+            for (Employee headEmployee : CEO.getSubordinates()) {
+                System.out.println(headEmployee);
+
+                for (Employee employee : headEmployee.getSubordinates()) {
+                    System.out.println(employee);
+                }
+            }
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/composite_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_EMPLOYEES_CREATION);
+            constructor.constructText();
+
+            Employee CEO = new Employee("João","CEO", 30000);
+
+            System.out.println("1.1 " + CEO.toString() + " criado...");
+
+            Employee diretorVendas = new Employee("Roberto","Diretor de vendas", 20000);
+
+            System.out.println("1.2 " + diretorVendas.toString() + " criado...");
+
+            Employee diretorPublicidade = new Employee("Miguel","Diretor de publicidade", 20000);
+
+            System.out.println("1.3 " + diretorPublicidade.toString() + " criado...");
+
+            Employee empregado1 = new Employee("Laura","Publicidade", 10000);
+            Employee empregado2 = new Employee("José","Publicidade", 10000);
+
+            System.out.println("1.4.1 " + empregado1.toString() + " criado...");
+            System.out.println("1.4.2 " + empregado2.toString() + " criado...");
+
+            Employee executorVendas1 = new Employee("Ricardo","Vendas", 10000);
+            Employee executorVendas2 = new Employee("Rolando","Vendas", 10000);
+
+            System.out.println("1.5.1 " + executorVendas1.toString() + " criado...");
+            System.out.println("1.5.2 " + executorVendas2.toString() + " criado...");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_1);
+            constructor.constructText();
+
+            CEO.add(diretorVendas);
+            CEO.add(diretorPublicidade);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_2);
+            constructor.constructText();
+
+            diretorVendas.add(executorVendas1);
+            diretorVendas.add(executorVendas2);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_3);
+            constructor.constructText();
+
+            diretorPublicidade.add(empregado1);
+            diretorPublicidade.add(empregado2);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_PRINT_ALL_EMPLOYEES);
+            constructor.constructText();
+
+            System.out.println(CEO);
+
+            for (Employee headEmployee : CEO.getSubordinates()) {
+                System.out.println(headEmployee);
+
+                for (Employee employee : headEmployee.getSubordinates()) {
+                    System.out.println(employee);
+                }
+            }
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/composite_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+
+        }
     }
 }
