@@ -20,6 +20,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Chain of responsibility Pattern.";
     public static String CONCEPTS_OPTIONS_COMMAND = "Command Pattern.";
     public static String CONCEPTS_OPTIONS_COMPOSITE = "Composite Pattern.";
+    public static String CONCEPTS_OPTIONS_DECORATOR = "Decorator Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -105,6 +106,14 @@ public class MessagesEN {
             " 'composite' objects. Processing of a primitive objects is handled own way, and processing of a composite object is handeled" +
             " differently. Having to query the 'type' of each object before attempting to process it is not desirable.";
 
+    public static String CASESTUDY_DECORATOR= "Decorator.";
+    public static String CASESTUDY_DECORATOR_TEXT_P1 = " * Attach additional responsibilities to an object dynamically. Decorators provide" +
+            " a flexible alternative to subclassing for extending functionality;";
+    public static String CASESTUDY_DECORATOR_TEXT_P2 = " * Client-specific embellishment of a core object by recursively wrapping it;";
+    public static String CASESTUDY_DECORATOR_TEXT_P3 = " * Wrapping a gift, putting it in a box, and wrapping the box.";
+    public static String CASESTUDY_DECORATOR_TEXT_P4 = " You want to add behavior or state to individual objects at run-time. Inheritance" +
+            " is not feasible because it is static and applies to an entire class.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -181,6 +190,20 @@ public class MessagesEN {
     public static String CASESTUDY_TO_NOT_FORGET = " (Don't forget that the classe Employee has a method: remove, which should be used" +
             " when we want to remove someone from the hierarchy, but must be used carefully because that employee could have a list of" +
             " other employees that will be also removed...)";
+
+    // Messages used during the case of study implementation - DECORATOR
+    public static String CASESTUDY_SMALL_ROOMS_DECORATION = "1. In first place, using the approach explained before to decorate the rooms" +
+            " by wrapping then recursively, we create three small rooms using the class SmallRoom which implements Room Interface." +
+            " All the decorations are executed by using the specific classes of individual choices:";
+    public static String CASESTUDY_SMALL_ROOM_1 = "1.1 First we create a simple room with no decoration;";
+    public static String CASESTUDY_SMALL_ROOM_2 = "1.2 Then we create and decorate a room with white walls and a red candle;";
+    public static String CASESTUDY_SMALL_ROOM_3 = "1.3 The last small room has white walls and woody floors.";
+    public static String CASESTUDY_AVERAGE_ROOMS_DECORATION = "2. Another type of rooms is the average. By using the same process, we will" +
+            " create another 2 rooms, but of such type:";
+    public static String CASESTUDY_AVERAGE_ROOM_1 = "2.1 The first has white walls, a red candle and a yellow bed;";
+    public static String CASESTUDY_AVERAGE_ROOM_2 = "2.2 The second is decorated by a red candle and a black mirror;";
+    public static String CASESTUDY_BIG_ROOM_DECORATION = "3. At last we could have a enchanted big room with blue walls, a yellow bed, " +
+            "a shiny floor and a red candle.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

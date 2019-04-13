@@ -68,7 +68,7 @@ public class ConceptsView implements AbstractsView {
     public void showOptions(MenuInputScanner optionsList) {
 
         int answer = this.prompt.getUserInput(optionsList);
-        if (answer==9) {this.mainView.init(languageID);}
+        if (answer==10) {this.mainView.init(languageID);}
 
         if (answer==1) {
 
@@ -160,6 +160,17 @@ public class ConceptsView implements AbstractsView {
 
         }
 
+        if (answer==9) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(20).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(20).displayPortugueseTexts();
+            }
+
+        }
 
     }
 }

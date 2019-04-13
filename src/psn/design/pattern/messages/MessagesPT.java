@@ -20,6 +20,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_CHAIN_OF_RESPONSIBILITY = "Padrão Chain of responsibility.";
     public static String CONCEPTS_OPTIONS_COMMAND = "Padrão Command.";
     public static String CONCEPTS_OPTIONS_COMPOSITE = "Padrão Composite.";
+    public static String CONCEPTS_OPTIONS_DECORATOR = "Padrão Decorator.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -98,7 +99,6 @@ public class MessagesPT {
     public static String CASESTUDY_COMMAND_TEXT_P4 = " Precisa de emitir pedidos a objectos sem saber nada sobre a operação" +
             " sendo pedida ou sobre o receptor do pedido.";
 
-    //TODO: Traduzir
     public static String CASESTUDY_COMPOSITE= "Composite.";
     public static String CASESTUDY_COMPOSITE_TEXT_P1 = " * Compor objectos em estruturas de árvores para representar todas as hierarquias." +
             " Composite permite aos clientes tratar objectos individuais e composição de objectos uniformemente;";
@@ -108,6 +108,15 @@ public class MessagesPT {
     public static String CASESTUDY_COMPOSITE_TEXT_P5 = " A aplicação precisa de manipular uma coleção de hierarquia de objectos 'primitivos'" +
             " e 'compostos'. O processamento de objectos primitivos é lidado de uma forma, e o processamento de objectos compostos de outra" +
             ". Tendo de procurar o 'tipo' de cada objecto antes de tentar processar não é pretendido.";
+
+    public static String CASESTUDY_DECORATOR= "Decorator.";
+    public static String CASESTUDY_DECORATOR_TEXT_P1 = " * Anexar responsabilidades adicionais dinamicamente a um objecto. Os Decorators" +
+            " fornecem uma alternativa flexivel às sub-classes para extensão de funcionalidade;";
+    public static String CASESTUDY_DECORATOR_TEXT_P2 = " * Embelezamento de cliente específico de um objecto central por envolvê-lo" +
+            " recursivamente;";
+    public static String CASESTUDY_DECORATOR_TEXT_P3 = " * Cobrir uam prenda, colocando-a numa caixa, e envolvendo a caixa.";
+    public static String CASESTUDY_DECORATOR_TEXT_P4 = " Tu queres adicionar uma comportamento ou estado a objectos individuais em run-time." +
+            " Herança não é viável porque é estático e aplicada a uma classe por inteiro.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
@@ -185,6 +194,20 @@ public class MessagesPT {
     public static String CASESTUDY_TO_NOT_FORGET = " (Não esquecer que a classe Employee tem o método remove, que deverá ser usado" +
             " quando queremos remover alguém da hierarquia, mas deve ser usado com cuidado porque este empregado poderá ter uma lista" +
             " de outros empregados que também serão removidos...)";
+
+    // Messages used during the case of study implementation - DECORATOR
+    public static String CASESTUDY_SMALL_ROOMS_DECORATION = "1. Em primeiro lugar, usando a abordagem explicada anteriormente para decorar" +
+            " or quartos envolvendo-os recursivamente, nós criamos três pequenos quartos usando a classe SmallRoom que implementa a" +
+            " Interface Room. Todas as decorações são executadas usando as classes específicas de escolhas individuais:";
+    public static String CASESTUDY_SMALL_ROOM_1 = "1.1 Primeiro nós criamos um quarto pequeno simples sem decoração;";
+    public static String CASESTUDY_SMALL_ROOM_2 = "1.2 Em seguida criamos e decoramos um quarto com paredes brancas e uma vela vermelha;";
+    public static String CASESTUDY_SMALL_ROOM_3 = "1.3 O último quarto pequeno possui paredes brancas e chão woody.";
+    public static String CASESTUDY_AVERAGE_ROOMS_DECORATION = "2. Outro tipo de quartos são os médios. Usando o mesmo processo, criamos" +
+            " outros dois quartos, mas deste tipo:";
+    public static String CASESTUDY_AVERAGE_ROOM_1 = "2.1 O primeiro tem paredes brancas, uma vela vermelha e uma cama amarela;";
+    public static String CASESTUDY_AVERAGE_ROOM_2 = "2.2 O segundo é decorado por uma vela vermelha e um espelho negro;";
+    public static String CASESTUDY_BIG_ROOM_DECORATION = "3. Por fim teremos uma grande quarto encantado com paredes azuis, " +
+            "uma cama amarela, chão brilhante e uma vela vermelha.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

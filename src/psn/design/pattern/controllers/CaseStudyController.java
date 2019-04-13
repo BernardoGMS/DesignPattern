@@ -8,7 +8,7 @@ import psn.design.pattern.views.AbstractsView;
 public class CaseStudyController implements AbstractsController {
 
     protected AbstractsView caseStudyView;
-    private String[] options = new String[8];
+    private String[] options = new String[9];
     private Integer languageID;
 
     public CaseStudyController(AbstractsView caseStudyView) {
@@ -23,7 +23,8 @@ public class CaseStudyController implements AbstractsController {
         options[4] = (this.languageID==0) ? MessagesEN.CASESTUDY_CHAIN_OF_RESPONSIBILITY : MessagesPT.CASESTUDY_CHAIN_OF_RESPONSIBILITY;
         options[5] = (this.languageID==0) ? MessagesEN.CASESTUDY_COMMAND : MessagesPT.CASESTUDY_COMMAND;
         options[6] = (this.languageID==0) ? MessagesEN.CASESTUDY_COMPOSITE : MessagesPT.CASESTUDY_COMPOSITE;
-        options[7] = (this.languageID==0) ? MessagesEN.INITIAL_OPTIONS_BACK : MessagesPT.INITIAL_OPTIONS_BACK ;
+        options[7] = (this.languageID==0) ? MessagesEN.CASESTUDY_DECORATOR : MessagesPT.CASESTUDY_DECORATOR;
+        options[8] = (this.languageID==0) ? MessagesEN.INITIAL_OPTIONS_BACK : MessagesPT.INITIAL_OPTIONS_BACK ;
     }
 
     @Override

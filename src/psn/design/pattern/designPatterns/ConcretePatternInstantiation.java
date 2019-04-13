@@ -20,6 +20,8 @@ import psn.design.pattern.designPatterns.Command.auxClasses.BuyStock;
 import psn.design.pattern.designPatterns.Command.auxClasses.SellStock;
 import psn.design.pattern.designPatterns.Command.auxClasses.Stock;
 import psn.design.pattern.designPatterns.Composite.Employee;
+import psn.design.pattern.designPatterns.Decorator.Room;
+import psn.design.pattern.designPatterns.Decorator.auxClasses.*;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -599,25 +601,25 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             System.out.println("1.5.1 " + executorVendas1.toString() + " criado...");
             System.out.println("1.5.2 " + executorVendas2.toString() + " criado...");
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_1);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ADD_LOW_LEVELS_1);
             constructor.constructText();
 
             CEO.add(diretorVendas);
             CEO.add(diretorPublicidade);
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_2);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ADD_LOW_LEVELS_2);
             constructor.constructText();
 
             diretorVendas.add(executorVendas1);
             diretorVendas.add(executorVendas2);
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_LOW_LEVELS_3);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ADD_LOW_LEVELS_3);
             constructor.constructText();
 
             diretorPublicidade.add(empregado1);
             diretorPublicidade.add(empregado2);
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_PRINT_ALL_EMPLOYEES);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_PRINT_ALL_EMPLOYEES);
             constructor.constructText();
 
             System.out.println(CEO);
@@ -632,10 +634,98 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
             constructor.constructTextDown(2);
 
-            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/composite_pattern.htm");
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/composite_pattern.htm");
 
             constructor.constructTextDown(2);
 
+
+        }
+    }
+
+    @Override
+    public void implementDecorator(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_SMALL_ROOMS_DECORATION);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_SMALL_ROOM_1);
+            constructor.constructText();
+            Room smallSimpleRoom = new SmallRoom();
+            smallSimpleRoom.decorateRoom();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_SMALL_ROOM_2);
+            constructor.constructText();
+            Room smallRoomWhiteWallsRedCandle = new WhiteWallsDecorator(new RedCandleDecorator( new SmallRoom()));
+            smallRoomWhiteWallsRedCandle.decorateRoom();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_SMALL_ROOM_3);
+            constructor.constructText();
+            Room smallRoomWhiteWallsWoodyFloor = new WhiteWallsDecorator(new WoodyFloorDecorator( new SmallRoom()));
+            smallRoomWhiteWallsWoodyFloor.decorateRoom();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_AVERAGE_ROOMS_DECORATION);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_AVERAGE_ROOM_1);
+            constructor.constructText();
+            Room averageRoomWhiteWallsRedCandleYellowBed = new WhiteWallsDecorator(new RedCandleDecorator( new YellowBedDecorator( new AverageRoom())));
+            averageRoomWhiteWallsRedCandleYellowBed.decorateRoom();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_AVERAGE_ROOM_2);
+            constructor.constructText();
+            Room averageRoomRedCandleBlackMirror = new RedCandleDecorator(new BlackMirrorDecorator( new AverageRoom()));
+            averageRoomRedCandleBlackMirror.decorateRoom();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_BIG_ROOM_DECORATION);
+            constructor.constructText();
+            Room bigRoomBlueWallsYellowBedShinyFloorRedCandle = new BlueWallsDecorator(new YellowBedDecorator( new ShinyFloorDecorator( new RedCandleDecorator( new BigRoom()))));
+            bigRoomBlueWallsYellowBedShinyFloorRedCandle.decorateRoom();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_SMALL_ROOMS_DECORATION);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_SMALL_ROOM_1);
+            constructor.constructText();
+            Room smallSimpleRoom = new SmallRoom();
+            smallSimpleRoom.decorateRoom();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_SMALL_ROOM_2);
+            constructor.constructText();
+            Room smallRoomWhiteWallsRedCandle = new WhiteWallsDecorator(new RedCandleDecorator( new SmallRoom()));
+            smallRoomWhiteWallsRedCandle.decorateRoom();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_SMALL_ROOM_3);
+            constructor.constructText();
+            Room smallRoomWhiteWallsWoodyFloor = new WhiteWallsDecorator(new WoodyFloorDecorator( new SmallRoom()));
+            smallRoomWhiteWallsWoodyFloor.decorateRoom();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_AVERAGE_ROOMS_DECORATION);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_AVERAGE_ROOM_1);
+            constructor.constructText();
+            Room averageRoomWhiteWallsRedCandleYellowBed = new WhiteWallsDecorator(new RedCandleDecorator( new YellowBedDecorator( new AverageRoom())));
+            averageRoomWhiteWallsRedCandleYellowBed.decorateRoom();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_AVERAGE_ROOM_2);
+            constructor.constructText();
+            Room averageRoomRedCandleBlackMirror = new RedCandleDecorator(new BlackMirrorDecorator( new AverageRoom()));
+            averageRoomRedCandleBlackMirror.decorateRoom();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_BIG_ROOM_DECORATION);
+            constructor.constructText();
+            Room bigRoomBlueWallsYellowBedShinyFloorRedCandle = new BlueWallsDecorator(new YellowBedDecorator( new ShinyFloorDecorator( new RedCandleDecorator( new BigRoom()))));
+            bigRoomBlueWallsYellowBedShinyFloorRedCandle.decorateRoom();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm");
+
+            constructor.constructTextDown(2);
 
         }
     }
