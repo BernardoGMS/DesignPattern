@@ -21,6 +21,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_COMMAND = "Padrão Command.";
     public static String CONCEPTS_OPTIONS_COMPOSITE = "Padrão Composite.";
     public static String CONCEPTS_OPTIONS_DECORATOR = "Padrão Decorator.";
+    public static String CONCEPTS_OPTIONS_FACADE = "Padrão Facade.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -118,6 +119,13 @@ public class MessagesPT {
     public static String CASESTUDY_DECORATOR_TEXT_P4 = " Tu queres adicionar uma comportamento ou estado a objectos individuais em run-time." +
             " Herança não é viável porque é estático e aplicada a uma classe por inteiro.";
 
+    public static String CASESTUDY_FACADE= "Facade.";
+    public static String CASESTUDY_FACADE_TEXT_P1 = " * Fornece uma interface a um conjunto de interfaces num sub-sistema. A Facade define" +
+            " uma interface de nível mais elevado que torna o sub-sistema mais simples de ser usado;";
+    public static String CASESTUDY_FACADE_TEXT_P2 = " * Envolve um sub-sistema complicado com uma interface simples.";
+    public static String CASESTUDY_FACADE_TEXT_P3 = " Um segmento da comunidade cliente precisa de uma interface simplificada para a" +
+            " funcionalidade geral de um sub-sistema complexo.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -206,8 +214,22 @@ public class MessagesPT {
             " outros dois quartos, mas deste tipo:";
     public static String CASESTUDY_AVERAGE_ROOM_1 = "2.1 O primeiro tem paredes brancas, uma vela vermelha e uma cama amarela;";
     public static String CASESTUDY_AVERAGE_ROOM_2 = "2.2 O segundo é decorado por uma vela vermelha e um espelho negro;";
-    public static String CASESTUDY_BIG_ROOM_DECORATION = "3. Por fim teremos uma grande quarto encantado com paredes azuis, " +
-            "uma cama amarela, chão brilhante e uma vela vermelha.";
+    public static String CASESTUDY_BIG_ROOM_DECORATION = "3. Por fim podemos ter um grande e encantado quarto com paredes azuis, uma cama" +
+            " amarela, um chão shiny e uma vela vermelha";
+
+    // Messages used during the case of study implementation - FACADE
+    public static String CASESTUDY_INTERFACES_EXPL = "1. Para começar o processo, criamos uma interface de elevado nível chamada Shape," +
+            " que irá ser implementada pelas interfaces Circle, Triangle and Rectangle. Depois estas três interfaces terão o seu próprio" +
+            " comportamento. Quando queremos desenhar alguma destas formas, por exemplo, através da classe ShapeMaker,apenas temos " +
+            "de chamar o método pretendido cujos 'atributos internos' correspondem à forma específica que queremos, mas sempre chamando" +
+            " a classe geral.";
+    public static String CASESTUDY_SHAPE_MAKER_CREATION = "2. Em segundo lugar criamos o ShapeMaker com três métodos, um por forma," +
+            " e será usado para implementar o método draw() (desenhar) pertencente à interface Shape;";
+    public static String CASESTUDY_DRAW_CIRCLE = "3.1 Agora, chamando drawCircle() (desenhar circulo) de ShapeMaker, desenhamos" +
+            " (uma Shape (Forma));";
+    public static String CASESTUDY_DRAW_RECTANGLE = "3.2 Similarmente, fazemos a mesma coisa com o retângulo chamando drawRectangle() +" +
+            "(desenhar retângulo);";
+    public static String CASESTUDY_DRAW_TRIANGLE = "3.3 E por fim, chamando drawTriangle() (desenhar triângulo), desenhamos um triângulo.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

@@ -12,9 +12,6 @@ import psn.design.pattern.designPatterns.Builder.MealBuilder;
 import psn.design.pattern.designPatterns.Builder.auxClasses.Coke;
 import psn.design.pattern.designPatterns.ChainOfResponsibility.AbstractLogger;
 import psn.design.pattern.designPatterns.ChainOfResponsibility.ChainPatternDemo;
-import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.ConsoleLogger;
-import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.ErrorLogger;
-import psn.design.pattern.designPatterns.ChainOfResponsibility.auxClasses.FileLogger;
 import psn.design.pattern.designPatterns.Command.auxClasses.Broker;
 import psn.design.pattern.designPatterns.Command.auxClasses.BuyStock;
 import psn.design.pattern.designPatterns.Command.auxClasses.SellStock;
@@ -22,6 +19,7 @@ import psn.design.pattern.designPatterns.Command.auxClasses.Stock;
 import psn.design.pattern.designPatterns.Composite.Employee;
 import psn.design.pattern.designPatterns.Decorator.Room;
 import psn.design.pattern.designPatterns.Decorator.auxClasses.*;
+import psn.design.pattern.designPatterns.Facade.auxClasses.ShapeMaker;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -728,5 +726,60 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             constructor.constructTextDown(2);
 
         }
+    }
+
+    @Override
+    public void implementFacade(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_INTERFACES_EXPL);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_SHAPE_MAKER_CREATION);
+            constructor.constructText();
+            ShapeMaker shapeMaker = new ShapeMaker();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_DRAW_CIRCLE);
+            constructor.constructText();
+            shapeMaker.drawCircle();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_DRAW_RECTANGLE);
+            constructor.constructText();
+            shapeMaker.drawRectangle();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_DRAW_TRIANGLE);
+            constructor.constructText();
+            shapeMaker.drawTriangle();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/facade_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_INTERFACES_EXPL);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_SHAPE_MAKER_CREATION);
+            constructor.constructText();
+            ShapeMaker shapeMaker = new ShapeMaker();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_DRAW_CIRCLE);
+            constructor.constructText();
+            shapeMaker.drawCircle();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_DRAW_RECTANGLE);
+            constructor.constructText();
+            shapeMaker.drawRectangle();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_DRAW_TRIANGLE);
+            constructor.constructText();
+            shapeMaker.drawTriangle();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/facade_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
+
     }
 }

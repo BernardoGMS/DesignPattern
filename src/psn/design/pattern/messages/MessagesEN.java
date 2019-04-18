@@ -21,6 +21,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_COMMAND = "Command Pattern.";
     public static String CONCEPTS_OPTIONS_COMPOSITE = "Composite Pattern.";
     public static String CONCEPTS_OPTIONS_DECORATOR = "Decorator Pattern.";
+    public static String CONCEPTS_OPTIONS_FACADE = "Facade Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -114,6 +115,13 @@ public class MessagesEN {
     public static String CASESTUDY_DECORATOR_TEXT_P4 = " You want to add behavior or state to individual objects at run-time. Inheritance" +
             " is not feasible because it is static and applies to an entire class.";
 
+    public static String CASESTUDY_FACADE= "Facade.";
+    public static String CASESTUDY_FACADE_TEXT_P1 = " * Provide a interface to a set of interfaces in a subsystem. Facade defines" +
+            " a higher-level interface that makes the subsystem easier to use;";
+    public static String CASESTUDY_FACADE_TEXT_P2 = " * Wrap a complicated subsystem with a simpler interface.";
+    public static String CASESTUDY_FACADE_TEXT_P3 = " A segment of the client community needs a simplified interface to the overall" +
+            " functionality of a complex subsystem.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -204,6 +212,17 @@ public class MessagesEN {
     public static String CASESTUDY_AVERAGE_ROOM_2 = "2.2 The second is decorated by a red candle and a black mirror;";
     public static String CASESTUDY_BIG_ROOM_DECORATION = "3. At last we could have a enchanted big room with blue walls, a yellow bed, " +
             "a shiny floor and a red candle.";
+
+    // Messages used during the case of study implementation - FACADE
+    public static String CASESTUDY_INTERFACES_EXPL = "1. To begin with the process, we create a high-level interface named Shape," +
+            "which will be implemented by the interfaces Circle, Triangle and Rectangle. Then those three interfaces have their own behavior." +
+            " When we want to draw some of then, for example, through the class ShapeMaker, we just need to call the required method," +
+            " which 'inner attributes' corresponds to the specific shape we want, but always called as the general interface.";
+    public static String CASESTUDY_SHAPE_MAKER_CREATION = "2. Secondly we create the ShapeMaker with three methods, one for each shape," +
+            " and it will be used to implement the method draw() owned by the interface Shape;";
+    public static String CASESTUDY_DRAW_CIRCLE = "3.1 Now, by calling drawCircle() from ShapeMaker, we can draw the circle (a Shape);";
+    public static String CASESTUDY_DRAW_RECTANGLE = "3.2 Similarly, we to the same thing with rectangle by calling drawRectangle();";
+    public static String CASESTUDY_DRAW_TRIANGLE = "3.3 And at last, by calling drawTriangle(), we draw a triangle shape.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

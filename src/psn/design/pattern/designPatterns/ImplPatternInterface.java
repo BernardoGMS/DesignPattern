@@ -19,4 +19,6 @@ public interface ImplPatternInterface {
     void implementComposite(TextsConstructor constructor);
 
     void implementDecorator(TextsConstructor constructor);
+
+    void implementFacade(TextsConstructor constructor);
 }

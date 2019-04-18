@@ -8,7 +8,7 @@ import psn.design.pattern.views.AbstractsView;
 public class ConceptsController implements AbstractsController {
 
     protected AbstractsView conceptsView;
-    private String[] options = new String[10];
+    private String[] options = new String[11];
     private Integer languageID;
 
     public ConceptsController(AbstractsView conceptsView) {
@@ -25,7 +25,8 @@ public class ConceptsController implements AbstractsController {
         options[6] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_COMMAND : MessagesPT.CONCEPTS_OPTIONS_COMMAND;
         options[7] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_COMPOSITE : MessagesPT.CONCEPTS_OPTIONS_COMPOSITE;
         options[8] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_DECORATOR : MessagesPT.CONCEPTS_OPTIONS_DECORATOR;
-        options[9] = (this.languageID==0) ? MessagesEN.INITIAL_OPTIONS_BACK : MessagesPT.INITIAL_OPTIONS_BACK ;
+        options[9] = (this.languageID==0) ? MessagesEN.CONCEPTS_OPTIONS_FACADE : MessagesPT.CONCEPTS_OPTIONS_FACADE;
+        options[10] = (this.languageID==0) ? MessagesEN.INITIAL_OPTIONS_BACK : MessagesPT.INITIAL_OPTIONS_BACK ;
 
     }
 
