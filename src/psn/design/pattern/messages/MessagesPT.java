@@ -22,6 +22,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_COMPOSITE = "Padrão Composite.";
     public static String CONCEPTS_OPTIONS_DECORATOR = "Padrão Decorator.";
     public static String CONCEPTS_OPTIONS_FACADE = "Padrão Facade.";
+    public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Padrão Factory Method.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -125,6 +126,16 @@ public class MessagesPT {
     public static String CASESTUDY_FACADE_TEXT_P2 = " * Envolve um sub-sistema complicado com uma interface simples.";
     public static String CASESTUDY_FACADE_TEXT_P3 = " Um segmento da comunidade cliente precisa de uma interface simplificada para a" +
             " funcionalidade geral de um sub-sistema complexo.";
+
+    public static String CASESTUDY_FACTORY_METHOD= "Factory Method.";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P1 = " * Defenir uma interface para criar um objecto, mas deixando as subclasses" +
+            " decidirem qual será a classe a ser instanciada. O Factory Method permite a uma classe deferir a instanciação para as" +
+            " suas subclasses;";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P2 = " * Definir um construtor 'virtual';";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P3 = " * O novo operacor considerado danoso.";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P4 = " Uma estrutura precisa de padronizar o modelo arquitectónico para um conjunto" +
+            " de aplicações, mas permite aplicações individuais definirem o seu próprio domínio de objectos e fornece para as suas" +
+            " instanciações.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
@@ -230,6 +241,18 @@ public class MessagesPT {
     public static String CASESTUDY_DRAW_RECTANGLE = "3.2 Similarmente, fazemos a mesma coisa com o retângulo chamando drawRectangle() +" +
             "(desenhar retângulo);";
     public static String CASESTUDY_DRAW_TRIANGLE = "3.3 E por fim, chamando drawTriangle() (desenhar triângulo), desenhamos um triângulo.";
+
+    // Messages used during the case of study implementation - FACTORY METHOD
+    public static String CASESTUDY_CREATE_POKE_FACTORY = "1. A criação de uma fábrica irá nos fornecer um métodos que nos dá" +
+            " permissão para instanciar um 'subtipo' específico de pokemon escolhido em run time (getPokemon(pokemonType)). Isto é" +
+            " exatamente os primeiro passo a seguir para usar o padrão de design:";
+    public static String CASESTUDY_GET_PIKACHU = "2.1 No exemplo corrente são instanciados três tipos diferentes de pokemons:" +
+            " Pikachu, Squirtle and Charizard. O pimeiro a ser instanciado será o Pikachu.";
+    public static String CASESTUDY_CALL_PIKACHU = "2.1.1 Depois, uma vez instanciado, é tempo de chamá-lo:";
+    public static String CASESTUDY_GET_SQUIRTLE = "2.2 Em segundo lugar, criemos um squirtle...";
+    public static String CASESTUDY_CALL_SQUIRTLE = "2.2.1 E claro, chamá-lo:";
+    public static String CASESTUDY_GET_CHARIZARD = "2.3 Por fim, instanciamos um charizard...";
+    public static String CASESTUDY_CALL_CHARIZARD = "2.3.1 E chamomo-lo.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

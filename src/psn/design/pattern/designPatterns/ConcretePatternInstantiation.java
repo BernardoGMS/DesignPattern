@@ -20,6 +20,8 @@ import psn.design.pattern.designPatterns.Composite.Employee;
 import psn.design.pattern.designPatterns.Decorator.Room;
 import psn.design.pattern.designPatterns.Decorator.auxClasses.*;
 import psn.design.pattern.designPatterns.Facade.auxClasses.ShapeMaker;
+import psn.design.pattern.designPatterns.FactoryMethod.Pokemon;
+import psn.design.pattern.designPatterns.FactoryMethod.auxClasses.PokemonFactory;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -776,6 +778,85 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             constructor.constructTextDown(2);
 
             System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/facade_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
+
+    }
+
+    @Override
+    public void implementFactoryMethod(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_POKE_FACTORY);
+            constructor.constructText();
+            PokemonFactory factory = new PokemonFactory();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_PIKACHU);
+            constructor.constructText();
+            Pokemon pikachu = factory.getPokemon("PIKACHU");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CALL_PIKACHU);
+            constructor.constructText();
+            pikachu.callPokemon();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_SQUIRTLE);
+            constructor.constructText();
+            Pokemon squirtle = factory.getPokemon("SQUIRTLE");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CALL_SQUIRTLE);
+            constructor.constructText();
+            squirtle.callPokemon();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_CHARIZARD);
+            constructor.constructText();
+            Pokemon charizard = factory.getPokemon("CHARIZARD");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CALL_CHARIZARD);
+            constructor.constructText();
+            charizard.callPokemon();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/factory_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_POKE_FACTORY);
+            constructor.constructText();
+            PokemonFactory factory = new PokemonFactory();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_GET_PIKACHU);
+            constructor.constructText();
+            Pokemon pikachu = factory.getPokemon("PIKACHU");
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CALL_PIKACHU);
+            constructor.constructText();
+            pikachu.callPokemon();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_GET_SQUIRTLE);
+            constructor.constructText();
+            Pokemon squirtle = factory.getPokemon("SQUIRTLE");
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CALL_SQUIRTLE);
+            constructor.constructText();
+            squirtle.callPokemon();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_GET_CHARIZARD);
+            constructor.constructText();
+            Pokemon charizard = factory.getPokemon("CHARIZARD");
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CALL_CHARIZARD);
+            constructor.constructText();
+            charizard.callPokemon();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/factory_pattern.htm");
 
             constructor.constructTextDown(2);
 

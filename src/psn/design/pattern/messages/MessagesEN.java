@@ -22,6 +22,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_COMPOSITE = "Composite Pattern.";
     public static String CONCEPTS_OPTIONS_DECORATOR = "Decorator Pattern.";
     public static String CONCEPTS_OPTIONS_FACADE = "Facade Pattern.";
+    public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Factory Method Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -121,6 +122,14 @@ public class MessagesEN {
     public static String CASESTUDY_FACADE_TEXT_P2 = " * Wrap a complicated subsystem with a simpler interface.";
     public static String CASESTUDY_FACADE_TEXT_P3 = " A segment of the client community needs a simplified interface to the overall" +
             " functionality of a complex subsystem.";
+
+    public static String CASESTUDY_FACTORY_METHOD= "Factory Method.";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P1 = " * Define an interface for creating an object, but let subclasses decide" +
+            " which class to instantiate. Factory Method lets a class defer instantiation to subclasses;";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P2 = " * Defining a 'virtual' constructor;";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P3 = " * The new operator considered harmful.";
+    public static String CASESTUDY_FACTORY_METHOD_TEXT_P4 = " A framework needs to standardize the architectural model for a range" +
+            " of applications, but allow for individual applications to define their own domain objects and provide for their instantiation.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -223,6 +232,18 @@ public class MessagesEN {
     public static String CASESTUDY_DRAW_CIRCLE = "3.1 Now, by calling drawCircle() from ShapeMaker, we can draw the circle (a Shape);";
     public static String CASESTUDY_DRAW_RECTANGLE = "3.2 Similarly, we to the same thing with rectangle by calling drawRectangle();";
     public static String CASESTUDY_DRAW_TRIANGLE = "3.3 And at last, by calling drawTriangle(), we draw a triangle shape.";
+
+    // Messages used during the case of study implementation - FACTORY METHOD
+    public static String CASESTUDY_CREATE_POKE_FACTORY = "1. The creation of an factory will provide us a method that give us the" +
+            " permission to instantiate a specific 'subtype' of pokemon chosen in run time (getPokemon(pokemonType)). That exactly the" +
+            " first step to use the design pattern:";
+    public static String CASESTUDY_GET_PIKACHU = "2.1 In the current example there are implemented three different types os pokemons:" +
+            " Pikachu, Squirtle and Charizard. The first to be instantiate is Pikachu.";
+    public static String CASESTUDY_CALL_PIKACHU = "2.1.1 Then, once instantiated, it is time to call him:";
+    public static String CASESTUDY_GET_SQUIRTLE = "2.2 Secondly, lets create a squirtle...";
+    public static String CASESTUDY_CALL_SQUIRTLE = "2.2.1 And of course call him:";
+    public static String CASESTUDY_GET_CHARIZARD = "2.3 At last, we instantiate a charizard...";
+    public static String CASESTUDY_CALL_CHARIZARD = "2.3.1 And we call him.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

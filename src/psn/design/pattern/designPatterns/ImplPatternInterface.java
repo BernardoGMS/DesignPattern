@@ -21,4 +21,6 @@ public interface ImplPatternInterface {
     void implementDecorator(TextsConstructor constructor);
 
     void implementFacade(TextsConstructor constructor);
+
+    void implementFactoryMethod(TextsConstructor constructor);
 }

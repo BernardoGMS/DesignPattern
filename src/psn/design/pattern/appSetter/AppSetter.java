@@ -101,6 +101,8 @@ public class AppSetter {
         textsInterfaceMap.put(20, new DecoratorConceptsTexts());
         textsInterfaceMap.put(21, new FacadeTexts());
         textsInterfaceMap.put(22, new FacadeConceptsTexts());
+        textsInterfaceMap.put(23, new FactoryMethodTexts());
+        textsInterfaceMap.put(24, new FactoryMethodConceptsTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);
