@@ -23,6 +23,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_DECORATOR = "Padrão Decorator.";
     public static String CONCEPTS_OPTIONS_FACADE = "Padrão Facade.";
     public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Padrão Factory Method.";
+    public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Padrão Flyweight.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -136,6 +137,13 @@ public class MessagesPT {
     public static String CASESTUDY_FACTORY_METHOD_TEXT_P4 = " Uma estrutura precisa de padronizar o modelo arquitectónico para um conjunto" +
             " de aplicações, mas permite aplicações individuais definirem o seu próprio domínio de objectos e fornece para as suas" +
             " instanciações.";
+
+    public static String CASESTUDY_FLYWEIGHT= "Flyweight.";
+    public static String CASESTUDY_FLYWEIGHT_TEXT_P1 = " * Usar partilha para suportar um elevado número de objectos refinados eficientemente;";
+    public static String CASESTUDY_FLYWEIGHT_TEXT_P2 = " * A estratégia GUI Motif de substituir ferramentas pesadas por aparelhos de baixo" +
+            " peso.";
+    public static String CASESTUDY_FLYWEIGHT_TEXT_P3 = " Desenhar objectos nos mais baixos níveis do sistema de 'granulidade' fornece" +
+            " flexibilidade opcional, mas por ser inaceitavelmente dispendiosa em termos de desempenho e utilização de memória.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +

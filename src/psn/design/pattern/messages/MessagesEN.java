@@ -23,6 +23,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_DECORATOR = "Decorator Pattern.";
     public static String CONCEPTS_OPTIONS_FACADE = "Facade Pattern.";
     public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Factory Method Pattern.";
+    public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Flyweight Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -130,6 +131,12 @@ public class MessagesEN {
     public static String CASESTUDY_FACTORY_METHOD_TEXT_P3 = " * The new operator considered harmful.";
     public static String CASESTUDY_FACTORY_METHOD_TEXT_P4 = " A framework needs to standardize the architectural model for a range" +
             " of applications, but allow for individual applications to define their own domain objects and provide for their instantiation.";
+
+    public static String CASESTUDY_FLYWEIGHT= "Flyweight.";
+    public static String CASESTUDY_FLYWEIGHT_TEXT_P1 = " * Use sharing to support large number of fine-grained objects efficiently;";
+    public static String CASESTUDY_FLYWEIGHT_TEXT_P2 = " * The Motif GUI strategy of replacing heavy-widgets with light-weight gadgets.";
+    public static String CASESTUDY_FLYWEIGHT_TEXT_P3 = " Designing objects down to the lowest levels of system 'granularity' provides" +
+            " optional flexibility, but can be unacceptably expensive in terms of performance and memory usage.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +

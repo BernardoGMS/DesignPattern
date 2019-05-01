@@ -863,4 +863,9 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
         }
 
     }
+
+    @Override
+    public void implementFlyweight(TextsConstructor constructor) {
+
+    }
 }

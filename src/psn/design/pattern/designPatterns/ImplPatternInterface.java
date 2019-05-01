@@ -23,4 +23,6 @@ public interface ImplPatternInterface {
     void implementFacade(TextsConstructor constructor);
 
     void implementFactoryMethod(TextsConstructor constructor);
+
+    void implementFlyweight(TextsConstructor constructor);
 }
