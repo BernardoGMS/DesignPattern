@@ -262,6 +262,16 @@ public class MessagesPT {
     public static String CASESTUDY_GET_CHARIZARD = "2.3 Por fim, instanciamos um charizard...";
     public static String CASESTUDY_CALL_CHARIZARD = "2.3.1 E chamomo-lo.";
 
+    // Messages used during the case of study implementation - FLYWEIGHT
+    public static String CASESTUDY_FLYWEIGHT_EXPL = "1. In the next example, we have a interface Building which has a void method:" +
+            " construct() and is irhantate by House Class. We pretend to create a set of 20 houses, with random parameters as color," +
+            " coordinates and area, but in order to save some memory, one can instantiate a new house just when it wasn't created" +
+            " one with the pretended color: i.e, if we pretend to create more than one red house, for example, the second, third," +
+            " and so on... houses will be the same as the red house instantiate in first place, just changing the coordinates and area:";
+    public static String CASESTUDY_FLYWEIGHT_EXPL_1 = "1.1 Below one can see the list of created house and respective parameters:";
+    public static String CASESTUDY_FLYWEIGHT_FINAL_EXPL = "2. As we can observe above, in any situation we had repeat the the instantiation" +
+            " of a house with the same color.";
+
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";
     public static String CASESTUDY_EXEMPLIFICATION = "EXEMPLO CONCRETO";

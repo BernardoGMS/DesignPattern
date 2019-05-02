@@ -22,6 +22,9 @@ import psn.design.pattern.designPatterns.Decorator.auxClasses.*;
 import psn.design.pattern.designPatterns.Facade.auxClasses.ShapeMaker;
 import psn.design.pattern.designPatterns.FactoryMethod.Pokemon;
 import psn.design.pattern.designPatterns.FactoryMethod.auxClasses.PokemonFactory;
+import psn.design.pattern.designPatterns.Flyweight.auxClasses.BuildingFactory;
+import psn.design.pattern.designPatterns.Flyweight.auxClasses.Colors;
+import psn.design.pattern.designPatterns.Flyweight.auxClasses.House;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -867,5 +870,57 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
     @Override
     public void implementFlyweight(TextsConstructor constructor) {
 
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_FLYWEIGHT_EXPL);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_FLYWEIGHT_EXPL_1);
+            constructor.constructText();
+
+                for(int i=0; i < 20; ++i) {
+                    House house = (House) BuildingFactory.getHouse(Colors.getRandomColor());
+                    house.setHorizontalCoordinate(Colors.getRandomHorizontalCoord());
+                    house.setVerticalCoordinate(Colors.getRandomVerticalCoord());
+                    house.setArea(100);
+                    house.construct();
+                }
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_FLYWEIGHT_FINAL_EXPL);
+            constructor.constructText();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_FLYWEIGHT_EXPL);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_FLYWEIGHT_EXPL_1);
+            constructor.constructText();
+
+            for(int i=0; i < 20; ++i) {
+                House house = (House) BuildingFactory.getHouse(Colors.getRandomColor());
+                house.setHorizontalCoordinate(Colors.getRandomHorizontalCoord());
+                house.setVerticalCoordinate(Colors.getRandomVerticalCoord());
+                house.setArea(100);
+                house.construct();
+            }
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_FLYWEIGHT_FINAL_EXPL);
+            constructor.constructText();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
     }
 }

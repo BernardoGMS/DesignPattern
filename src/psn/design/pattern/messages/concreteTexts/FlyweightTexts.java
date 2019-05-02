@@ -12,20 +12,20 @@ public class FlyweightTexts implements TextsInterface {
     @Override
     public void displayEnglishTexts() {
 
-        this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_FACADE_TEXT_P1);
-        this.textsConstructor.setCurrentTitle(MessagesEN.CASESTUDY_FACADE.toUpperCase());
+        this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_FLYWEIGHT_TEXT_P1);
+        this.textsConstructor.setCurrentTitle(MessagesEN.CASESTUDY_FLYWEIGHT.toUpperCase());
         this.textsConstructor.constructTextTitle();
         this.textsConstructor.setCurrentSubTitle(MessagesEN.CASESTUDY_INTENT);
         this.textsConstructor.constructTextSubTitle();
 
         this.textsConstructor.constructText();
-        this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_FACADE_TEXT_P2);
+        this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_FLYWEIGHT_TEXT_P2);
         this.textsConstructor.constructText();
         this.textsConstructor.constructTextDown(1);
 
         this.textsConstructor.setCurrentSubTitle(MessagesEN.CASESTUDY_PROBLEM);
         this.textsConstructor.constructTextSubTitle();
-        this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_FACADE_TEXT_P3);
+        this.textsConstructor.setCurrentText(MessagesEN.CASESTUDY_FLYWEIGHT_TEXT_P3);
         this.textsConstructor.constructText();
         this.textsConstructor.constructTextDown(1);
 
@@ -36,20 +36,20 @@ public class FlyweightTexts implements TextsInterface {
     @Override
     public void displayPortugueseTexts() {
 
-        this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_FACADE_TEXT_P1);
-        this.textsConstructor.setCurrentTitle(MessagesPT.CASESTUDY_FACADE.toUpperCase());
+        this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_FLYWEIGHT_TEXT_P1);
+        this.textsConstructor.setCurrentTitle(MessagesPT.CASESTUDY_FLYWEIGHT.toUpperCase());
         this.textsConstructor.constructTextTitle();
         this.textsConstructor.setCurrentSubTitle(MessagesPT.CASESTUDY_INTENT);
         this.textsConstructor.constructTextSubTitle();
 
         this.textsConstructor.constructText();
-        this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_FACADE_TEXT_P2);
+        this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_FLYWEIGHT_TEXT_P2);
         this.textsConstructor.constructText();
         this.textsConstructor.constructTextDown(1);
 
         this.textsConstructor.setCurrentSubTitle(MessagesPT.CASESTUDY_PROBLEM);
         this.textsConstructor.constructTextSubTitle();
-        this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_FACADE_TEXT_P3);
+        this.textsConstructor.setCurrentText(MessagesPT.CASESTUDY_FLYWEIGHT_TEXT_P3);
         this.textsConstructor.constructText();
         this.textsConstructor.constructTextDown(1);
 
