@@ -25,6 +25,8 @@ import psn.design.pattern.designPatterns.FactoryMethod.auxClasses.PokemonFactory
 import psn.design.pattern.designPatterns.Flyweight.auxClasses.BuildingFactory;
 import psn.design.pattern.designPatterns.Flyweight.auxClasses.Colors;
 import psn.design.pattern.designPatterns.Flyweight.auxClasses.House;
+import psn.design.pattern.designPatterns.Interpreter.Expression;
+import psn.design.pattern.designPatterns.Interpreter.auxClasses.ExpressionsImpl;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -922,5 +924,62 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             constructor.constructTextDown(2);
 
         }
+    }
+
+    @Override
+    public void implementInterpreter(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            Expression isMale = ExpressionsImpl.getMaleExpression();
+            Expression isMarriedWoman = ExpressionsImpl.getMarriedWomanExpression();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_INTERPRETER_EXPL);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_INTERPRETER_EXPL_1);
+            constructor.constructText();
+
+            System.out.println("John is male? " + isMale.interpret("John"));
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_INTERPRETER_EXPL_2);
+            constructor.constructText();
+
+            System.out.println("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            Expression isMale = ExpressionsImpl.getMaleExpression();
+            Expression isMarriedWoman = ExpressionsImpl.getMarriedWomanExpression();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_INTERPRETER_EXPL);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_INTERPRETER_EXPL_1);
+            constructor.constructText();
+
+            System.out.println("John is male? " + isMale.interpret("John"));
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_INTERPRETER_EXPL_2);
+            constructor.constructText();
+
+            System.out.println("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+
+
+        }
+
     }
 }

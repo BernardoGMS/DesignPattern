@@ -24,6 +24,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_FACADE = "Padrão Facade.";
     public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Padrão Factory Method.";
     public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Padrão Flyweight.";
+    public static String CONCEPTS_OPTIONS_INTERPRETER = "Padrão Interpreter.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -144,6 +145,15 @@ public class MessagesPT {
             " peso.";
     public static String CASESTUDY_FLYWEIGHT_TEXT_P3 = " Desenhar objectos nos mais baixos níveis do sistema de 'granulidade' fornece" +
             " flexibilidade opcional, mas por ser inaceitavelmente dispendiosa em termos de desempenho e utilização de memória.";
+
+    public static String CASESTUDY_INTERPRETER = "Interpreter.";
+    public static String CASESTUDY_INTERPRETER_TEXT_P1 = " * Dada uma linguagem, defenir uma representação para uma gramática através de" +
+            " um interpretador que usa a representação para interpretar expressões na linguagem;";
+    public static String CASESTUDY_INTERPRETER_TEXT_P2 = " * Mapear um domínio para uma linguagem, a linguagem para uma gramática, e" +
+            " a gramática para um design orientado a objectos de forma hierarquica.";
+    public static String CASESTUDY_INTERPRETER_TEXT_P3 = " Uma classe de problemas ocorre repetidamente num domínio bem definido e" +
+            " compreendido. Se o comínio for caracterizado por uma 'linguagem', então os problemas podem ser facilmente resolvidos" +
+            " através de um 'motor' de interpretação.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
@@ -271,6 +281,18 @@ public class MessagesPT {
     public static String CASESTUDY_FLYWEIGHT_EXPL_1 = "1.1 Below one can see the list of created house and respective parameters:";
     public static String CASESTUDY_FLYWEIGHT_FINAL_EXPL = "2. As we can observe above, in any situation we had repeat the the instantiation" +
             " of a house with the same color.";
+
+    // Messages used during the case of study implementation - INTERPRETER
+    public static String CASESTUDY_INTERPRETER_EXPL = "1. Este exemplo pretend interpretar se algumas expressões são verdadeiras ou falsas." +
+            " Isto é feito utilizando a interface Expression que é implementada por 3 classes, cada uma delas com significados" +
+            " distintos. AndExpression representa o operador AND e a OrExpression o OR.";
+    public static String CASESTUDY_INTERPRETER_EXPL_1 = "1.1 Usando alguns métodos que dão a relação das expressões com as respectivas" +
+            " classes, podemos verificar, por exemplo, criando um método getMaleExpression() que contém uma lista de nomes masculinos" +
+            " e returna uma OrExpression(Expression, Expression), se algum nome é masculino ou não, usando a interface interpreter.";
+    public static String CASESTUDY_INTERPRETER_EXPL_2 = "1.2 Por exemplo, se nós queremos verificar se uma mulher é casada, podemos" +
+            " usar a mesma abordagem, mas usando outro método que devolve uma AndExpression que é interpretada pelo interpreter, mas" +
+            " em vez de procurar por uma expressão OR, procura por uma expressão do tipo 'womanName' + 'married', para devolver a" +
+            " variável booleana verdadeira!";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

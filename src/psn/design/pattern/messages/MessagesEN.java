@@ -24,6 +24,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_FACADE = "Facade Pattern.";
     public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Factory Method Pattern.";
     public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Flyweight Pattern.";
+    public static String CONCEPTS_OPTIONS_INTERPRETER = "Interpreter Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -132,11 +133,20 @@ public class MessagesEN {
     public static String CASESTUDY_FACTORY_METHOD_TEXT_P4 = " A framework needs to standardize the architectural model for a range" +
             " of applications, but allow for individual applications to define their own domain objects and provide for their instantiation.";
 
-    public static String CASESTUDY_FLYWEIGHT= "Flyweight.";
+    public static String CASESTUDY_FLYWEIGHT = "Flyweight.";
     public static String CASESTUDY_FLYWEIGHT_TEXT_P1 = " * Use sharing to support large number of fine-grained objects efficiently;";
     public static String CASESTUDY_FLYWEIGHT_TEXT_P2 = " * The Motif GUI strategy of replacing heavy-widgets with light-weight gadgets.";
     public static String CASESTUDY_FLYWEIGHT_TEXT_P3 = " Designing objects down to the lowest levels of system 'granularity' provides" +
             " optional flexibility, but can be unacceptably expensive in terms of performance and memory usage.";
+
+    public static String CASESTUDY_INTERPRETER = "Interpreter.";
+    public static String CASESTUDY_INTERPRETER_TEXT_P1 = " * Given a language, define a representation for a grammar along with an" +
+            " interpreter that uses the representation to interpret sentences in the language;";
+    public static String CASESTUDY_INTERPRETER_TEXT_P2 = " * Map a domain to a language, the language to a grammar, and the grammar" +
+            " to a hierarchical object-oriented design.";
+    public static String CASESTUDY_INTERPRETER_TEXT_P3 = " A class of problems occurs repeatedly in a well-defined and well-understood" +
+            " domain. If the domain were characterized with a 'language', then problems could be easily solved with an interpretation" +
+            " 'engine'.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -261,6 +271,18 @@ public class MessagesEN {
     public static String CASESTUDY_FLYWEIGHT_EXPL_1 = "1.1 Below one can see the list of created house and respective parameters:";
     public static String CASESTUDY_FLYWEIGHT_FINAL_EXPL = "2. As we can observe above, in any situation we had repeat the the instantiation" +
             " of a house with the same color.";
+
+    // Messages used during the case of study implementation - INTERPRETER
+    public static String CASESTUDY_INTERPRETER_EXPL = "1. That example pretends to interpret if some expressions are true or false." +
+            " This is done by using the interface Expression which is implemented by 3 classes, each of them representing distinct" +
+            " meanings. AndExpression represents the operator AND and OrExpression the OR.";
+    public static String CASESTUDY_INTERPRETER_EXPL_1 = "1.1 By using some methods that relate the expressions with the respective" +
+            " classes, we can verify, for example, by creating a method getMaleExpression() which contains a list of male names and" +
+            " return a OrExpression(Expression, Expression), if some name is a male name or not, using the interpreter interface.";
+    public static String CASESTUDY_INTERPRETER_EXPL_2 = "1.2 For example, if we want to verify is a woman is married, one can use" +
+            " the same approach, but using another method that returns a AndExpression which is interpreted by the interpreter, but" +
+            " instead of looking for an OR expression, seek for a expression like 'womanName' + 'married', to give the true boolean!";
+
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";
