@@ -29,4 +29,6 @@ public interface ImplPatternInterface {
     void implementInterpreter(TextsConstructor constructor);
 
     void implementIterator(TextsConstructor constructor);
+
+    void implementMediator(TextsConstructor constructor);
 }

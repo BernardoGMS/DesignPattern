@@ -29,6 +29,7 @@ import psn.design.pattern.designPatterns.Interpreter.Expression;
 import psn.design.pattern.designPatterns.Interpreter.auxClasses.ExpressionsImpl;
 import psn.design.pattern.designPatterns.Iterator.Iterator;
 import psn.design.pattern.designPatterns.Iterator.auxClasses.DragonBallRepository;
+import psn.design.pattern.designPatterns.Mediator.auxClasses.Flight;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -1045,7 +1046,62 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm");
 
             constructor.constructTextDown(2);
-
         }
+    }
+
+    @Override
+    public void implementMediator(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_2);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_3);
+            constructor.constructText();
+
+            Flight flight1 = new Flight("747",10,40,55);
+            Flight flight2 = new Flight("1011",50,45,0);
+            Flight flight3 = new Flight("112",70,11,44);
+
+            flight1.sendMessage("Hi! My position now is: Lat: " + flight1.getLatitude() + "; Long: " + flight1.getLongitude() + "; Alt: " + flight1.getAltitude());
+            flight1.sendMessage("I am in an airport. My position now is: Lat: " + flight2.getLatitude() + "; Long: " + flight2.getLongitude() + "; Alt: " + flight2.getAltitude());
+            flight1.sendMessage("Hello mates! My position now is: Lat: " + flight3.getLatitude() + "; Long: " + flight3.getLongitude() + "; Alt: " + flight3.getAltitude());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/mediator_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEDIATOR_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEDIATOR_2);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEDIATOR_3);
+            constructor.constructText();
+
+            Flight flight1 = new Flight("747",10,40,55);
+            Flight flight2 = new Flight("1011",50,45,0);
+            Flight flight3 = new Flight("112",70,11,44);
+
+            flight1.sendMessage("Hi! My position now is: Lat: " + flight1.getLatitude() + "; Long: " + flight1.getLongitude() + "; Alt: " + flight1.getAltitude());
+            flight1.sendMessage("I am in an airport. My position now is: Lat: " + flight2.getLatitude() + "; Long: " + flight2.getLongitude() + "; Alt: " + flight2.getAltitude());
+            flight1.sendMessage("Hello mates! My position now is: Lat: " + flight3.getLatitude() + "; Long: " + flight3.getLongitude() + "; Alt: " + flight3.getAltitude());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/mediator_pattern.htm");
+
+            constructor.constructTextDown(2);
+        }
+
     }
 }

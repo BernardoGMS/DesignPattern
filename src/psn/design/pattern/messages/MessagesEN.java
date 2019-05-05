@@ -26,6 +26,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Flyweight Pattern.";
     public static String CONCEPTS_OPTIONS_INTERPRETER = "Interpreter Pattern.";
     public static String CONCEPTS_OPTIONS_ITERATOR = "Iterator Pattern.";
+    public static String CONCEPTS_OPTIONS_MEDIATOR = "Mediator Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -158,6 +159,17 @@ public class MessagesEN {
     public static String CASESTUDY_ITERATOR_TEXT_P4 = " * Polymorphic traversal.";
     public static String CASESTUDY_ITERATOR_TEXT_P5 = " Need to 'abstract' the traversal of widly different data structures" +
             " so that algorithms can be defined that are capable of interfacing with each transparently.";
+
+    public static String CASESTUDY_MEDIATOR = "Mediator.";
+    public static String CASESTUDY_MEDIATOR_TEXT_P1 = " * Define an object encapsulates how a set of objects interact, Mediator" +
+            " promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you very their" +
+            " interaction independently;";
+    public static String CASESTUDY_MEDIATOR_TEXT_P2 = " * Design an intermediary to decouple many peers;";
+    public static String CASESTUDY_MEDIATOR_TEXT_P3 = " * Promote the many-to-many relationships between interacting peers to" +
+            " 'full object status';";
+    public static String CASESTUDY_MEDIATOR_TEXT_P4 = " We want to design reusable components, but dependencies between the" +
+            " potentially reusable pieces demonstrates the 'spaghetti code' phenomenon (trying to scoop a single serving results" +
+            " in an 'all or nothing clump').";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -304,6 +316,14 @@ public class MessagesEN {
             " representing the names of Dragon Ball characters;";
     public static String CASESTUDY_ITERATOR_INTERATION = "3. Lastly, using the methods next and hasNext, one can traverse all" +
             " the objects contained in the container even if we do not know in advance the class of those objects.";
+
+    // Messages used during the case of study implementation - MEDIATOR
+    public static String CASESTUDY_MEDIATOR_1 = "1. To begin that example, we need to instantiate a mediator (unique) which implements the" +
+            " showMessage() method from Mediator Interface to send a message.";
+    public static String CASESTUDY_MEDIATOR_2 = "2. The messages are created to be sent between flights, in this case, to inform" +
+            " each others their current positions.";
+    public static String CASESTUDY_MEDIATOR_3 = "3. After instantiate the three flights, the mediator is responsible for send the" +
+            " messages between flights.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

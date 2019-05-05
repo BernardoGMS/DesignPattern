@@ -26,6 +26,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Padrão Flyweight.";
     public static String CONCEPTS_OPTIONS_INTERPRETER = "Padrão Interpreter.";
     public static String CONCEPTS_OPTIONS_ITERATOR = "Padrão Iterator.";
+    public static String CONCEPTS_OPTIONS_MEDIATOR = "Padrão Mediator.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -165,6 +166,17 @@ public class MessagesPT {
     public static String CASESTUDY_ITERATOR_TEXT_P4 = " * Travessia polimorfica.";
     public static String CASESTUDY_ITERATOR_TEXT_P5 = " Necessidade de 'abstrair' a travessia de uma estrutura de dados amplamente diferente" +
             " de modo a que os algoritmos poderem ser definidos e capazes de se percorrerem de forma transparente.";
+
+    public static String CASESTUDY_MEDIATOR = "Mediator.";
+    public static String CASESTUDY_MEDIATOR_TEXT_P1 = " * Definir um objecto que encapsula como um conjunto de objectos interage," +
+            " Mediator promove a perda de ligação afastando os objectos que deixam de ser referirem explicitamente, e isto permite-nos" +
+            " veriar as suas interações independentemente;";
+    public static String CASESTUDY_MEDIATOR_TEXT_P2 = " * Desenhar um intermediário para desacoplar muitos pares;";
+    public static String CASESTUDY_MEDIATOR_TEXT_P3 = " * Promover as relações muitos-para-muitos entre pares que interagem entre si" +
+            " para 'status de objecto total';";
+    public static String CASESTUDY_MEDIATOR_TEXT_P4 = " Queremos desenhar componentes reutilizáveis, mas as dependencias entre" +
+            " as partes potencialmente reutilizáveis demonstram o fenónemo 'código esparguete' (tentar colher um conjunto único de" +
+            " resultados numa 'moita de tudo ou nada').";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
@@ -315,6 +327,14 @@ public class MessagesPT {
             " que representa os nomes de personagens do Dragon Ball;";
     public static String CASESTUDY_ITERATOR_INTERATION = "3. Por último, usando os métodos next e hasNext, podemos percorrer todos" +
             " os objectos contidos no container mesmo se não soubermos a priori a classe destes objectos.";
+
+    // Messages used during the case of study implementation - MEDIATOR
+    public static String CASESTUDY_MEDIATOR_1 = "1. Para começar este exemplo, necessitamos de instanciar um mediador (único) que implementa" +
+            " o método showMessage() da Interface Mediator para enviar mensagem.";
+    public static String CASESTUDY_MEDIATOR_2 = "2. As mensagens são criadas para serem enviadas entres voos, neste caso, para informar" +
+            " cada um dos outros as suas posições.";
+    public static String CASESTUDY_MEDIATOR_3 = "3. Após serem instanciados os três voos, o mediador é responsável por enviar" +
+            " mensagens entre voos.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";
