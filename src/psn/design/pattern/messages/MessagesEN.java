@@ -25,6 +25,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Factory Method Pattern.";
     public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Flyweight Pattern.";
     public static String CONCEPTS_OPTIONS_INTERPRETER = "Interpreter Pattern.";
+    public static String CONCEPTS_OPTIONS_ITERATOR = "Iterator Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -147,6 +148,16 @@ public class MessagesEN {
     public static String CASESTUDY_INTERPRETER_TEXT_P3 = " A class of problems occurs repeatedly in a well-defined and well-understood" +
             " domain. If the domain were characterized with a 'language', then problems could be easily solved with an interpretation" +
             " 'engine'.";
+
+    public static String CASESTUDY_ITERATOR = "Iterator.";
+    public static String CASESTUDY_ITERATOR_TEXT_P1 = " * Provide a way to access the elements of an aggregate object sequentially" +
+            " without exposing its underlying representation;";
+    public static String CASESTUDY_ITERATOR_TEXT_P2 = " * The C++ and Java library abstraction that makes it possible to decouple" +
+            " collection classes and algorithms;";
+    public static String CASESTUDY_ITERATOR_TEXT_P3 = " * Promote to 'full object status' the traversal of a collection;";
+    public static String CASESTUDY_ITERATOR_TEXT_P4 = " * Polymorphic traversal.";
+    public static String CASESTUDY_ITERATOR_TEXT_P5 = " Need to 'abstract' the traversal of widly different data structures" +
+            " so that algorithms can be defined that are capable of interfacing with each transparently.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -283,6 +294,16 @@ public class MessagesEN {
             " the same approach, but using another method that returns a AndExpression which is interpreted by the interpreter, but" +
             " instead of looking for an OR expression, seek for a expression like 'womanName' + 'married', to give the true boolean!";
 
+    // Messages used during the case of study implementation - ITERATOR
+    public static String CASESTUDY_ITERATOR_1 = "1. To exemplify that pattern, we create a interface Iterator which has two methods:";
+    public static String CASESTUDY_ITERATOR_1_1 = "1.1 hasNext(), returns a boolean that says if there is a next object in the collection" +
+            " or not;";
+    public static String CASESTUDY_ITERATOR_1_2 = "1.1 next(), returns an object contained by the collection, if exists.";
+    public static String CASESTUDY_ITERATOR_REPOSITORY = "2. Then, we have a Repository that implements the container which has a" +
+            " method to create a new iterator that implements iterator interface. In that example we created a container of Strings" +
+            " representing the names of Dragon Ball characters;";
+    public static String CASESTUDY_ITERATOR_INTERATION = "3. Lastly, using the methods next and hasNext, one can traverse all" +
+            " the objects contained in the container even if we do not know in advance the class of those objects.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

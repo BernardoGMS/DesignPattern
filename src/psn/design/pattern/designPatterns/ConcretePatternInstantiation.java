@@ -27,6 +27,8 @@ import psn.design.pattern.designPatterns.Flyweight.auxClasses.Colors;
 import psn.design.pattern.designPatterns.Flyweight.auxClasses.House;
 import psn.design.pattern.designPatterns.Interpreter.Expression;
 import psn.design.pattern.designPatterns.Interpreter.auxClasses.ExpressionsImpl;
+import psn.design.pattern.designPatterns.Iterator.Iterator;
+import psn.design.pattern.designPatterns.Iterator.auxClasses.DragonBallRepository;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -977,9 +979,73 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
             constructor.constructTextDown(2);
 
-
-
         }
 
+    }
+
+    @Override
+    public void implementIterator(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ITERATOR_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ITERATOR_1_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ITERATOR_1_2);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ITERATOR_REPOSITORY);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ITERATOR_INTERATION);
+            constructor.constructText();
+
+            DragonBallRepository DBRepository = new DragonBallRepository();
+
+            for(Iterator iter = DBRepository.getIterator(); iter.hasNext();){
+                String name = (String)iter.next();
+                System.out.println("Character Name: " + name);
+            }
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ITERATOR_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ITERATOR_1_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ITERATOR_1_2);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ITERATOR_REPOSITORY);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ITERATOR_INTERATION);
+            constructor.constructText();
+
+            DragonBallRepository DBRepository = new DragonBallRepository();
+
+            for(Iterator iter = DBRepository.getIterator(); iter.hasNext();){
+                String name = (String)iter.next();
+                System.out.println("Character Name: " + name);
+            }
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
     }
 }

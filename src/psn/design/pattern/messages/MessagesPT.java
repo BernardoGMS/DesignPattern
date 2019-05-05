@@ -25,6 +25,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_FACTORY_METHOD = "Padrão Factory Method.";
     public static String CONCEPTS_OPTIONS_FLYWEIGHT = "Padrão Flyweight.";
     public static String CONCEPTS_OPTIONS_INTERPRETER = "Padrão Interpreter.";
+    public static String CONCEPTS_OPTIONS_ITERATOR = "Padrão Iterator.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -154,6 +155,16 @@ public class MessagesPT {
     public static String CASESTUDY_INTERPRETER_TEXT_P3 = " Uma classe de problemas ocorre repetidamente num domínio bem definido e" +
             " compreendido. Se o comínio for caracterizado por uma 'linguagem', então os problemas podem ser facilmente resolvidos" +
             " através de um 'motor' de interpretação.";
+
+    public static String CASESTUDY_ITERATOR = "Iterator.";
+    public static String CASESTUDY_ITERATOR_TEXT_P1 = " * Fornecer uma forma de aceder os elementos de um objecto agregado sequencialmente" +
+            " sem expor a sua representação subjacente;";
+    public static String CASESTUDY_ITERATOR_TEXT_P2 = " * A biblioteca de abstração de C++ e Java que torna possível desacoplar" +
+            " as classes da collection e algoritmos;";
+    public static String CASESTUDY_ITERATOR_TEXT_P3 = " * Promover para 'status de objecto total' a travessia de uma collection;";
+    public static String CASESTUDY_ITERATOR_TEXT_P4 = " * Travessia polimorfica.";
+    public static String CASESTUDY_ITERATOR_TEXT_P5 = " Necessidade de 'abstrair' a travessia de uma estrutura de dados amplamente diferente" +
+            " de modo a que os algoritmos poderem ser definidos e capazes de se percorrerem de forma transparente.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
@@ -293,6 +304,17 @@ public class MessagesPT {
             " usar a mesma abordagem, mas usando outro método que devolve uma AndExpression que é interpretada pelo interpreter, mas" +
             " em vez de procurar por uma expressão OR, procura por uma expressão do tipo 'womanName' + 'married', para devolver a" +
             " variável booleana verdadeira!";
+
+    // Messages used during the case of study implementation - ITERATOR
+    public static String CASESTUDY_ITERATOR_1 = "1. Para exemplicar este padrão, criamos uma interface Iterator que possui dois métodos:";
+    public static String CASESTUDY_ITERATOR_1_1 = "1.1 hasNext(), devolve uma booleana que diz se existe ou não um próximo objecto" +
+            " na collection;";
+    public static String CASESTUDY_ITERATOR_1_2 = "1.1 next(), devolve um objecto contido na collection, se existir.";
+    public static String CASESTUDY_ITERATOR_REPOSITORY = "2. Então, teremos um Repositório que implementa o container que possui um" +
+            " método para criar um novo iterador que implementa a interface iterator. Neste exemplo, criámos um container de Strings" +
+            " que representa os nomes de personagens do Dragon Ball;";
+    public static String CASESTUDY_ITERATOR_INTERATION = "3. Por último, usando os métodos next e hasNext, podemos percorrer todos" +
+            " os objectos contidos no container mesmo se não soubermos a priori a classe destes objectos.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";
