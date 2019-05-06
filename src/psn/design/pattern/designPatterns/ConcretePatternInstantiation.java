@@ -30,6 +30,8 @@ import psn.design.pattern.designPatterns.Interpreter.auxClasses.ExpressionsImpl;
 import psn.design.pattern.designPatterns.Iterator.Iterator;
 import psn.design.pattern.designPatterns.Iterator.auxClasses.DragonBallRepository;
 import psn.design.pattern.designPatterns.Mediator.auxClasses.Flight;
+import psn.design.pattern.designPatterns.Memento.auxClasses.CareTaker;
+import psn.design.pattern.designPatterns.Memento.auxClasses.Originator;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -1101,6 +1103,51 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/mediator_pattern.htm");
 
             constructor.constructTextDown(2);
+        }
+
+    }
+
+    @Override
+    public void implementMemento(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_1);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_2);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_3);
+            constructor.constructText();
+
+            Originator originator = new Originator();
+            CareTaker careTaker = new CareTaker();
+
+            originator.setState("State #1");
+            originator.setState("State #2");
+            careTaker.add(originator.saveStateToMemento());
+
+            originator.setState("State #3");
+            careTaker.add(originator.saveStateToMemento());
+
+            originator.setState("State #4");
+            System.out.println("Current State: " + originator.getState());
+
+            originator.getStateFromMemento(careTaker.get(0));
+            System.out.println("First saved State: " + originator.getState());
+            originator.getStateFromMemento(careTaker.get(1));
+            System.out.println("Second saved State: " + originator.getState());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/memento_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+
         }
 
     }

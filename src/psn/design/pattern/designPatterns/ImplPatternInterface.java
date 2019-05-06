@@ -31,4 +31,6 @@ public interface ImplPatternInterface {
     void implementIterator(TextsConstructor constructor);
 
     void implementMediator(TextsConstructor constructor);
+
+    void implementMemento(TextsConstructor constructor);
 }

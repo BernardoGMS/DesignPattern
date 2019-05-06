@@ -27,6 +27,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_INTERPRETER = "Interpreter Pattern.";
     public static String CONCEPTS_OPTIONS_ITERATOR = "Iterator Pattern.";
     public static String CONCEPTS_OPTIONS_MEDIATOR = "Mediator Pattern.";
+    public static String CONCEPTS_OPTIONS_MEMENTO = "Memento Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -170,6 +171,14 @@ public class MessagesEN {
     public static String CASESTUDY_MEDIATOR_TEXT_P4 = " We want to design reusable components, but dependencies between the" +
             " potentially reusable pieces demonstrates the 'spaghetti code' phenomenon (trying to scoop a single serving results" +
             " in an 'all or nothing clump').";
+
+    public static String CASESTUDY_MEMENTO = "Memento.";
+    public static String CASESTUDY_MEMENTO_TEXT_P1 = " * Without violating encapsulation, capture and externalize an object's" +
+            " internal state so that the object can be returned to this state later;";
+    public static String CASESTUDY_MEMENTO_TEXT_P2 = " * A magic cookie that encapsulates a 'check point' capability;";
+    public static String CASESTUDY_MEMENTO_TEXT_P3 = " * Promote undo or rollback to full object status.";
+    public static String CASESTUDY_MEMENTO_TEXT_P4 = " Need to restore an object back to its previous state (undo or rollback" +
+            " operations).";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +

@@ -27,6 +27,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_INTERPRETER = "Padrão Interpreter.";
     public static String CONCEPTS_OPTIONS_ITERATOR = "Padrão Iterator.";
     public static String CONCEPTS_OPTIONS_MEDIATOR = "Padrão Mediator.";
+    public static String CONCEPTS_OPTIONS_MEMENTO = "Padrão Memento.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -177,6 +178,13 @@ public class MessagesPT {
     public static String CASESTUDY_MEDIATOR_TEXT_P4 = " Queremos desenhar componentes reutilizáveis, mas as dependencias entre" +
             " as partes potencialmente reutilizáveis demonstram o fenónemo 'código esparguete' (tentar colher um conjunto único de" +
             " resultados numa 'moita de tudo ou nada').";
+
+    public static String CASESTUDY_MEMENTO = "Memento.";
+    public static String CASESTUDY_MEMENTO_TEXT_P1 = " * Sem violar o encapsulamento, captura e externalisa o estado de um objecto" +
+            " interno de modo a que o objecto pode ser devolvido neste estado mais tarde;";
+    public static String CASESTUDY_MEMENTO_TEXT_P2 = " * Umcookie mágico que encapsula uma capacidade de 'check point';";
+    public static String CASESTUDY_MEMENTO_TEXT_P3 = " * Promove undo ou rollback para estado de objecto total.";
+    public static String CASESTUDY_MEMENTO_TEXT_P4 = " Precisa de restaurar um objecto para o seu estado prévio (oprações undo or rollback).";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +

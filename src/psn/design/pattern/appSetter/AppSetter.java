@@ -111,6 +111,8 @@ public class AppSetter {
         textsInterfaceMap.put(30, new IteratorConceptsTexts());
         textsInterfaceMap.put(31, new MediatorTexts());
         textsInterfaceMap.put(32, new MediatorConceptsTexts());
+        textsInterfaceMap.put(33, new MementoTexts());
+        textsInterfaceMap.put(34, new MementoConceptsTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);
