@@ -28,6 +28,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_ITERATOR = "Padrão Iterator.";
     public static String CONCEPTS_OPTIONS_MEDIATOR = "Padrão Mediator.";
     public static String CONCEPTS_OPTIONS_MEMENTO = "Padrão Memento.";
+    public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Padrão Null Object.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -186,6 +187,18 @@ public class MessagesPT {
     public static String CASESTUDY_MEMENTO_TEXT_P3 = " * Promove undo ou rollback para estado de objecto total.";
     public static String CASESTUDY_MEMENTO_TEXT_P4 = " Precisa de restaurar um objecto para o seu estado prévio (oprações undo or rollback).";
 
+    public static String CASESTUDY_NULL_OBJECT = "Null Object.";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P1 = " O objectivo de um Null Object é encapsular a ausència de um objecto" +
+            " através do fornecimento de uma alternativa substituível que ofereça comportamento padrão de 'fazer nada'. Em suma," +
+            " um design de 'nada vierá de nada'. Usa-se o Padrão Null Object quando:";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P2 = " * Um objecto requer um colaborador. O Padrão Null Object não apresenta" +
+            " esta colaboração - faz uso de uma colaboração que já existe;";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P3 = " * Alguns colaboradores deverão não fazer nada;";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P4 = " * Queremos abstrair do cliente o acto de lidar com o nulo.";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P5 = " Dado que a referência a um objecto deve ser opcionalmente nula, e que" +
+            " o resultado de uma verificação nula é para fazer nada ou usar algum valor por defeito, como pode a ausência de um" +
+            " objecto - a presença de uma referência nula - pode ser tratada de forma transparente?";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -343,6 +356,29 @@ public class MessagesPT {
             " cada um dos outros as suas posições.";
     public static String CASESTUDY_MEDIATOR_3 = "3. Após serem instanciados os três voos, o mediador é responsável por enviar" +
             " mensagens entre voos.";
+
+    // Messages used during the case of study implementation - MEMENTO
+    public static String CASESTUDY_MEMENTO_CREATE_ORIGINATOR = "1. Em primeiro lugar, nós começamos o exemplo por criar o originator," +
+            " que tem um estado e é responsável por gravar o estado numa lista pertencente à classe CareTaker, usando o método" +
+            " saveStateToMemento() e o método add() do careTaker, que irá ser instanciado posteriormente.";
+    public static String CASESTUDY_MEMENTO_CREATE_CARETAKER = "2. Em segundo luger criamos um caretaker que é o objecto responsável por" +
+            " saber porquê e quando o originator precisa de guardar e repor-se.";
+    public static String CASESTUDY_MEMENTO_SET_STATE_1_AND_2_AND_SAVE_2 = "3. Agora nós atribuimos os estado 1 e 2 ao originator," +
+            " mas apenas o segundo é guardado.";
+    public static String CASESTUDY_MEMENTO_SET_AND_SAVE_STATE_3 = "4. Depois, nós podemos atribuir os estado 3 e salvá-lo.";
+    public static String CASESTUDY_MEMENTO_SET_AND_GET_STATE_4 = "5. Agora, pode-se atribuir os estrado 4 e verificar qual é o estado" +
+            " atual do originator. Este não é guardado.";
+    public static String CASESTUDY_MEMENTO_CHECK_SAVED_STATES = "6. Por fim, podemos verificar todos os estados que foram salvos usando" +
+            " a lista memento, i.e., neste exemplo podemos ter apenas dois estados:";
+
+    // Messages used during the case of study implementation - NULL OBJECT
+    public static String CASESTUDY_GET_ALL_CUSTOMERS_BY_NAME = "1. Usando  a Classe Customer Factory, que temum conjunto de nomes de clientes" +
+            " guardados numa vector, pretendemos , dando um nome, que a fábrica crie clientes reais no caso de encontrar" +
+            " o nome dado: se não, irá criar um cliente nulo. Neste exemplo temos Rob, Joe e Julie!";
+    public static String CASESTUDY_CREATE_FOUR_CUSTOMERS = "2. Para mostrar como funciona, podemos pedir à fábrica para criar" +
+            " clientes com os nomes Rob, Bob, Julie and Laura.";
+    public static String CASESTUDY_CHECK_CUSTOMERS = "2.1 Por fim, podemos pedir aos quatro clientes para imprimir os seus nomes:" +
+            " no caso de terem sido criados objectos nulos, então irá ser imprimido 'Not Available in Customer Database':";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

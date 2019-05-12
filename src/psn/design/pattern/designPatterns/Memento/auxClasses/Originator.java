@@ -5,6 +5,11 @@ import psn.design.pattern.designPatterns.Memento.Memento;
 public class Originator {
     private String state;
 
+    public Originator() {
+
+        System.out.println("Originator created.");
+    }
+
     public void setState(String state){
         this.state = state;
     }

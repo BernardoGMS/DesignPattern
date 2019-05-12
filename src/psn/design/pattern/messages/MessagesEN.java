@@ -28,6 +28,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_ITERATOR = "Iterator Pattern.";
     public static String CONCEPTS_OPTIONS_MEDIATOR = "Mediator Pattern.";
     public static String CONCEPTS_OPTIONS_MEMENTO = "Memento Pattern.";
+    public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Null Object Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -179,6 +180,18 @@ public class MessagesEN {
     public static String CASESTUDY_MEMENTO_TEXT_P3 = " * Promote undo or rollback to full object status.";
     public static String CASESTUDY_MEMENTO_TEXT_P4 = " Need to restore an object back to its previous state (undo or rollback" +
             " operations).";
+
+    public static String CASESTUDY_NULL_OBJECT = "Null Object.";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P1 = " The intent of a Null Object is to encapsulate the absence of an object" +
+            " by providing a substitutable alternative that offers suitable default do nothing behaviour. In short, a design where" +
+            " 'nothing will come of nothing'. Use Null Object Pattern when:";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P2 = " * An object requires a collaborator. The Null Object Pattern does not introduce" +
+            " this collaboration - it makes use of a collaboration that already exists;";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P3 = " * Some collaborator instances should do nothing;";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P4 = " * You want to abstract the handling of null from the client.";
+    public static String CASESTUDY_NULL_OBJECT_TEXT_P5 = " Given that an object reference may be optionally null, and that the result" +
+            " of a null check is to do nothing or use some default value, how can the absence of an object - the presence of a null" +
+            " reference - be treated transparently?";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -333,6 +346,29 @@ public class MessagesEN {
             " each others their current positions.";
     public static String CASESTUDY_MEDIATOR_3 = "3. After instantiate the three flights, the mediator is responsible for send the" +
             " messages between flights.";
+
+    // Messages used during the case of study implementation - MEMENTO
+    public static String CASESTUDY_MEMENTO_CREATE_ORIGINATOR = "1. In first place, we start the example by creating the originator," +
+            " which has a state and is responsible to save the state in a List beloging to CareTaker class, by using the method" +
+            " saveStateToMemento() and the method add() of the careTaker, that will be instantiated later.";
+    public static String CASESTUDY_MEMENTO_CREATE_CARETAKER = "2. Secondly we create a caretaker that is the object responsible to" +
+            " know why and when the originator needs to save and restore itself.";
+    public static String CASESTUDY_MEMENTO_SET_STATE_1_AND_2_AND_SAVE_2 = "3. Now we set the state 1 and 2 to the originator," +
+            " but only the second is saved.";
+    public static String CASESTUDY_MEMENTO_SET_AND_SAVE_STATE_3 = "4. Then, we can set the state 3 and save it.";
+    public static String CASESTUDY_MEMENTO_SET_AND_GET_STATE_4 = "5. Now, one can set the state 4 and check what is the current" +
+            " originator status. It is not saved.";
+    public static String CASESTUDY_MEMENTO_CHECK_SAVED_STATES = "6. Lastly, we can check all the states that were saved by using" +
+            " the memento list, i.e., in the example we had just saved 2 states:";
+
+    // Messages used during the case of study implementation - NULL OBJECT
+    public static String CASESTUDY_GET_ALL_CUSTOMERS_BY_NAME = "1. Using the Customer Factory Class, which has a set of customers" +
+            " names saved in an array, we pretend by giving a name, that the Factory creates real customers if it finds the given" +
+            " name: if not, it will create a null customer. In this example we have Rob, Joe and Julie!";
+    public static String CASESTUDY_CREATE_FOUR_CUSTOMERS = "2. To show how it works, lets ask to the Factory  to create four customers with names" +
+            " Rob, Bob, Julie and Laura.";
+    public static String CASESTUDY_CHECK_CUSTOMERS = "2.1 At last, we can ask the four customers to print their names: if the customers" +
+            " creates null objects, then it will print 'Not Available in Customer Database':";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

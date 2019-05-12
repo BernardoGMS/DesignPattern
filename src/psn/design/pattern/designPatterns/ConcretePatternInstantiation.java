@@ -32,6 +32,8 @@ import psn.design.pattern.designPatterns.Iterator.auxClasses.DragonBallRepositor
 import psn.design.pattern.designPatterns.Mediator.auxClasses.Flight;
 import psn.design.pattern.designPatterns.Memento.auxClasses.CareTaker;
 import psn.design.pattern.designPatterns.Memento.auxClasses.Originator;
+import psn.design.pattern.designPatterns.NullObject.AbstractCustomer;
+import psn.design.pattern.designPatterns.NullObject.auxClasses.CustomerFactory;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -1112,28 +1114,32 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
         if (constructor instanceof TextsConstructorEN) {
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_1);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEMENTO_CREATE_ORIGINATOR);
             constructor.constructText();
-
-            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_2);
-            constructor.constructText();
-
-            constructor.setCurrentText(MessagesEN.CASESTUDY_MEDIATOR_3);
-            constructor.constructText();
-
             Originator originator = new Originator();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEMENTO_CREATE_CARETAKER);
+            constructor.constructText();
             CareTaker careTaker = new CareTaker();
 
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEMENTO_SET_STATE_1_AND_2_AND_SAVE_2);
+            constructor.constructText();
             originator.setState("State #1");
             originator.setState("State #2");
             careTaker.add(originator.saveStateToMemento());
 
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEMENTO_SET_AND_SAVE_STATE_3);
+            constructor.constructText();
             originator.setState("State #3");
             careTaker.add(originator.saveStateToMemento());
 
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEMENTO_SET_AND_GET_STATE_4);
+            constructor.constructText();
             originator.setState("State #4");
             System.out.println("Current State: " + originator.getState());
 
+            constructor.setCurrentText(MessagesPT.CASESTUDY_MEMENTO_CHECK_SAVED_STATES);
+            constructor.constructText();
             originator.getStateFromMemento(careTaker.get(0));
             System.out.println("First saved State: " + originator.getState());
             originator.getStateFromMemento(careTaker.get(1));
@@ -1147,6 +1153,103 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
         }else{
 
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEMENTO_CREATE_ORIGINATOR);
+            constructor.constructText();
+            Originator originator = new Originator();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEMENTO_CREATE_CARETAKER);
+            constructor.constructText();
+            CareTaker careTaker = new CareTaker();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEMENTO_SET_STATE_1_AND_2_AND_SAVE_2);
+            constructor.constructText();
+            originator.setState("State #1");
+            originator.setState("State #2");
+            careTaker.add(originator.saveStateToMemento());
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEMENTO_SET_AND_SAVE_STATE_3);
+            constructor.constructText();
+            originator.setState("State #3");
+            careTaker.add(originator.saveStateToMemento());
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEMENTO_SET_AND_GET_STATE_4);
+            constructor.constructText();
+            originator.setState("State #4");
+            System.out.println("Current State: " + originator.getState());
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_MEMENTO_CHECK_SAVED_STATES);
+            constructor.constructText();
+            originator.getStateFromMemento(careTaker.get(0));
+            System.out.println("First saved State: " + originator.getState());
+            originator.getStateFromMemento(careTaker.get(1));
+            System.out.println("Second saved State: " + originator.getState());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/memento_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }
+
+    }
+
+    @Override
+    public void implementNullObject(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_ALL_CUSTOMERS_BY_NAME);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_FOUR_CUSTOMERS);
+            constructor.constructText();
+
+            AbstractCustomer customer1 = CustomerFactory.getCustomer("Rob");
+            AbstractCustomer customer2 = CustomerFactory.getCustomer("Bob");
+            AbstractCustomer customer3 = CustomerFactory.getCustomer("Julie");
+            AbstractCustomer customer4 = CustomerFactory.getCustomer("Laura");
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CHECK_CUSTOMERS);
+            constructor.constructText();
+
+            System.out.println("Customers:");
+            System.out.println(customer1.getName());
+            System.out.println(customer2.getName());
+            System.out.println(customer3.getName());
+            System.out.println(customer4.getName());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_GET_ALL_CUSTOMERS_BY_NAME);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_FOUR_CUSTOMERS);
+            constructor.constructText();
+
+            AbstractCustomer customer1 = CustomerFactory.getCustomer("Rob");
+            AbstractCustomer customer2 = CustomerFactory.getCustomer("Bob");
+            AbstractCustomer customer3 = CustomerFactory.getCustomer("Julie");
+            AbstractCustomer customer4 = CustomerFactory.getCustomer("Laura");
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CHECK_CUSTOMERS);
+            constructor.constructText();
+
+            System.out.println("Customers:");
+            System.out.println(customer1.getName());
+            System.out.println(customer2.getName());
+            System.out.println(customer3.getName());
+            System.out.println(customer4.getName());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/null_object_pattern.htm");
+
+            constructor.constructTextDown(2);
 
         }
 
