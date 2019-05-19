@@ -35,4 +35,6 @@ public interface ImplPatternInterface {
     void implementMemento(TextsConstructor constructor);
 
     void implementNullObject(TextsConstructor constructor);
+
+    void implementObjectPool(TextsConstructor constructor);
 }

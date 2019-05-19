@@ -29,6 +29,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_MEDIATOR = "Padrão Mediator.";
     public static String CONCEPTS_OPTIONS_MEMENTO = "Padrão Memento.";
     public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Padrão Null Object.";
+    public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Padrão Object Pool.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -198,6 +199,18 @@ public class MessagesPT {
     public static String CASESTUDY_NULL_OBJECT_TEXT_P5 = " Dado que a referência a um objecto deve ser opcionalmente nula, e que" +
             " o resultado de uma verificação nula é para fazer nada ou usar algum valor por defeito, como pode a ausência de um" +
             " objecto - a presença de uma referência nula - pode ser tratada de forma transparente?";
+
+    public static String CASESTUDY_OBJECT_POOL = "Object Pool.";
+    public static String CASESTUDY_OBJECT_POOL_TEXT_P1 = " Guardar objectos numa pool uma enorme aceleração de performance; é mais" +
+            " eficiente em situações onde o custo de inicializar-se a instanciação de uma classe é elevado, a taxa de inicialização" +
+            " da classe é elevada, e o número de instanciações em uso em qualquer momento é baixo.";
+    public static String CASESTUDY_OBJECT_POOL_TEXT_P2 = " Pools de objectos (também conchecido por pools de recursos) são usadas para" +
+            " gerir o caching de objectos. Um cliente com acesso a uma pool de objectos pode evitar criar um novo objecto por simplesmente" +
+            " pedir à pool um que já tenha sido anteriormente instanciado. Geralmente a pool irá crescer, i.e., a pool irá criar" +
+            " novos objectos se estiver vazia, ou podemos ter uma pool que restringe o número de objectos criados.";
+    public static String CASESTUDY_OBJECT_POOL_TEXT_P3 = " É desejável manter todos os objectos reutilizáveis que são não estão" +
+            " a ser usados no momento, na mesma pool que modo que poderão ser geridos atendento uma política coerente. Para" +
+            " conseguir-se isto, a Classe da Pool Reutilizável é desenhada como sendo uma classe Singleton.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +

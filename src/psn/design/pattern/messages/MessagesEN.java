@@ -29,6 +29,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_MEDIATOR = "Mediator Pattern.";
     public static String CONCEPTS_OPTIONS_MEMENTO = "Memento Pattern.";
     public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Null Object Pattern.";
+    public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Object Pool Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -192,6 +193,18 @@ public class MessagesEN {
     public static String CASESTUDY_NULL_OBJECT_TEXT_P5 = " Given that an object reference may be optionally null, and that the result" +
             " of a null check is to do nothing or use some default value, how can the absence of an object - the presence of a null" +
             " reference - be treated transparently?";
+
+    public static String CASESTUDY_OBJECT_POOL = "Object Pool.";
+    public static String CASESTUDY_OBJECT_POOL_TEXT_P1 = " Object pooling can offer a significant performance boost; it is most" +
+            " effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class" +
+            " is high, and the number of instantiation in use at any time is low.";
+    public static String CASESTUDY_OBJECT_POOL_TEXT_P2 = " Object pools (otherwise known as resource pools) are used to manage the" +
+            " object caching. A client with access to an Object Pool can avoid creating a new Objects by simply asking the pool for" +
+            " one that has already been instantiated instead. Generally the pool will be a growing pool, i.e., the pool itself will" +
+            " create new objects if the pool is empty, or we can have a pool, which restricts the number of objects created.";
+    public static String CASESTUDY_OBJECT_POOL_TEXT_P3 = " It is desirable to keep all Reusable objects that are not currently" +
+            " in use in the same object pool so that can be managed by one coherent policy. To achieve this, the Reusable Pool" +
+            " class is designed to be singleton class.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +

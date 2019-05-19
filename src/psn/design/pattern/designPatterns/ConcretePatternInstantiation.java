@@ -1,6 +1,5 @@
 package psn.design.pattern.designPatterns;
 
-import com.sun.xml.internal.bind.v2.TODO;
 import psn.design.pattern.designPatterns.AbstractFactory.AbstractFactoryDP;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductA;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductB;
@@ -34,10 +33,14 @@ import psn.design.pattern.designPatterns.Memento.auxClasses.CareTaker;
 import psn.design.pattern.designPatterns.Memento.auxClasses.Originator;
 import psn.design.pattern.designPatterns.NullObject.AbstractCustomer;
 import psn.design.pattern.designPatterns.NullObject.auxClasses.CustomerFactory;
+import psn.design.pattern.designPatterns.ObjectPool.auxClasses.ExpensiveResource;
+import psn.design.pattern.designPatterns.ObjectPool.auxClasses.ExpensiveResourcePool;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
 import psn.design.pattern.messages.TextsConstructorEN;
+
+import java.sql.Connection;
 
 public class ConcretePatternInstantiation implements ImplPatternInterface {
 
@@ -1253,5 +1256,96 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
         }
 
+    }
+
+    @Override
+    public void implementObjectPool(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_ALL_CUSTOMERS_BY_NAME);
+            constructor.constructText();
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_FOUR_CUSTOMERS);
+            constructor.constructText();
+
+            final ExpensiveResourcePool pool = new ExpensiveResourcePool(3);
+
+            System.out.println("Simple usage");
+            System.out.println();
+            System.out.println("Pool size:" + pool.size());
+
+            /* simple usage - get the object */
+            ExpensiveResource obj0 = pool.get();
+            /* simple usage - use the object */
+            obj0.doSomething();
+
+            /* to check that the object was removed from the pool */
+            System.out.println("Pool size:" + pool.size());
+
+            /* simple usage - return the object */
+            pool.release(obj0);
+
+            System.out.println();
+            System.out.println("extended usage");
+            System.out.println();
+
+            final ExpensiveResource obj1 = pool.get();
+            ExpensiveResource obj2 = pool.get();
+            ExpensiveResource obj3 = pool.get();
+
+            /* to check that the object was removed from the pool */
+            System.out.println("Pool size:" + pool.size());
+            obj1.doSomething();
+            obj2.doSomething();
+            obj3.doSomething();
+
+            /* create a new thread to simulate the long operation for obj1 - this will avoid blocking the test app */
+            Runnable exec = new Runnable() {
+
+                @Override
+                public void run() {
+                    try {
+                        Thread.sleep(10 * 1000);
+                    } catch (InterruptedException e)	{
+                        e.printStackTrace();
+                    }
+                    pool.release(obj1);
+                }
+            };
+            Thread thread = new Thread(exec);
+            thread.start();
+
+            /* will wait until the thread will finish and will return the object to the pool - 10 sec
+             * will be the same object as for obj1.
+             */
+            System.out.println("Pool size:" + pool.size());
+            ExpensiveResource obj4 = pool.get();
+            obj4.doSomething();
+
+            /*return all objects to the pool */
+            pool.release(obj4);
+            pool.release(obj2);
+            pool.release(obj3);
+
+            /* check the pool size */
+            System.out.println("Pool size:" + pool.size());
+
+            /* shutdown the pool*/
+            pool.shutdown();
+
+            /* check the pool size */
+            System.out.println("Pool size:" + pool.size());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://sourcemaking.com/design_patterns/object_pool/java");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+
+
+        }
     }
 }
