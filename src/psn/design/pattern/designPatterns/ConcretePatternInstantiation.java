@@ -35,12 +35,17 @@ import psn.design.pattern.designPatterns.NullObject.AbstractCustomer;
 import psn.design.pattern.designPatterns.NullObject.auxClasses.CustomerFactory;
 import psn.design.pattern.designPatterns.ObjectPool.auxClasses.ExpensiveResource;
 import psn.design.pattern.designPatterns.ObjectPool.auxClasses.ExpensiveResourcePool;
+import psn.design.pattern.designPatterns.Observer.auxClasses.BinaryObserver;
+import psn.design.pattern.designPatterns.Observer.auxClasses.HexaObserver;
+import psn.design.pattern.designPatterns.Observer.auxClasses.OctalObserver;
+import psn.design.pattern.designPatterns.Observer.auxClasses.Subject;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
 import psn.design.pattern.messages.TextsConstructorEN;
 
 import java.sql.Connection;
+import java.util.concurrent.BlockingQueue;
 
 public class ConcretePatternInstantiation implements ImplPatternInterface {
 
@@ -1275,7 +1280,7 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             System.out.println("Pool size:" + pool.size());
 
             /* simple usage - get the object */
-            ExpensiveResource obj0 = pool.get();
+            ExpensiveResource obj0 = (ExpensiveResource) pool.get();
             /* simple usage - use the object */
             obj0.doSomething();
 
@@ -1283,15 +1288,15 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             System.out.println("Pool size:" + pool.size());
 
             /* simple usage - return the object */
-            pool.release(obj0);
+            pool.release((BlockingQueue) obj0);
 
             System.out.println();
             System.out.println("extended usage");
             System.out.println();
 
-            final ExpensiveResource obj1 = pool.get();
-            ExpensiveResource obj2 = pool.get();
-            ExpensiveResource obj3 = pool.get();
+            final ExpensiveResource obj1 = (ExpensiveResource) pool.get();
+            ExpensiveResource obj2 = (ExpensiveResource) pool.get();
+            ExpensiveResource obj3 = (ExpensiveResource) pool.get();
 
             /* to check that the object was removed from the pool */
             System.out.println("Pool size:" + pool.size());
@@ -1309,7 +1314,7 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
                     } catch (InterruptedException e)	{
                         e.printStackTrace();
                     }
-                    pool.release(obj1);
+                    pool.release((BlockingQueue) obj1);
                 }
             };
             Thread thread = new Thread(exec);
@@ -1319,13 +1324,13 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
              * will be the same object as for obj1.
              */
             System.out.println("Pool size:" + pool.size());
-            ExpensiveResource obj4 = pool.get();
+            ExpensiveResource obj4 = (ExpensiveResource) pool.get();
             obj4.doSomething();
 
             /*return all objects to the pool */
-            pool.release(obj4);
-            pool.release(obj2);
-            pool.release(obj3);
+            pool.release((BlockingQueue) obj4);
+            pool.release((BlockingQueue) obj2);
+            pool.release((BlockingQueue) obj3);
 
             /* check the pool size */
             System.out.println("Pool size:" + pool.size());
@@ -1345,6 +1350,68 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
         }else{
 
 
+
+        }
+    }
+
+    @Override
+    public void implementObserver(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_SUBJECT_TO_BE_OBSERVED);
+            constructor.constructText();
+
+            Subject subject = new Subject();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_ADD_THREE_OBSERVERS);
+            constructor.constructText();
+
+            new HexaObserver(subject);
+            new OctalObserver(subject);
+            new BinaryObserver(subject);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_SET_STATE);
+            constructor.constructText();
+
+            System.out.println("First state change: 15");
+            subject.setState(15);
+            System.out.println("Second state change: 10");
+            subject.setState(10);
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: https://www.tutorialspoint.com/design_pattern/observer_pattern.htm");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_SUBJECT_TO_BE_OBSERVED);
+            constructor.constructText();
+
+            Subject subject = new Subject();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_ADD_THREE_OBSERVERS);
+            constructor.constructText();
+
+            new HexaObserver(subject);
+            new OctalObserver(subject);
+            new BinaryObserver(subject);
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_SET_STATE);
+            constructor.constructText();
+
+            System.out.println("First state change: 15");
+            subject.setState(15);
+            System.out.println("Second state change: 10");
+            subject.setState(10);
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: https://www.tutorialspoint.com/design_pattern/observer_pattern.htm");
+
+            constructor.constructTextDown(2);
 
         }
     }

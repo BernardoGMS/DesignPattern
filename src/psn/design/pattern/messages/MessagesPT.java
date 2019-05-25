@@ -30,6 +30,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_MEMENTO = "Padrão Memento.";
     public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Padrão Null Object.";
     public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Padrão Object Pool.";
+    public static String CONCEPTS_OPTIONS_OBSERVER = "Padrão Observer.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -212,6 +213,15 @@ public class MessagesPT {
             " a ser usados no momento, na mesma pool que modo que poderão ser geridos atendento uma política coerente. Para" +
             " conseguir-se isto, a Classe da Pool Reutilizável é desenhada como sendo uma classe Singleton.";
 
+    public static String CASESTUDY_OBSERVER = "Observer.";
+    public static String CASESTUDY_OBSERVER_TEXT_P1 = " * Define uma dependência de um-para-muitos entre objectos de modo que quando" +
+            " um deles muda de estado, todas as suas dependencias são notificadas e atualizadas automaticamente;";
+    public static String CASESTUDY_OBSERVER_TEXT_P2 = " * Encapsula os componentes do núcleo (ou comum ou motor) na abstracção de" +
+            " um sujeito, e as componentes variáveis (ou opcional ou interface de user) numa hierarquia Observer (observador);";
+    public static String CASESTUDY_OBSERVER_TEXT_P3 = " * A parte 'view' de um Modelo-View-Controller.";
+    public static String CASESTUDY_OBSERVER_TEXT_P4 = " Um grande design monolítico não escala bem quando se aumentam os requisitos" +
+            " gráficos e de monitorização.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -392,6 +402,17 @@ public class MessagesPT {
             " clientes com os nomes Rob, Bob, Julie and Laura.";
     public static String CASESTUDY_CHECK_CUSTOMERS = "2.1 Por fim, podemos pedir aos quatro clientes para imprimir os seus nomes:" +
             " no caso de terem sido criados objectos nulos, então irá ser imprimido 'Not Available in Customer Database':";
+
+    // Messages used during the case of study implementation - OBSERVER
+    public static String CASESTUDY_CREATE_SUBJECT_TO_BE_OBSERVED = "1. Para começar com o exemplo, teremos de criar um sobject" +
+            " que possui um estado e uma lista alterável de observadores.";
+    public static String CASESTUDY_ADD_THREE_OBSERVERS = "2. Em segundo lugar, vamos adicionar à lista do sujeito três diferentes" +
+            " tipos de observadores que partilham a interface Observer, com o método update, responsável por notificar os observadores" +
+            " e é chamado de cada vez que o estado do sujeito se altera. Os três observadores são BinaryObserver, OctalObserver e " +
+            "HexaObserver e cada um deles imprime uma mensagem com o a sua base numérica correspondente: binario, octogonal " +
+            "ou hexagonal.";
+    public static String CASESTUDY_SET_STATE = "3. Finalmente, após mudar duas vezes o estado so sujeito, todos os observers" +
+            " contidos na sua lista são notificados.";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

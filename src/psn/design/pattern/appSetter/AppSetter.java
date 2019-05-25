@@ -117,6 +117,8 @@ public class AppSetter {
         textsInterfaceMap.put(36, new NullObjectConceptsTexts());
         textsInterfaceMap.put(37, new ObjectPoolTexts());
         textsInterfaceMap.put(38, new ObjectPoolConceptsTexts());
+        textsInterfaceMap.put(39, new ObserverTexts());
+        textsInterfaceMap.put(40, new ObserverConceptsTexts());
 
         this.mainView = new MainView(this.prompt,this);
         this.mainController = new MainController(this.mainView);

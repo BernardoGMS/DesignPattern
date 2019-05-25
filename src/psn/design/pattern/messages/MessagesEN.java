@@ -30,6 +30,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_MEMENTO = "Memento Pattern.";
     public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Null Object Pattern.";
     public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Object Pool Pattern.";
+    public static String CONCEPTS_OPTIONS_OBSERVER = "Observer Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -205,6 +206,15 @@ public class MessagesEN {
     public static String CASESTUDY_OBJECT_POOL_TEXT_P3 = " It is desirable to keep all Reusable objects that are not currently" +
             " in use in the same object pool so that can be managed by one coherent policy. To achieve this, the Reusable Pool" +
             " class is designed to be singleton class.";
+
+    public static String CASESTUDY_OBSERVER = "Observer.";
+    public static String CASESTUDY_OBSERVER_TEXT_P1 = " * Define a one-to-many dependency between objects so that when one object" +
+            "changes state, all its dependents are notified and updated automatically;";
+    public static String CASESTUDY_OBSERVER_TEXT_P2 = " * Encapsulate the core (or common or engine) components in a subject abstraction," +
+            " and the variable (or optional or user interface) components in an Observer hierarchy;";
+    public static String CASESTUDY_OBSERVER_TEXT_P3 = " * The 'view' part of Model-View-Controller.";
+    public static String CASESTUDY_OBSERVER_TEXT_P4 = " A large monolithic design does not scale well as new graphing or monitoring" +
+            " requirements are levied.";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -382,6 +392,17 @@ public class MessagesEN {
             " Rob, Bob, Julie and Laura.";
     public static String CASESTUDY_CHECK_CUSTOMERS = "2.1 At last, we can ask the four customers to print their names: if the customers" +
             " creates null objects, then it will print 'Not Available in Customer Database':";
+
+    // Messages used during the case of study implementation - OBSERVER
+    public static String CASESTUDY_CREATE_SUBJECT_TO_BE_OBSERVED = "1. To start with the example, we will have to create a subject" +
+            " that has a state and a changeble list of observers.";
+    public static String CASESTUDY_ADD_THREE_OBSERVERS = "2. In second place, we will add to the subject list three different types" +
+            " of observer that share the interface Observer, with the method update, responsible to notify the observers" +
+            " and is called each time the subject state changes. The three observer are BinaryObserver, OctalObserver and " +
+            "HexaObserver and each one of them change print a message in the corresponding numeric base system: binary, octagonal " +
+            "or hexagonal.";
+    public static String CASESTUDY_SET_STATE = "3. Finally, by changing twice the subject state, all the observers" +
+            " contained in his list are notified.";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";
