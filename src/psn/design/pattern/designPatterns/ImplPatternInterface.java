@@ -39,4 +39,6 @@ public interface ImplPatternInterface {
     void implementObjectPool(TextsConstructor constructor);
 
     void implementObserver(TextsConstructor constructor);
+
+    void implementPrivateClassData(TextsConstructor constructor);
 }

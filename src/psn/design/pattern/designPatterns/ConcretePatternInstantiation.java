@@ -39,6 +39,7 @@ import psn.design.pattern.designPatterns.Observer.auxClasses.BinaryObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.HexaObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.OctalObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.Subject;
+import psn.design.pattern.designPatterns.PrivateClassData.MainClass;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -1414,5 +1415,66 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
             constructor.constructTextDown(2);
 
         }
+    }
+
+    @Override
+    public void implementPrivateClassData(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_MAIN_CLASS);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_INSTANTIATE_DATA_CLASS);
+            constructor.constructText();
+
+            int height = 5;
+            int weight = 7;
+            int width = 8;
+
+            MainClass mainClass = new MainClass(height,weight,width);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_VALUES);
+            constructor.constructText();
+
+            System.out.println("Height: " + mainClass.getDataClass().getHeight());
+            System.out.println("Weight: " + mainClass.getDataClass().getWeight());
+            System.out.println("Width: " + mainClass.getDataClass().getWidth());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: Design Pattern Explained Simply, p.89");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_MAIN_CLASS);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_INSTANTIATE_DATA_CLASS);
+            constructor.constructText();
+
+            int height = 5;
+            int weight = 7;
+            int width = 8;
+
+            MainClass mainClass = new MainClass(height,weight,width);
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_VALUES);
+            constructor.constructText();
+
+            System.out.println("Height: " + mainClass.getDataClass().getHeight());
+            System.out.println("Weight: " + mainClass.getDataClass().getWeight());
+            System.out.println("Width: " + mainClass.getDataClass().getWidth());
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: Design Pattern Explained Simply, p.89");
+
+            constructor.constructTextDown(2);
+
+        }
+
     }
 }

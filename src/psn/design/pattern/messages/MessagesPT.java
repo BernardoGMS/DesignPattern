@@ -31,6 +31,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Padrão Null Object.";
     public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Padrão Object Pool.";
     public static String CONCEPTS_OPTIONS_OBSERVER = "Padrão Observer.";
+    public static String CONCEPTS_OPTIONS_PRIVATE_CLASS_DATA = "Padrão Private Class Data.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -221,6 +222,19 @@ public class MessagesPT {
     public static String CASESTUDY_OBSERVER_TEXT_P3 = " * A parte 'view' de um Modelo-View-Controller.";
     public static String CASESTUDY_OBSERVER_TEXT_P4 = " Um grande design monolítico não escala bem quando se aumentam os requisitos" +
             " gráficos e de monitorização.";
+
+    public static String CASESTUDY_PRIVATE_CLASS_DATA = "Private Class Data.";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P1 = " * Controle de acesso e escrita a atríbutos de uma classe;";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P2 = " * Separa os dados dos métodos que os utilizam;";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P3 = " * Encapsula a instanciação dos dados da classe;";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P4 = " * Fornece um novo tipo de final - final depois do constructor";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P5 = " Uma class deve expôr os seus atributos (variáveis) para manipulação" +
+            " quando a manipulação não é mais desejável, i.e., depois de construcção. Usando o design de private class data" +
+            " permite prevenir esta manipulação indesejável.";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P6 = " Uma classe deve ter atributos de alteração única que não podem" +
+            " ser declarados final. Usando este padrão é-nos permitido iniciar este atributos da classe uma única vez.";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P7 = " A motivação para este padrão vem do objectivo do estado de" +
+            " proteção da classe minimizando a visibilidade dos seus atributos (dados).";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
@@ -413,6 +427,12 @@ public class MessagesPT {
             "ou hexagonal.";
     public static String CASESTUDY_SET_STATE = "3. Finalmente, após mudar duas vezes o estado so sujeito, todos os observers" +
             " contidos na sua lista são notificados.";
+
+    // Messages used during the case of study implementation - Private Data Class
+    public static String CASESTUDY_CREATE_MAIN_CLASS = "1. Em primeiro lugar devemos instanciar a Main Class, que irá conter" +
+            " a data class que possui três atributos: altura, peso e largura.";
+    public static String CASESTUDY_INSTANTIATE_DATA_CLASS= "1.1 Devemos dar a cada atributo um valor específico!";
+    public static String CASESTUDY_GET_VALUES= "2. Depois nós podemos obter cada atributo através da mainClass:";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

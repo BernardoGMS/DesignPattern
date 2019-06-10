@@ -31,6 +31,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_NULL_OBJECT = "Null Object Pattern.";
     public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Object Pool Pattern.";
     public static String CONCEPTS_OPTIONS_OBSERVER = "Observer Pattern.";
+    public static String CONCEPTS_OPTIONS_PRIVATE_CLASS_DATA = "Private Class Data Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -215,6 +216,19 @@ public class MessagesEN {
     public static String CASESTUDY_OBSERVER_TEXT_P3 = " * The 'view' part of Model-View-Controller.";
     public static String CASESTUDY_OBSERVER_TEXT_P4 = " A large monolithic design does not scale well as new graphing or monitoring" +
             " requirements are levied.";
+
+    public static String CASESTUDY_PRIVATE_CLASS_DATA = "Private Class Data.";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P1 = " * Control write access to class attributes;";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P2 = " * Separate data from methods that use it;";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P3 = " * Encapsulate class data initialization;";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P4 = " * Providing new type of final - final after constructor";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P5 = " A class may expose its attributes (class variables) to manipulation" +
+            " when manipulation is no longer desirable, e.g., after construction. Using the private class data design pattern" +
+            " prevents that undesirable manipulation.";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P6 = " A class may have one-time mutable attributes that cannot be declared" +
+            " final. Using this design pattern allows one-time setting of those class attributes.";
+    public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P7 = " The motivation for this design pattern comes from the design goal of" +
+            " protecting class state by minimizing the visibility of its attributes (data).";
 
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
@@ -403,6 +417,12 @@ public class MessagesEN {
             "or hexagonal.";
     public static String CASESTUDY_SET_STATE = "3. Finally, by changing twice the subject state, all the observers" +
             " contained in his list are notified.";
+
+    // Messages used during the case of study implementation - Private Data Class
+    public static String CASESTUDY_CREATE_MAIN_CLASS = "1. In first place we should instantiate the Main Class, which will contain" +
+            " the data class that has three attributes: height, weight and width.";
+    public static String CASESTUDY_INSTANTIATE_DATA_CLASS= "1.1 We must give to each attribute the a specific value!";
+    public static String CASESTUDY_GET_VALUES= "2. Then we can get each attributes but asking to the the mainClass:";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";
