@@ -32,6 +32,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Object Pool Pattern.";
     public static String CONCEPTS_OPTIONS_OBSERVER = "Observer Pattern.";
     public static String CONCEPTS_OPTIONS_PRIVATE_CLASS_DATA = "Private Class Data Pattern.";
+    public static String CONCEPTS_OPTIONS_PROTOTYPE = "Prototype Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -230,6 +231,13 @@ public class MessagesEN {
     public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P7 = " The motivation for this design pattern comes from the design goal of" +
             " protecting class state by minimizing the visibility of its attributes (data).";
 
+    public static String CASESTUDY_PROTOTYPE = "Prototype.";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P1 = " * Specify the kinds of objects to create using a prototypical instance" +
+            ", and create new objects by copying this prototype;";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P2 = " * Co-opt one instance of a class for use as a breeder of all future instances;";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P3 = " * The new operator considered harmful.";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P4 = " Application 'hard wires' the class of object to create in each 'new' expression.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -423,6 +431,14 @@ public class MessagesEN {
             " the data class that has three attributes: height, weight and width.";
     public static String CASESTUDY_INSTANTIATE_DATA_CLASS= "1.1 We must give to each attribute the a specific value!";
     public static String CASESTUDY_GET_VALUES= "2. Then we can get each attributes but asking to the the mainClass:";
+
+    // Messages used during the case of study implementation - Private Data Class
+    public static String CASESTUDY_COLORSTORE = "1. To begin, we must have a class with a static Color Map List which contains" +
+            " a set of colors, classes that extends from the 'prototype' color which implements cloneable interface.";
+    public static String CASESTUDY_GETCOLOR = "2. In that way we can use the method getColor, and by using the String Key" +
+            ", we create a new object according the color and add to the new list:";
+    public static String CASESTUDY_COLORS = "3. The example above showed that it was added 4 colors: twice red, one of blue, " +
+            "and one of white!";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

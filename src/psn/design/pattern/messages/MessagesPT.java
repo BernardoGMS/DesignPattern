@@ -32,6 +32,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_OBJECT_POOL = "Padrão Object Pool.";
     public static String CONCEPTS_OPTIONS_OBSERVER = "Padrão Observer.";
     public static String CONCEPTS_OPTIONS_PRIVATE_CLASS_DATA = "Padrão Private Class Data.";
+    public static String CONCEPTS_OPTIONS_PROTOTYPE = "Padrão Prototype.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -236,6 +237,15 @@ public class MessagesPT {
     public static String CASESTUDY_PRIVATE_CLASS_DATA_TEXT_P7 = " A motivação para este padrão vem do objectivo do estado de" +
             " proteção da classe minimizando a visibilidade dos seus atributos (dados).";
 
+    public static String CASESTUDY_PROTOTYPE = "Prototype.";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P1 = " * Especificar os tipos de objectos a criar usando uma instância prototipal" +
+            ", e criando novos objectos copiando este protótipo;";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P2 = " * Co-optar uma instância de uma classe para uso como um criador de todas as " +
+            "futuras instâncias;";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P3 = " * O novo operador é considerado prejudicial.";
+    public static String CASESTUDY_PROTOTYPE_TEXT_P4 = " A aplicação 'envolve fortemente' a classe do objecto a ser criado em cada" +
+            " 'nova' expressão.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -427,6 +437,14 @@ public class MessagesPT {
             "ou hexagonal.";
     public static String CASESTUDY_SET_STATE = "3. Finalmente, após mudar duas vezes o estado so sujeito, todos os observers" +
             " contidos na sua lista são notificados.";
+
+    // Messages used during the case of study implementation - Private Data Class
+    public static String CASESTUDY_COLORSTORE = "1. PAra começas, devemos ter uma classe com uma Lista de Cores que contém" +
+            " um conjunto de cores, classes que extendem de uma cor 'protótipo' que implementa interface cloneable.";
+    public static String CASESTUDY_GETCOLOR = "2. Deste modo podmeos usar o método getColor, e usando a chave (String)" +
+            ", criamos um novo objecto que acordo com a cor e adicionamos à nova lista:";
+    public static String CASESTUDY_COLORS = "3. O exemplo acima mostea que foram adicionadas 4 cores: duas vezes vermelho, " +
+            "uma de azul e uma de branco!";
 
     // Messages used during the case of study implementation - Private Data Class
     public static String CASESTUDY_CREATE_MAIN_CLASS = "1. Em primeiro lugar devemos instanciar a Main Class, que irá conter" +

@@ -40,6 +40,7 @@ import psn.design.pattern.designPatterns.Observer.auxClasses.HexaObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.OctalObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.Subject;
 import psn.design.pattern.designPatterns.PrivateClassData.MainClass;
+import psn.design.pattern.designPatterns.Prototype.auxClasses.*;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
@@ -1449,10 +1450,10 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
         }else{
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_MAIN_CLASS);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_MAIN_CLASS);
             constructor.constructText();
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_INSTANTIATE_DATA_CLASS);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_INSTANTIATE_DATA_CLASS);
             constructor.constructText();
 
             int height = 5;
@@ -1461,7 +1462,7 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
             MainClass mainClass = new MainClass(height,weight,width);
 
-            constructor.setCurrentText(MessagesEN.CASESTUDY_GET_VALUES);
+            constructor.setCurrentText(MessagesPT.CASESTUDY_GET_VALUES);
             constructor.constructText();
 
             System.out.println("Height: " + mainClass.getDataClass().getHeight());
@@ -1470,11 +1471,64 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
 
             constructor.constructTextDown(2);
 
-            System.out.println("Source: Design Pattern Explained Simply, p.89");
+            System.out.println("Fonte: Design Pattern Explained Simply, p.89");
 
             constructor.constructTextDown(2);
 
         }
 
     }
+
+    @Override
+    public void implementPrototype(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_COLORSTORE);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_GETCOLOR);
+            constructor.constructText();
+
+            ColorStore.getColor("blue").addColor();
+            ColorStore.getColor("red").addColor();
+            ColorStore.getColor("red").addColor();
+            ColorStore.getColor("white").addColor();
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_COLORS);
+            constructor.constructText();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: www.geeksforgeeks.org/prototype-design-pattern");
+
+            constructor.constructTextDown(2);
+
+        }else{
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_COLORSTORE);
+            constructor.constructText();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_GETCOLOR);
+            constructor.constructText();
+
+            ColorStore.getColor("blue").addColor();
+            ColorStore.getColor("red").addColor();
+            ColorStore.getColor("red").addColor();
+            ColorStore.getColor("white").addColor();
+
+            constructor.setCurrentText(MessagesPT.CASESTUDY_COLORS);
+            constructor.constructText();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Fonte: www.geeksforgeeks.org/prototype-design-pattern");
+
+            constructor.constructTextDown(2);
+
+        }
+    }
+
+
 }
+
