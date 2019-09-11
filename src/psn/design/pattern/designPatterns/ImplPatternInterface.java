@@ -43,4 +43,6 @@ public interface ImplPatternInterface {
     void implementPrivateClassData(TextsConstructor constructor);
 
     void implementPrototype(TextsConstructor constructor);
+
+    void implementProxy(TextsConstructor constructor);
 }

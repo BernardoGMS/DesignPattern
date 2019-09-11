@@ -1,5 +1,7 @@
 package psn.design.pattern.designPatterns.Prototype.auxClasses;
 
+import psn.design.pattern.designPatterns.Prototype.ColorMap;
+
 import java.util.HashMap;
 import java.util.Map;
 

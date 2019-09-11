@@ -33,6 +33,7 @@ public class MessagesPT {
     public static String CONCEPTS_OPTIONS_OBSERVER = "Padrão Observer.";
     public static String CONCEPTS_OPTIONS_PRIVATE_CLASS_DATA = "Padrão Private Class Data.";
     public static String CONCEPTS_OPTIONS_PROTOTYPE = "Padrão Prototype.";
+    public static String CONCEPTS_OPTIONS_PROXY = "Padrão Proxy.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Visão Geral.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Padrões criacionais.";
@@ -246,6 +247,13 @@ public class MessagesPT {
     public static String CASESTUDY_PROTOTYPE_TEXT_P4 = " A aplicação 'envolve fortemente' a classe do objecto a ser criado em cada" +
             " 'nova' expressão.";
 
+    public static String CASESTUDY_PROXY = "Proxy.";
+    public static String CASESTUDY_PROXY_TEXT_P1 = " * Fronece um substituto ou um espaço reservado a um objecto para controlar acesso ao mesmo;";
+    public static String CASESTUDY_PROXY_TEXT_P2 = " * Usa um nível extra de indirecto para distribuir um acesso distribuído, controlado ou inteligente;";
+    public static String CASESTUDY_PROXY_TEXT_P3 = " * Adiciona um envolvedor e delega para proteger o componente real da complexidade indevida.";
+    public static String CASESTUDY_PROXY_TEXT_P4 = " Precisas de suportar objectos famintos de recursos, e não queres instanciar" +
+            " os objectos a menos que e até estes sejam requeridos pelo cliente.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Criando duas fábricas de biscoitos usando o método estático da classe" +
             " FactoryMaker...";
@@ -451,6 +459,11 @@ public class MessagesPT {
             " a data class que possui três atributos: altura, peso e largura.";
     public static String CASESTUDY_INSTANTIATE_DATA_CLASS= "1.1 Devemos dar a cada atributo um valor específico!";
     public static String CASESTUDY_GET_VALUES= "2. Depois nós podemos obter cada atributo através da mainClass:";
+
+    // Messages used during the case of study implementation - PROXY
+    public static String CASESTUDY_CREATE_SOCKET_PROXY = "1. O primeiro passo é criar o object SocketProxy.";
+    public static String CASESTUDY_CREATE_SOCKET_PROXY_WHILE = "2. Depois começamos o ciclo para receber e enviar informação.:";
+    public static String CASESTUDY_NEW_INFO = "             --- Nova Informação: ---               ";
 
     public static String CASESTUDY_INTENT = "MOTIVAÇÃO";
     public static String CASESTUDY_PROBLEM = "PROBLEMA";

@@ -68,7 +68,7 @@ public class ConceptsView implements AbstractsView {
     public void showOptions(MenuInputScanner optionsList) {
 
         int answer = this.prompt.getUserInput(optionsList);
-        if (answer==20) {this.mainView.init(languageID);}
+        if (answer==23) {this.mainView.init(languageID);}
 
         if (answer==1) {
 
@@ -288,6 +288,42 @@ public class ConceptsView implements AbstractsView {
             }else{
 
                 this.textsInterfaceMap.get(40).displayPortugueseTexts();
+            }
+
+        }
+
+        if (answer==20) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(42).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(42).displayPortugueseTexts();
+            }
+
+        }
+
+        if (answer==21) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(44).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(44).displayPortugueseTexts();
+            }
+
+        }
+
+        if (answer==22) {
+
+            if (this.textsConstructor instanceof TextsConstructorEN) {
+
+                this.textsInterfaceMap.get(46).displayEnglishTexts();
+            }else{
+
+                this.textsInterfaceMap.get(46).displayPortugueseTexts();
             }
 
         }

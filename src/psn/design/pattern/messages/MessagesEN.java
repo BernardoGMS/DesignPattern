@@ -33,6 +33,7 @@ public class MessagesEN {
     public static String CONCEPTS_OPTIONS_OBSERVER = "Observer Pattern.";
     public static String CONCEPTS_OPTIONS_PRIVATE_CLASS_DATA = "Private Class Data Pattern.";
     public static String CONCEPTS_OPTIONS_PROTOTYPE = "Prototype Pattern.";
+    public static String CONCEPTS_OPTIONS_PROXY = "Proxy Pattern.";
 
     public static String CONCEPTS_OPTIONS_OVERVIEW = "Overview.";
     public static String CONCEPTS_OPTIONS_CREATIONALPATTERNS = "Creational Patterns.";
@@ -238,6 +239,13 @@ public class MessagesEN {
     public static String CASESTUDY_PROTOTYPE_TEXT_P3 = " * The new operator considered harmful.";
     public static String CASESTUDY_PROTOTYPE_TEXT_P4 = " Application 'hard wires' the class of object to create in each 'new' expression.";
 
+    public static String CASESTUDY_PROXY = "Proxy.";
+    public static String CASESTUDY_PROXY_TEXT_P1 = " * Provide a surrogate or placeholder for another object to control access to it;";
+    public static String CASESTUDY_PROXY_TEXT_P2 = " * Use an extra level of indirection to support distributed, controlled, or intelligent access;";
+    public static String CASESTUDY_PROXY_TEXT_P3 = " * Add a wrapper and delegation to protect the real component from undue complexity.";
+    public static String CASESTUDY_PROXY_TEXT_P4 = " * You need to support resource-hungry objects, and you do not want to instantiate" +
+            " such objects unless and until they are actually requested by the client.";
+
     // Messages used during the case of study implementation - ABSTRACT FACTORY
     public static String CASESTUDY_CREATE_FACTORIES = " 1. Creating two cookies factories using the static method of the class" +
             " FactoryMaker...";
@@ -426,19 +434,24 @@ public class MessagesEN {
     public static String CASESTUDY_SET_STATE = "3. Finally, by changing twice the subject state, all the observers" +
             " contained in his list are notified.";
 
-    // Messages used during the case of study implementation - Private Data Class
+    // Messages used during the case of study implementation - PRIVATE DATA CLASS
     public static String CASESTUDY_CREATE_MAIN_CLASS = "1. In first place we should instantiate the Main Class, which will contain" +
             " the data class that has three attributes: height, weight and width.";
     public static String CASESTUDY_INSTANTIATE_DATA_CLASS= "1.1 We must give to each attribute the a specific value!";
     public static String CASESTUDY_GET_VALUES= "2. Then we can get each attributes but asking to the the mainClass:";
 
-    // Messages used during the case of study implementation - Private Data Class
+    // Messages used during the case of study implementation - PROTOTYPE
     public static String CASESTUDY_COLORSTORE = "1. To begin, we must have a class with a static Color Map List which contains" +
             " a set of colors, classes that extends from the 'prototype' color which implements cloneable interface.";
     public static String CASESTUDY_GETCOLOR = "2. In that way we can use the method getColor, and by using the String Key" +
             ", we create a new object according the color and add to the new list:";
     public static String CASESTUDY_COLORS = "3. The example above showed that it was added 4 colors: twice red, one of blue, " +
             "and one of white!";
+
+    // Messages used during the case of study implementation - PROXY
+    public static String CASESTUDY_CREATE_SOCKET_PROXY = "1. The first step is to create the object SocketProxy.";
+    public static String CASESTUDY_CREATE_SOCKET_PROXY_WHILE = "2. Then we start the cycle to receive and send information.:";
+    public static String CASESTUDY_NEW_INFO = "             --- New Info: ---               ";
 
     public static String CASESTUDY_INTENT = "INTENT";
     public static String CASESTUDY_PROBLEM = "PROBLEM";

@@ -1,4 +1,4 @@
-package psn.design.pattern.designPatterns.Prototype.auxClasses;
+package psn.design.pattern.designPatterns.Prototype;
 
 public abstract class ColorMap implements Cloneable {
 

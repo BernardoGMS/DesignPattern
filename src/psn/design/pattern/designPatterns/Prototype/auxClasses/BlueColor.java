@@ -1,7 +1,9 @@
 package psn.design.pattern.designPatterns.Prototype.auxClasses;
 
-class BlueColor extends ColorMap
-{
+import psn.design.pattern.designPatterns.Prototype.ColorMap;
+
+class BlueColor extends ColorMap {
+
     public BlueColor()
     {
         this.colorName = "blue";

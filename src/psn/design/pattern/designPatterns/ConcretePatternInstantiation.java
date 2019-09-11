@@ -1,5 +1,6 @@
 package psn.design.pattern.designPatterns;
 
+import psn.design.pattern.DesignPattern;
 import psn.design.pattern.designPatterns.AbstractFactory.AbstractFactoryDP;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductA;
 import psn.design.pattern.designPatterns.AbstractFactory.auxClasses.AbstractProductB;
@@ -40,13 +41,15 @@ import psn.design.pattern.designPatterns.Observer.auxClasses.HexaObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.OctalObserver;
 import psn.design.pattern.designPatterns.Observer.auxClasses.Subject;
 import psn.design.pattern.designPatterns.PrivateClassData.MainClass;
-import psn.design.pattern.designPatterns.Prototype.auxClasses.*;
+import psn.design.pattern.designPatterns.Prototype.auxClasses.ColorStore;
+import psn.design.pattern.designPatterns.Proxy.SocketInterface;
+import psn.design.pattern.designPatterns.Proxy.auxClasses.SocketProxy;
 import psn.design.pattern.messages.MessagesEN;
 import psn.design.pattern.messages.MessagesPT;
 import psn.design.pattern.messages.TextsConstructor;
 import psn.design.pattern.messages.TextsConstructorEN;
 
-import java.sql.Connection;
+import java.util.Scanner;
 import java.util.concurrent.BlockingQueue;
 
 public class ConcretePatternInstantiation implements ImplPatternInterface {
@@ -1529,6 +1532,108 @@ public class ConcretePatternInstantiation implements ImplPatternInterface {
         }
     }
 
+    @Override
+    public void implementProxy(TextsConstructor constructor) {
+
+        if (constructor instanceof TextsConstructorEN) {
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_SOCKET_PROXY);
+            constructor.constructText();
+
+            // 3. The client deals with the wrapper
+            String args = "first";
+            SocketInterface socket = new SocketProxy("127.0.0.1", 8080, args.equals("first") ? true : false);
+            String str;
+            boolean skip = true;
+
+            constructor.setCurrentText(MessagesEN.CASESTUDY_CREATE_SOCKET_PROXY_WHILE);
+            constructor.constructText();
+
+            while (true) {
+
+                constructor.setCurrentText(MessagesEN.CASESTUDY_NEW_INFO);
+                constructor.constructText();
+
+                if (args.equals("second") && skip) {
+
+                    skip = !skip;
+                } else {
+
+                    str = socket.readLine();
+                    System.out.println("Receive - " + str);
+                    if (str.equals(null)) {
+                        break;
+                    }
+                }
+
+                System.out.print("Send ---- ");
+                str = new Scanner(System.in).nextLine();
+                socket.writeLine(str);
+                if (str.equals("quit")) {
+                    break;
+                }
+            }
+            socket.dispose();
+
+            constructor.constructTextDown(2);
+
+            System.out.println("Source: sourcemaking.com/design_patterns/proxy/java/1");
+
+            constructor.constructTextDown(2);
+
+        } else {
+
+            if (constructor instanceof TextsConstructorEN) {
+
+                constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_SOCKET_PROXY);
+                constructor.constructText();
+
+                // 3. The client deals with the wrapper
+                String args = "first";
+                SocketInterface socket = new SocketProxy("127.0.0.1", 8080, args.equals("first") ? true : false);
+                String str;
+                boolean skip = true;
+
+                constructor.setCurrentText(MessagesPT.CASESTUDY_CREATE_SOCKET_PROXY_WHILE);
+                constructor.constructText();
+
+                while (true) {
+
+                    constructor.setCurrentText(MessagesPT.CASESTUDY_NEW_INFO);
+                    constructor.constructText();
+
+                    if (args.equals("second") && skip) {
+
+                        skip = !skip;
+                    } else {
+
+                        str = socket.readLine();
+                        System.out.println("Recebido - " + str);
+                        if (str.equals(null)) {
+                            break;
+                        }
+                    }
+
+                    System.out.print("Enviado ---- ");
+                    str = new Scanner(System.in).nextLine();
+                    socket.writeLine(str);
+                    if (str.equals("quit")) {
+                        break;
+                    }
+                }
+                socket.dispose();
+
+                constructor.constructTextDown(2);
+
+                System.out.println("Fonte: sourcemaking.com/design_patterns/proxy/java/1");
+
+                constructor.constructTextDown(2);
+
+
+            }
+        }
+
+    }
 
 }
 
